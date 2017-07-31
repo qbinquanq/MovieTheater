@@ -4,7 +4,7 @@ S	As a User, I can log into the system.
 M	As a User, I can view a list of movies that are playing for the week. 
 M	As a User, I can purchase tickets for a movie ahead of time. 
 M	As a User, I can look at tickets I have already purchased and see what movie and when it is playing. 
-L	As a User, I can request for a reimbursement for tickets as long as it is two or more days before the date I 				purchased the ticket for. 
+L	As a User, I can request for a reimbursement for tickets as long as it is two or more days before the date I purchased the ticket for. 
 
 Employee:
 M	As an Employee, I can log the amount of people that walked into the theater to buy a ticket for each movie. 
@@ -12,8 +12,7 @@ M	As an Employee, I can log the amount of people that walked into the theater to
 Manager:
 L	As a Manager, I can determine which movies are being played in the theater. 
 L	As a Manager, I can determine which hall a movie is being played in. 
-M	As a Manager, I can check the amount of revanue each movie got for the week, as well as how much the theater made 			overall. 
-M	As a Manager, I can make Employee accounts so my employees can do their job. 
+M	As a Manager, I can check the amount of revanue each movie got for the week, as well as how much the theater made overall.  
 
 System:
 S	As a System, I can store requests input by a user.
