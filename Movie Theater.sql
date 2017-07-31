@@ -42,7 +42,7 @@ showtimes timestamp unique
 );
 
 create table theater.MovieInfo(
-infoId number primary key
+infoId number primary key,
 movieId number,
 hallId number,
 showId number,
