@@ -3,6 +3,10 @@ body{
 }
 .jumbrotron{
 	background-color:#B4403C !important;
+<<<<<<< HEAD
+=======
+	padding:10px 10px 10px 10px;
+>>>>>>> a4181e3407df1e6745506e31a582968b8adc76ef
 }
 .container{
 	margin-top:80px;
@@ -17,6 +21,7 @@ form{
 	color:#000000;
 }
 #search{
+<<<<<<< HEAD
 	color:#000000;
 	
     height: 100%;
@@ -36,3 +41,28 @@ form{
 	display:inline;
 }
 >>>>>>> 280386d8d51a61aae2f387079f452244f9c47303
+=======
+	background-color:red;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    opacity:0.5;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+#search_title{
+	font-weight:500;
+	font-size:4em;
+	font-family:"Gill Sans Extrabold, sans-serif";
+	margin-right:10px;
+}
+#search_bar{
+	width:80%;
+	height:40px;
+	margin-left:10px;
+	border-radius:6px;
+}
+#movie_img{
+	background-color:green;
+}
+>>>>>>> a4181e3407df1e6745506e31a582968b8adc76ef
