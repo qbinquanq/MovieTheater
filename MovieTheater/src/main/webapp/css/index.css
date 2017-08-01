@@ -2,7 +2,7 @@ body{
 	background-color:#E8F7F7;
 }
 .jumbrotron{
-	background-color:#B4403C;
+	background-color:#B4403C !important;
 }
 .container{
 	margin-top:80px;
@@ -20,6 +20,6 @@ form{
 	color:#000000;
 	display:inline-block;
     height: 100%;
-    margin: 0 auto;
     width: 400px;
+    margin-right:100px;
 }
