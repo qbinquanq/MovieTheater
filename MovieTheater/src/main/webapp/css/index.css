@@ -18,8 +18,21 @@ form{
 }
 #search{
 	color:#000000;
-	display:inline-block;
+	
     height: 100%;
+<<<<<<< HEAD
     width: 400px;
     margin-right:100px;
 }
+=======
+    margin: 0 auto;
+    width: 40%;
+    vertical-align: middle;
+}
+#search_bar{
+	background-color:#D49A7D;
+}
+#search_button{
+	display:inline;
+}
+>>>>>>> 280386d8d51a61aae2f387079f452244f9c47303
