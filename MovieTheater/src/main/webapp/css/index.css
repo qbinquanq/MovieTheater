@@ -1,0 +1,25 @@
+body{
+	background-color:#E8F7F7;
+}
+.jumbrotron{
+	background-color:#B4403C;
+}
+.container{
+	margin-top:80px;
+}
+footer{
+	color:#000000;
+    height: 100px;
+    margin: auto;
+    width: 400px;
+}
+form{
+	color:#000000;
+}
+#search{
+	color:#000000;
+	display:inline-block;
+    height: 100%;
+    margin: 0 auto;
+    width: 400px;
+}
