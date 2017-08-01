@@ -62,4 +62,5 @@ walkAmount number,
 userId number
 );
 
+
 commit;
