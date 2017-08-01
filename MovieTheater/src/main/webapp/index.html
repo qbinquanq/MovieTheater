@@ -2,41 +2,92 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/index.css" />
-<title>Insert title here</title>
+
+<title>Users</title>
 </head>
 <body>
-	<div id="Registration_panel">
-	<form action="" method="post">
-		<label for="u_firstname">Your First Name</label>
-		<input id="u_firstname" name="u_firstname" type="text"/>
-		
-		<label for="u_lastname">Your Last Name</label>
-		<input id="u_lastname" name="u_lastname" type="text"/>
-		
-		<label for="user">Username</label>
-		<input id="user" name="user" type="text"/>
-		
-		<label for="pass">Password</label>
-		<input id="pass" name="pass" type="password"/>
-		
-		<label for="confirm_pass">Confirm Your Password</label>
-		<input id="confirm_pass" name="confirm_pass" type="password"/>
-		
-		<label for="email">Email</label>
-		<input id="email" name="email" type="email"/>
-		
-		<input type="submit" value="Registration" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/> 
-	</form>
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home<span> Main Page</span> </a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+</nav>
+<br>
+<div class="jumbotron" >
+	<p>Description</p>
+</div>
+<div class="container">
+	<div class="row">
+		<div id="Registration_panel" class="col-md-6">
+		<h2>User Registration</h2>
+			<form action="" method="post">
+				<div class="form-group">
+					<label for="u_firstname">FirstName</label>
+					<input id="u_firstname" name="u_firstname" type="text"/>
+				</div>
+				
+				<div class="form-group">
+					<label for="u_lastname">LastName</label>
+					<input id="u_lastname" name="u_lastname" type="text"/>
+				</div>
+				
+				<div class="form-group">
+					<label for="user">Username</label>
+					<input id="user" name="user" type="text"/>
+				</div>
+				
+				<div class="form-group">
+					<label for="pass">Password</label>
+					<input id="pass" name="pass" type="password"/>
+				</div>
+				
+				<div class="form-group">
+					<label for="confirm_pass">Confirm Password</label>
+					<input id="confirm_pass" name="confirm_pass" type="password"/>
+				</div>
+				
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email"/>
+				</div>
+				<input type="submit" value="Registration" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/> 
+			</form>
+		</div>
+		<div class="col-md-6">
+			<h2>User Login</h2>
+			<form action="" method="post">
+			 <div class="form-group">
+				<label for="user">Username</label>
+				<input id="user" name="user" type="text"/>
+			</div>
+			
+			<div class="form-group">
+				<label for="pass">Password</label>
+				<input id="pass" name="pass" type="password"/>
+			</div>
+				<input type="submit" value="Login" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/>
+			</form>
+		</div>
 	</div>
-	<span id="Login_panel">
-	<form action="" method="post">
-		<label for="user">Username</label>
-		<input id="user" name="user" type="text"/>
-		<label for="pass">Password</label>
-		<input id="pass" name="pass" type="password"/>
-		<input type="submit" value="Login" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/>
-	</form>
-	</span>
+</div>
+
+
+<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
+<!--  <script type="text/javascript" src="js/bootstrap.js"></script> -->
 </body>
 </html>
+

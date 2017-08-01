@@ -13,7 +13,7 @@ Manager:
 L	As a Manager, I can determine which movies are being played in the theater. 
 L	As a Manager, I can determine which hall a movie is being played in. 
 M	As a Manager, I can check reports. 
-	As a Manager, I can approve or deny refunds.
+M	As a Manager, I can approve or deny refunds.
 
 System:
 XL	As a System, I can connect a database to a program to store and retrieve information.
