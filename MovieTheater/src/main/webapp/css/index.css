@@ -3,10 +3,7 @@ body{
 }
 .jumbrotron{
 	background-color:#B4403C !important;
-<<<<<<< HEAD
-=======
 	padding:10px 10px 10px 10px;
->>>>>>> a4181e3407df1e6745506e31a582968b8adc76ef
 }
 .container{
 	margin-top:80px;
@@ -21,27 +18,6 @@ form{
 	color:#000000;
 }
 #search{
-<<<<<<< HEAD
-	color:#000000;
-	
-    height: 100%;
-<<<<<<< HEAD
-    width: 400px;
-    margin-right:100px;
-}
-=======
-    margin: 0 auto;
-    width: 40%;
-    vertical-align: middle;
-}
-#search_bar{
-	background-color:#D49A7D;
-}
-#search_button{
-	display:inline;
-}
->>>>>>> 280386d8d51a61aae2f387079f452244f9c47303
-=======
 	background-color:red;
     height: 200px;
     width: 80%;
@@ -65,4 +41,3 @@ form{
 #movie_img{
 	background-color:green;
 }
->>>>>>> a4181e3407df1e6745506e31a582968b8adc76ef
