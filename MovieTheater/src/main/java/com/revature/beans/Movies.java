@@ -1,22 +1,28 @@
 package com.revature.beans;
 
-import java.time.LocalDate;
+import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "MOVIES")
-public class Movies {
+public class Movies{
+	@Id
 	private int movieId;
 	private String mTitle;
-	private LocalDate releaseDate;
+	private Date releaseDate;
+	@Column(name="MGENRE")
 	private String genre;
 	private int mLength;
+
 	public Movies() {
 		super();
 	}
-	public Movies(int movieId, String mTitle, LocalDate releaseDate, String genre, int mLength) {
+
+	public Movies(int movieId, String mTitle, Date releaseDate, String genre, int mLength) {
 		super();
 		this.movieId = movieId;
 		this.mTitle = mTitle;
@@ -24,11 +30,13 @@ public class Movies {
 		this.genre = genre;
 		this.mLength = mLength;
 	}
+
 	@Override
 	public String toString() {
 		return "Movies [movieId=" + movieId + ", mTitle=" + mTitle + ", releaseDate=" + releaseDate + ", genre=" + genre
 				+ ", mLength=" + mLength + "]";
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -40,6 +48,7 @@ public class Movies {
 		result = prime * result + ((releaseDate == null) ? 0 : releaseDate.hashCode());
 		return result;
 	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -70,33 +79,43 @@ public class Movies {
 			return false;
 		return true;
 	}
+
 	public int getMovieId() {
 		return movieId;
 	}
+
 	public void setMovieId(int movieId) {
 		this.movieId = movieId;
 	}
+
 	public String getmTitle() {
 		return mTitle;
 	}
+
 	public void setmTitle(String mTitle) {
 		this.mTitle = mTitle;
 	}
-	public LocalDate getReleaseDate() {
+
+	public Date getReleaseDate() {
 		return releaseDate;
 	}
-	public void setReleaseDate(LocalDate releaseDate) {
+
+	public void setReleaseDate(Date releaseDate) {
 		this.releaseDate = releaseDate;
 	}
+
 	public String getGenre() {
 		return genre;
 	}
+
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
+
 	public int getmLength() {
 		return mLength;
 	}
+
 	public void setmLength(int mLength) {
 		this.mLength = mLength;
 	}
