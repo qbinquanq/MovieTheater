@@ -4,8 +4,8 @@ import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.revature.Dao.AccountsDao;
-import com.revature.Dao.AccountsDaoImp;
+import com.revature.dao.AccountsDao;
+import com.revature.dao.AccountsDaoImp;
 import com.revature.beans.Accounts;
 import com.revature.util.HibernateUtil;
 

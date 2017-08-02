@@ -15,6 +15,6 @@ public class TesterDriver {
 	
 	public static void main(String[] args) {
 		log.warn(md.getAllMovies());
-		System.out.println(LocalDate.now().getDayOfWeek());
+		System.out.println((LocalDate.now().getDayOfWeek()));
 	}
 }
