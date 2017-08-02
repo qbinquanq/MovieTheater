@@ -3,13 +3,8 @@
 <hibernate-configuration>
 	<session-factory>
 		<!-- Configure our database -->
-<<<<<<< HEAD
-		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@database.cvu8ch9wvzo2.us-east-2.rds.amazonaws.com:1521:JAVA</property>
-=======
 		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL</property>
->>>>>>> f9175cffd2119976b35e67826c7939ed929eb13c
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@tgillette1706cuny.c8apmfvx2unh.us-east-2.rds.amazonaws.com:1521:ORCL</property>
 		<property name="hibernate.connection.username">theater</property>
 		<property name="hibernate.connection.password">p4ssw0rd</property>
 		<property name="hibernate.connection.pool_size">35</property>
@@ -21,11 +16,7 @@
 		<property name="hibernate.format_sql">true</property>
 		
 		<!-- Annotation -->
-<<<<<<< HEAD
 		<mapping class="com.revature.beans.TestMovie"/>
-=======
-		
->>>>>>> f9175cffd2119976b35e67826c7939ed929eb13c
 		<mapping class="com.revature.beans.Accounts"/>
 		<mapping class="com.revature.beans.Movies"/>
 		<mapping class="com.revature.beans.Showtimes"/>
