@@ -18,6 +18,10 @@
 		<!-- Annotation -->
 		
 		<mapping class="com.revature.beans.Accounts"/>
+		<mapping class="com.revature.beans.Movies"/>
+		<mapping class="com.revature.beans.Showtimes"/>
+		<mapping class="com.revature.beans.Halls"/>
+		<mapping class="com.revature.beans.MovieInfo"/>
 		
 		<!-- The property that must not be used -->
 	</session-factory>
