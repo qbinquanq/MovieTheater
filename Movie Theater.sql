@@ -157,7 +157,7 @@ insert into theater.Accounts(uname, pword, email, fname, lname) values('senderso
 
 insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Secret Agent: Masters', TO_TIMESTAMP('2017-08-04', 'YYYY-MM-DD'), 'Action', 126);
 insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Dark Tower', TO_TIMESTAMP('2017-08-04', 'YYYY-MM-DD'), 'Thriller-Action', 140);
-insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Funny Guy: Gal', TO_TIMESTAMP('2017-08-02', 'YYYY-MM-DD'), 'Comedy', 300);
+insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Funny Guy: Gal', TO_TIMESTAMP('2017-08-02', 'YYYY-MM-DD'), 'Comedy', 160);
 
 insert into theater.Halls(hcapacity, hcost) values(5, 13.45);
 insert into theater.Halls(hcapacity, hcost) values(10, 14.58);
