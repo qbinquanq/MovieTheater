@@ -1,0 +1,1407 @@
+2017-08-02 02:16:50 DEBUG logging:194 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@17d10166
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration boolean -> org.hibernate.type.BooleanType@17d10166
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@17d10166
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@484b61fc
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@53e25b76
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration yes_no -> org.hibernate.type.YesNoType@7e774085
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@ee7d9f1
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration byte -> org.hibernate.type.ByteType@ee7d9f1
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@ee7d9f1
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration character -> org.hibernate.type.CharacterType@7fbe847c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration char -> org.hibernate.type.CharacterType@7fbe847c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7fbe847c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@3d012ddd
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration short -> org.hibernate.type.ShortType@3d012ddd
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3d012ddd
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration integer -> org.hibernate.type.IntegerType@5e265ba4
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration int -> org.hibernate.type.IntegerType@5e265ba4
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5e265ba4
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@26f0a63f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration long -> org.hibernate.type.LongType@26f0a63f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@26f0a63f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@39ed3c8d
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration float -> org.hibernate.type.FloatType@39ed3c8d
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@39ed3c8d
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@69222c14
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration double -> org.hibernate.type.DoubleType@69222c14
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@69222c14
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5680a178
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5680a178
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@48cf768c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@48cf768c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration string -> org.hibernate.type.StringType@5c8da962
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.String -> org.hibernate.type.StringType@5c8da962
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@9e89d68
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@ed17bee
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration url -> org.hibernate.type.UrlType@2aae9190
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@2aae9190
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration date -> org.hibernate.type.DateType@1f89ab83
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@1f89ab83
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration time -> org.hibernate.type.TimeType@7b3300e5
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7b3300e5
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration timestamp -> org.hibernate.type.TimestampType@6a38e57f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6a38e57f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6a38e57f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@67f89fa3
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration calendar -> org.hibernate.type.CalendarType@7a46a697
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7a46a697
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7a46a697
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@75828a0f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration locale -> org.hibernate.type.LocaleType@57fa26b7
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@57fa26b7
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration currency -> org.hibernate.type.CurrencyType@4f47d241
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4f47d241
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@7cef4e59
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7cef4e59
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration class -> org.hibernate.type.ClassType@1996cd68
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1996cd68
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@198e2867
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@198e2867
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5cbc508c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@2eafffde
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration binary -> org.hibernate.type.BinaryType@6c629d6e
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration byte[] -> org.hibernate.type.BinaryType@6c629d6e
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration [B -> org.hibernate.type.BinaryType@6c629d6e
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@51016012
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@51016012
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@51016012
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration image -> org.hibernate.type.ImageType@44e81672
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration characters -> org.hibernate.type.CharArrayType@768debd
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration char[] -> org.hibernate.type.CharArrayType@768debd
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration [C -> org.hibernate.type.CharArrayType@768debd
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@66133adc
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@66133adc
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@66133adc
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration text -> org.hibernate.type.TextType@46f5f779
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration ntext -> org.hibernate.type.NTextType@270421f5
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration blob -> org.hibernate.type.BlobType@2d6a9952
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2d6a9952
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@629f0666
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration clob -> org.hibernate.type.ClobType@5474c6c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5474c6c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration nclob -> org.hibernate.type.NClobType@2aafb23c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2aafb23c
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2eee9593
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@721e0f4f
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration serializable -> org.hibernate.type.SerializableType@2aaf7cc2
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration object -> org.hibernate.type.ObjectType@4ec6a292
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4ec6a292
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@3c5a99da
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@47f37ef1
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5a01ccaa
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@71c7db30
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@19bb089b
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4563e9ab
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@11531931
+2017-08-02 02:16:50 DEBUG BasicTypeRegistry:146 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5e025e70
+2017-08-02 02:16:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-08-02 02:16:50 INFO  Version:54 - HHH000412: Hibernate Core {4.3.11.Final}
+2017-08-02 02:16:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-08-02 02:16:50 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2017-08-02 02:16:50 DEBUG DefaultIdentifierGeneratorFactory:93 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2017-08-02 02:16:50 INFO  Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-08-02 02:16:50 INFO  Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-08-02 02:16:50 TRACE EJB3DTDEntityResolver:59 - Resolving XML entity null : http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd
+2017-08-02 02:16:50 DEBUG DTDEntityResolver:69 - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2017-08-02 02:16:50 DEBUG DTDEntityResolver:71 - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+2017-08-02 02:16:50 DEBUG DTDEntityResolver:108 - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.connection.driver_class=oracle.jdbc.OracleDriver
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.connection.url=jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.connection.username=theater
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.connection.password=p4ssw0rd
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.connection.pool_size=35
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+2017-08-02 02:16:50 DEBUG Configuration:2037 - show_sql=true
+2017-08-02 02:16:50 DEBUG Configuration:2037 - hibernate.format_sql=true
+2017-08-02 02:16:50 DEBUG Configuration:2276 - Session-factory config [null] named class [com.revature.beans.Accounts] for mapping
+2017-08-02 02:16:50 INFO  Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-08-02 02:16:50 DEBUG Configuration:2217 - Properties: {hibernate.connection.password=p4ssw0rd, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_121\bin, java.vm.version=25.121-b13, hibernate.connection.username=theater, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\saurabh\Revature\BleedBlue\MovieTheater, java.runtime.version=1.8.0_121-b13, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_121\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\saurabh\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\saurabh\AppData\Local\Microsoft\WindowsApps;;C:\Users\saurabh\Downloads\eclipse-jee-mars-2-win32-x86_64\eclipse;;., java.specification.name=Java Platform API Specification, java.class.version=52.0, hibernate.connection.pool_size=35, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, user.home=C:\Users\saurabh, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.8, hibernate.format_sql=true, hibernate.connection.driver_class=oracle.jdbc.OracleDriver, show_sql=true, java.class.path=C:\Users\saurabh\Revature\BleedBlue\MovieTheater\target\classes;C:\Users\saurabh\Revature\BleedBlue\MovieTheater\src\main\webapp\WEB-INF\lib\ojdbc7.jar;C:\Users\saurabh\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\saurabh\.m2\repository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar;C:\Users\saurabh\.m2\repository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;C:\Users\saurabh\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\saurabh\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\saurabh\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\saurabh\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\saurabh\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;C:\Users\saurabh\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\saurabh\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\saurabh\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\saurabh\.m2\repository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar, user.name=saurabh, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.java.command=com.revature.Driver.Driver, java.home=C:\Program Files\Java\jre1.8.0_121, sun.arch.data.model=64, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.connection.url=jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_121, java.ext.dirs=C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, sun.cpu.isalist=amd64}
+2017-08-02 02:16:50 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2017-08-02 02:16:50 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2017-08-02 02:16:50 DEBUG IntegratorServiceImpl:63 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2017-08-02 02:16:50 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect] (replacing [org.hibernate.dialect.MySQL5Dialect])
+2017-08-02 02:16:50 DEBUG StrategySelectorImpl:79 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect] (replacing [org.hibernate.dialect.MySQL5InnoDBDialect])
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.spi.TransactionFactory] : [jdbc] -> [org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.spi.TransactionFactory] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.spi.TransactionFactory] : [jta] -> [org.hibernate.engine.transaction.internal.jta.JtaTransactionFactory]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.spi.TransactionFactory] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.engine.transaction.internal.jta.JtaTransactionFactory]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.spi.TransactionFactory] : [cmt] -> [org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.engine.transaction.spi.TransactionFactory] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.engine.transaction.internal.jta.CMTTransactionFactory]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.hql.spi.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.PersistentTableBulkIdStrategy]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.hql.spi.MultiTableBulkIdStrategy] : [temporary] -> [org.hibernate.hql.spi.TemporaryTableBulkIdStrategy]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [disallow] -> [org.hibernate.event.internal.EntityCopyNotAllowedObserver]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [allow] -> [org.hibernate.event.internal.EntityCopyAllowedObserver]
+2017-08-02 02:16:50 TRACE StrategySelectorImpl:69 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [log] -> [org.hibernate.event.internal.EntityCopyAllowedLoggedObserver]
+2017-08-02 02:16:50 DEBUG ServiceBinding:85 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2017-08-02 02:16:50 DEBUG Configuration:1843 - Preparing to build session factory with filters : {}
+2017-08-02 02:16:50 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2017-08-02 02:16:50 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2017-08-02 02:16:50 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:16:50 INFO  DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL]
+2017-08-02 02:16:50 INFO  DriverManagerConnectionProviderImpl:172 - HHH000046: Connection properties: {user=theater, password=p4ssw0rd}
+2017-08-02 02:16:50 INFO  DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-08-02 02:16:50 INFO  DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 35 (min=1)
+2017-08-02 02:16:50 DEBUG DriverManagerConnectionProviderImpl:104 - Initializing Connection pool with 1 Connections
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2017-08-02 02:16:52 DEBUG JdbcServicesImpl:128 - Database ->
+       name : Oracle
+    version : Oracle Database 12c Standard Edition Release 12.1.0.2.0 - 64bit Production
+      major : 12
+      minor : 1
+2017-08-02 02:16:52 DEBUG JdbcServicesImpl:139 - Driver ->
+       name : Oracle JDBC driver
+    version : 12.1.0.2.0
+      major : 12
+      minor : 1
+2017-08-02 02:16:52 DEBUG JdbcServicesImpl:150 - JDBC version : 4.1
+2017-08-02 02:16:52 DEBUG StandardRefCursorSupport:187 - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+2017-08-02 02:16:52 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2017-08-02 02:16:52 TRACE Configuration:1377 - Starting secondPassCompile() processing
+2017-08-02 02:16:52 DEBUG Configuration:3805 - Processing hbm.xml files
+2017-08-02 02:16:52 DEBUG Configuration:3835 - Process annotated classes
+2017-08-02 02:16:52 DEBUG AnnotationBinder:601 - Binding entity from annotated class: com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2017-08-02 02:16:52 DEBUG AnnotationBinder:1185 - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+2017-08-02 02:16:52 DEBUG EntityBinder:399 - Import with entity name Accounts
+2017-08-02 02:16:52 DEBUG EntityBinder:612 - Bind entity com.revature.beans.Accounts on table Accounts
+2017-08-02 02:16:52 TRACE AnnotationBinder:1674 - Processing annotations of com.revature.beans.Accounts.userId
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Accounts), mappingColumn=userId, insertable=true, updatable=true, unique=false}
+2017-08-02 02:16:52 DEBUG PropertyBinder:185 - MetadataSourceProcessor property userId with lazy=false
+2017-08-02 02:16:52 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Accounts:userId]
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:388 - building SimpleValue for userId
+2017-08-02 02:16:52 DEBUG PropertyBinder:271 - Building property userId
+2017-08-02 02:16:52 TRACE PropertyBinder:329 - Cascading userId with null
+2017-08-02 02:16:52 TRACE AnnotationBinder:2365 - Bind @Id on userId
+2017-08-02 02:16:52 TRACE AnnotationBinder:1674 - Processing annotations of com.revature.beans.Accounts.email
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Accounts), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2017-08-02 02:16:52 DEBUG PropertyBinder:185 - MetadataSourceProcessor property email with lazy=false
+2017-08-02 02:16:52 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Accounts:email]
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:388 - building SimpleValue for email
+2017-08-02 02:16:52 DEBUG PropertyBinder:271 - Building property email
+2017-08-02 02:16:52 TRACE PropertyBinder:329 - Cascading email with null
+2017-08-02 02:16:52 TRACE AnnotationBinder:1674 - Processing annotations of com.revature.beans.Accounts.fname
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Accounts), mappingColumn=fname, insertable=true, updatable=true, unique=false}
+2017-08-02 02:16:52 DEBUG PropertyBinder:185 - MetadataSourceProcessor property fname with lazy=false
+2017-08-02 02:16:52 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Accounts:fname]
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:388 - building SimpleValue for fname
+2017-08-02 02:16:52 DEBUG PropertyBinder:271 - Building property fname
+2017-08-02 02:16:52 TRACE PropertyBinder:329 - Cascading fname with null
+2017-08-02 02:16:52 TRACE AnnotationBinder:1674 - Processing annotations of com.revature.beans.Accounts.lname
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Accounts), mappingColumn=lname, insertable=true, updatable=true, unique=false}
+2017-08-02 02:16:52 DEBUG PropertyBinder:185 - MetadataSourceProcessor property lname with lazy=false
+2017-08-02 02:16:52 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Accounts:lname]
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:388 - building SimpleValue for lname
+2017-08-02 02:16:52 DEBUG PropertyBinder:271 - Building property lname
+2017-08-02 02:16:52 TRACE PropertyBinder:329 - Cascading lname with null
+2017-08-02 02:16:52 TRACE AnnotationBinder:1674 - Processing annotations of com.revature.beans.Accounts.pword
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Accounts), mappingColumn=pword, insertable=true, updatable=true, unique=false}
+2017-08-02 02:16:52 DEBUG PropertyBinder:185 - MetadataSourceProcessor property pword with lazy=false
+2017-08-02 02:16:52 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Accounts:pword]
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:388 - building SimpleValue for pword
+2017-08-02 02:16:52 DEBUG PropertyBinder:271 - Building property pword
+2017-08-02 02:16:52 TRACE PropertyBinder:329 - Cascading pword with null
+2017-08-02 02:16:52 TRACE AnnotationBinder:1674 - Processing annotations of com.revature.beans.Accounts.uname
+2017-08-02 02:16:52 DEBUG Ejb3Column:240 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Accounts), mappingColumn=uname, insertable=true, updatable=true, unique=false}
+2017-08-02 02:16:52 DEBUG PropertyBinder:185 - MetadataSourceProcessor property uname with lazy=false
+2017-08-02 02:16:52 DEBUG AbstractPropertyHolder:106 - Attempting to locate auto-apply AttributeConverter for property [com.revature.beans.Accounts:uname]
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:388 - building SimpleValue for uname
+2017-08-02 02:16:52 DEBUG PropertyBinder:271 - Building property uname
+2017-08-02 02:16:52 TRACE PropertyBinder:329 - Cascading uname with null
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for userId
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for email
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for fname
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for lname
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for pword
+2017-08-02 02:16:52 DEBUG SimpleValueBinder:428 - Starting fillSimpleValue for uname
+2017-08-02 02:16:52 DEBUG Configuration:1484 - Processing fk mappings (*ToOne and JoinedSubclass)
+2017-08-02 02:16:52 DEBUG Configuration:1689 - Processing extends queue
+2017-08-02 02:16:52 DEBUG Configuration:1747 - Processing extends queue
+2017-08-02 02:16:52 DEBUG Configuration:1692 - Processing collection mappings
+2017-08-02 02:16:52 DEBUG Configuration:1702 - Processing native query and ResultSetMapping mappings
+2017-08-02 02:16:52 DEBUG Configuration:1710 - Processing association property references
+2017-08-02 02:16:52 DEBUG Configuration:1732 - Creating tables' unique integer identifiers
+2017-08-02 02:16:52 DEBUG Configuration:1733 - Processing foreign key constraints
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform]
+2017-08-02 02:16:52 DEBUG JtaPlatformInitiator:59 - No JtaPlatform was specified, checking resolver
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.transaction.jta.platform.spi.JtaPlatformResolver]
+2017-08-02 02:16:52 DEBUG JtaPlatformResolverInitiator:50 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2017-08-02 02:16:52 DEBUG StandardJtaPlatformResolver:118 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2017-08-02 02:16:52 DEBUG SettingsFactory:122 - Automatic flush during beforeCompletion(): disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:128 - Automatic session close at end of transaction: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:139 - JDBC batch size: 15
+2017-08-02 02:16:52 DEBUG SettingsFactory:145 - JDBC batch updates for versioned data: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:155 - Scrollable result sets: enabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:161 - Wrap result sets: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:167 - JDBC3 getGeneratedKeys(): disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:179 - multi-tenancy strategy : NONE
+2017-08-02 02:16:52 DEBUG SettingsFactory:185 - Connection release mode: auto
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.transaction.spi.TransactionFactory]
+2017-08-02 02:16:52 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-08-02 02:16:52 TRACE BatchFetchStyle:68 - Interpreting BatchFetchStyle from setting : null
+2017-08-02 02:16:52 DEBUG SettingsFactory:207 - Using BatchFetchStyle : LEGACY
+2017-08-02 02:16:52 DEBUG SettingsFactory:232 - Default batch fetch size: 1
+2017-08-02 02:16:52 DEBUG SettingsFactory:238 - Generate SQL with comments: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:244 - Order SQL updates by primary key: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:250 - Order SQL inserts for batching: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:258 - Default null ordering: none
+2017-08-02 02:16:52 DEBUG SettingsFactory:501 - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+2017-08-02 02:16:52 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-08-02 02:16:52 DEBUG SettingsFactory:268 - Query language substitutions: {}
+2017-08-02 02:16:52 DEBUG SettingsFactory:274 - JPA-QL strict compliance: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:282 - Second-level cache: enabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:288 - Query cache: disabled
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2017-08-02 02:16:52 DEBUG RegionFactoryInitiator:105 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2017-08-02 02:16:52 DEBUG SettingsFactory:301 - Optimize cache for minimal puts: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:316 - Structured second-level cache entries: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:326 - Second-level cache direct-reference entries: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:332 - Automatic eviction of collection cache: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:340 - Statistics: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:346 - Deleted entity synthetic identifier rollback: disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:373 - Default entity-mode: pojo
+2017-08-02 02:16:52 DEBUG SettingsFactory:379 - Named query checking : enabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:385 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:403 - Allow initialization of lazy state outside session : : disabled
+2017-08-02 02:16:52 DEBUG SettingsFactory:413 - JTA Track by Thread: enabled
+2017-08-02 02:16:52 DEBUG SessionFactoryImpl:229 - Building session factory
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.service.spi.SessionFactoryServiceRegistryFactory]
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.spi.CacheImplementor]
+2017-08-02 02:16:52 TRACE TypeFactory:72 - Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@36cda2c2
+2017-08-02 02:16:52 DEBUG SessionFactoryImpl:285 - Session factory constructed with filter configurations : {}
+2017-08-02 02:16:52 DEBUG SessionFactoryImpl:286 - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=p4ssw0rd, sun.boot.library.path=C:\Program Files\Java\jre1.8.0_121\bin, java.vm.version=25.121-b13, hibernate.connection.username=theater, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\Users\saurabh\Revature\BleedBlue\MovieTheater, java.runtime.version=1.8.0_121-b13, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_121\lib\endorsed, os.arch=amd64, java.io.tmpdir=C:\Users\saurabh\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 10, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jre1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk1.8.0_101\bin;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Users\saurabh\AppData\Local\Microsoft\WindowsApps;;C:\Users\saurabh\Downloads\eclipse-jee-mars-2-win32-x86_64\eclipse;;., java.specification.name=Java Platform API Specification, java.class.version=52.0, hibernate.connection.pool_size=35, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=10.0, user.home=C:\Users\saurabh, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.8, file.encoding=Cp1252, hibernate.format_sql=true, hibernate.connection.driver_class=oracle.jdbc.OracleDriver, show_sql=true, user.name=saurabh, java.class.path=C:\Users\saurabh\Revature\BleedBlue\MovieTheater\target\classes;C:\Users\saurabh\Revature\BleedBlue\MovieTheater\src\main\webapp\WEB-INF\lib\ojdbc7.jar;C:\Users\saurabh\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\saurabh\.m2\repository\org\hibernate\hibernate-core\4.3.11.Final\hibernate-core-4.3.11.Final.jar;C:\Users\saurabh\.m2\repository\org\jboss\logging\jboss-logging\3.1.3.GA\jboss-logging-3.1.3.GA.jar;C:\Users\saurabh\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\saurabh\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\saurabh\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\saurabh\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\saurabh\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.5.Final\hibernate-commons-annotations-4.0.5.Final.jar;C:\Users\saurabh\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\saurabh\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\saurabh\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\saurabh\.m2\repository\org\jboss\jandex\1.1.0.Final\jandex-1.1.0.Final.jar, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jre1.8.0_121, sun.java.command=com.revature.Driver.Driver, hibernate.connection.url=jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_121, java.ext.dirs=C:\Program Files\Java\jre1.8.0_121\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jre1.8.0_121\lib\resources.jar;C:\Program Files\Java\jre1.8.0_121\lib\rt.jar;C:\Program Files\Java\jre1.8.0_121\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_121\lib\jce.jar;C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_121\classes, java.vendor=Oracle Corporation, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, sun.cpu.isalist=amd64}
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.query.spi.NativeQueryInterpreter]
+2017-08-02 02:16:52 DEBUG JaccIntegrator:90 - Skipping JACC integration as it was not enabled
+2017-08-02 02:16:52 DEBUG DefaultIdentifierGeneratorFactory:107 - Setting dialect [org.hibernate.dialect.Oracle10gDialect]
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.persister.spi.PersisterFactory]
+2017-08-02 02:16:52 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.persister.spi.PersisterClassResolver]
+2017-08-02 02:16:52 TRACE AbstractPropertyMapping:143 - Skipping duplicate registration of path [email], existing type = [org.hibernate.type.StringType@5c8da962], incoming type = [org.hibernate.type.StringType@5c8da962]
+2017-08-02 02:16:52 TRACE AbstractPropertyMapping:143 - Skipping duplicate registration of path [fname], existing type = [org.hibernate.type.StringType@5c8da962], incoming type = [org.hibernate.type.StringType@5c8da962]
+2017-08-02 02:16:52 TRACE AbstractPropertyMapping:143 - Skipping duplicate registration of path [lname], existing type = [org.hibernate.type.StringType@5c8da962], incoming type = [org.hibernate.type.StringType@5c8da962]
+2017-08-02 02:16:52 TRACE AbstractPropertyMapping:143 - Skipping duplicate registration of path [pword], existing type = [org.hibernate.type.StringType@5c8da962], incoming type = [org.hibernate.type.StringType@5c8da962]
+2017-08-02 02:16:52 TRACE AbstractPropertyMapping:143 - Skipping duplicate registration of path [uname], existing type = [org.hibernate.type.StringType@5c8da962], incoming type = [org.hibernate.type.StringType@5c8da962]
+2017-08-02 02:16:52 DEBUG AbstractEntityPersister:3676 - Static SQL for entity: com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG AbstractEntityPersister:3681 -  Version select: select userId from Accounts where userId =?
+2017-08-02 02:16:52 DEBUG AbstractEntityPersister:3684 -  Snapshot select: select accounts_.userId, accounts_.email as email2_0_, accounts_.fname as fname3_0_, accounts_.lname as lname4_0_, accounts_.pword as pword5_0_, accounts_.uname as uname6_0_ from Accounts accounts_ where accounts_.userId=?
+2017-08-02 02:16:52 DEBUG AbstractEntityPersister:3687 -  Insert 0: insert into Accounts (email, fname, lname, pword, uname, userId) values (?, ?, ?, ?, ?, ?)
+2017-08-02 02:16:52 DEBUG AbstractEntityPersister:3688 -  Update 0: update Accounts set email=?, fname=?, lname=?, pword=?, uname=? where userId=?
+2017-08-02 02:16:52 DEBUG AbstractEntityPersister:3689 -  Delete 0: delete from Accounts where userId=?
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3016fd5e]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@6c45ee6e
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@6c45ee6e
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@6c45ee6e
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [NONE]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=?
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1d2bd371]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@44040454
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@44040454
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@44040454
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [READ]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=?
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65fe9e33]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@18bc345
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@18bc345
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@18bc345
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [UPGRADE]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@42f8285e]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@26bab2f1
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@26bab2f1
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@26bab2f1
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [UPGRADE_NOWAIT]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update nowait
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3724af13]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@68ead359
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@68ead359
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@68ead359
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [UPGRADE_SKIPLOCKED]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update skip locked
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b53bcc2]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@180da663
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@180da663
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@180da663
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [FORCE]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update nowait
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@a43ce46]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@340da44c
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@340da44c
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@340da44c
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [PESSIMISTIC_READ]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@424ebba3]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@37052337
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@37052337
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@37052337
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [PESSIMISTIC_WRITE]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2320fa6f]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7a560583
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7a560583
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@7a560583
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [PESSIMISTIC_FORCE_INCREMENT]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=? for update nowait
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d722ac9]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@53f0a4cb
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@53f0a4cb
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@53f0a4cb
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [OPTIMISTIC]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=?
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:188 -  Starting root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG QuerySpacesImpl:192 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77a7cf58]
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:129 - Pushing fetch source to stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3d97a632
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:664 - .. Registering AssociationKey : AssociationKey(table=Accounts, columns={userId}) -> org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3d97a632
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:255 - >> Starting entity identifier : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : email
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=email, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : fname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=fname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : lname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=lname, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : pword
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=pword, type=string [non-identifier])
+2017-08-02 02:16:52 DEBUG MetamodelGraphWalker:154 - Visiting attribute path : uname
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:563 - >> Starting attribute Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:644 - << Finishing up attribute : Attribute(name=uname, type=string [non-identifier])
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:136 - Popped fetch owner from stack : org.hibernate.loader.plan.build.internal.returns.EntityReturnImpl@3d97a632
+2017-08-02 02:16:52 TRACE AbstractLoadPlanBuildingAssociationVisitationStrategy:224 -  Finished root entity : com.revature.beans.Accounts
+2017-08-02 02:16:52 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:94 - Building LoadPlan...
+2017-08-02 02:16:52 DEBUG LoadQueryJoinAndFetchProcessor:112 - processing queryspace <gen:0>
+2017-08-02 02:16:52 DEBUG LoadPlanTreePrinter:72 - LoadPlan(entity=com.revature.beans.Accounts)
+    - Returns
+       - EntityReturnImpl(entity=com.revature.beans.Accounts, querySpaceUid=<gen:0>, path=com.revature.beans.Accounts)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.revature.beans.Accounts)
+          - SQL table alias mapping - accounts0_
+          - alias suffix - 0_
+          - suffixed key columns - {userId1_0_0_}
+
+2017-08-02 02:16:52 DEBUG EntityLoader:146 - Static select for entity com.revature.beans.Accounts [OPTIMISTIC_FORCE_INCREMENT]: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=?
+2017-08-02 02:16:53 DEBUG Loader:56 - Static select for action ACTION_MERGE on entity com.revature.beans.Accounts: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=?
+2017-08-02 02:16:53 DEBUG Loader:56 - Static select for action ACTION_REFRESH on entity com.revature.beans.Accounts: select accounts0_.userId as userId1_0_0_, accounts0_.email as email2_0_0_, accounts0_.fname as fname3_0_0_, accounts0_.lname as lname4_0_0_, accounts0_.pword as pword5_0_0_, accounts0_.uname as uname6_0_0_ from Accounts accounts0_ where accounts0_.userId=?
+2017-08-02 02:16:53 DEBUG SessionFactoryRegistry:67 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@7e276594
+2017-08-02 02:16:53 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.jndi.spi.JndiService]
+2017-08-02 02:16:53 DEBUG SessionFactoryRegistry:89 - Registering SessionFactory: 97f7e51e-855d-4a07-98a6-cc30ba03277e (<unnamed>)
+2017-08-02 02:16:53 DEBUG SessionFactoryRegistry:96 - Not binding SessionFactory to JNDI, no JNDI name configured
+2017-08-02 02:16:53 DEBUG SessionFactoryImpl:505 - Instantiated session factory
+2017-08-02 02:16:53 DEBUG NamedQueryRepository:155 - Checking 0 named HQL queries
+2017-08-02 02:16:53 DEBUG NamedQueryRepository:171 - Checking 0 named SQL queries
+2017-08-02 02:16:53 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2017-08-02 02:16:53 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.stat.spi.StatisticsImplementor]
+2017-08-02 02:16:53 DEBUG StatisticsInitiator:110 - Statistics initialized [enabled=false]
+2017-08-02 02:16:53 TRACE SessionFactoryImpl$SessionBuilderImpl:1588 - Opening Hibernate Session.  tenant=null, owner=null
+2017-08-02 02:16:53 TRACE SessionImpl:322 - Opened session at timestamp: 15016546130
+2017-08-02 02:16:53 DEBUG AbstractTransactionImpl:160 - begin
+2017-08-02 02:16:53 DEBUG LogicalConnectionImpl:226 - Obtaining JDBC connection
+2017-08-02 02:16:53 DEBUG LogicalConnectionImpl:232 - Obtained JDBC connection
+2017-08-02 02:16:53 DEBUG JdbcTransaction:69 - initial autocommit status: false
+2017-08-02 02:16:53 TRACE QueryPlanCache:166 - Unable to locate HQL query plan in cache; generating (from Accounts where uname =:uname and pword =:pword)
+2017-08-02 02:16:53 DEBUG QueryTranslatorImpl:294 - parse() - HQL: from com.revature.beans.Accounts where uname =:uname and pword =:pword
+2017-08-02 02:16:53 DEBUG QueryTranslatorImpl:312 - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[IDENT] Node: 'com'
+    |           |  |  \-[IDENT] Node: 'revature'
+    |           |  \-[IDENT] Node: 'beans'
+    |           \-[IDENT] Node: 'Accounts'
+    \-[WHERE] Node: 'where'
+       \-[AND] Node: 'and'
+          +-[EQ] Node: '='
+          |  +-[IDENT] Node: 'uname'
+          |  \-[COLON] Node: ':'
+          |     \-[IDENT] Node: 'uname'
+          \-[EQ] Node: '='
+             +-[IDENT] Node: 'pword'
+             \-[COLON] Node: ':'
+                \-[IDENT] Node: 'pword'
+
+2017-08-02 02:16:53 DEBUG ErrorCounter:113 - throwQueryException() : no errors
+2017-08-02 02:16:53 DEBUG HqlSqlBaseWalker:121 - select << begin [level=1, statement=select]
+2017-08-02 02:16:53 DEBUG FromElement:158 - FromClause{level=1} : com.revature.beans.Accounts (<no alias>) -> accounts0_
+2017-08-02 02:16:53 TRACE HqlSqlWalker:635 - Attempting to resolve property [uname] as a non-qualified ref
+2017-08-02 02:16:53 DEBUG FromReferenceNode:77 - Resolved : {synthetic-alias} -> {synthetic-alias}
+2017-08-02 02:16:53 TRACE FromElement:639 - Handling property dereference [com.revature.beans.Accounts (null) -> uname (class)]
+2017-08-02 02:16:53 DEBUG DotNode:672 - getDataType() : uname -> org.hibernate.type.StringType@5c8da962
+2017-08-02 02:16:53 DEBUG FromReferenceNode:77 - Resolved : {synthetic-alias}.uname -> accounts0_.uname
+2017-08-02 02:16:53 TRACE HqlSqlWalker:635 - Attempting to resolve property [pword] as a non-qualified ref
+2017-08-02 02:16:53 DEBUG FromReferenceNode:77 - Resolved : {synthetic-alias} -> {synthetic-alias}
+2017-08-02 02:16:53 TRACE FromElement:639 - Handling property dereference [com.revature.beans.Accounts (null) -> pword (class)]
+2017-08-02 02:16:53 DEBUG DotNode:672 - getDataType() : pword -> org.hibernate.type.StringType@5c8da962
+2017-08-02 02:16:53 DEBUG FromReferenceNode:77 - Resolved : {synthetic-alias}.pword -> accounts0_.pword
+2017-08-02 02:16:53 DEBUG HqlSqlBaseWalker:125 - select : finishing up [level=1, statement=select]
+2017-08-02 02:16:53 DEBUG HqlSqlWalker:671 - processQuery() :  ( SELECT ( FromClause{level=1} Accounts accounts0_ ) ( where ( and ( = ( accounts0_.uname {synthetic-alias} uname ) ? ) ( = ( accounts0_.pword {synthetic-alias} pword ) ? ) ) ) )
+2017-08-02 02:16:53 DEBUG HqlSqlWalker:947 - Derived SELECT clause created.
+2017-08-02 02:16:53 DEBUG JoinProcessor:187 - Using FROM fragment [Accounts accounts0_]
+2017-08-02 02:16:53 DEBUG HqlSqlBaseWalker:129 - select >> end [level=1, statement=select]
+2017-08-02 02:16:53 DEBUG QueryTranslatorImpl:281 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Accounts)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'accounts0_.userId as userId1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Accounts,tableAlias=accounts0_,origin=null,columns={,className=com.revature.beans.Accounts}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'accounts0_.email as email2_0_, accounts0_.fname as fname3_0_, accounts0_.lname as lname4_0_, accounts0_.pword as pword5_0_, accounts0_.uname as uname6_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[accounts0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Accounts accounts0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=Accounts,tableAlias=accounts0_,origin=null,columns={,className=com.revature.beans.Accounts}}
+    \-[WHERE] SqlNode: 'where'
+       \-[AND] SqlNode: 'and'
+          +-[EQ] BinaryLogicOperatorNode: '='
+          |  +-[DOT] DotNode: 'accounts0_.uname' {propertyName=uname,dereferenceType=PRIMITIVE,getPropertyPath=uname,path={synthetic-alias}.uname,tableAlias=accounts0_,className=com.revature.beans.Accounts,classAlias=null}
+          |  |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  |  \-[IDENT] IdentNode: 'uname' {originalText=uname}
+          |  \-[NAMED_PARAM] ParameterNode: '?' {name=uname, expectedType=org.hibernate.type.StringType@5c8da962}
+          \-[EQ] BinaryLogicOperatorNode: '='
+             +-[DOT] DotNode: 'accounts0_.pword' {propertyName=pword,dereferenceType=PRIMITIVE,getPropertyPath=pword,path={synthetic-alias}.pword,tableAlias=accounts0_,className=com.revature.beans.Accounts,classAlias=null}
+             |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+             |  \-[IDENT] IdentNode: 'pword' {originalText=pword}
+             \-[NAMED_PARAM] ParameterNode: '?' {name=pword, expectedType=org.hibernate.type.StringType@5c8da962}
+
+2017-08-02 02:16:53 DEBUG ErrorCounter:113 - throwQueryException() : no errors
+2017-08-02 02:16:53 DEBUG QueryTranslatorImpl:263 - HQL: from com.revature.beans.Accounts where uname =:uname and pword =:pword
+2017-08-02 02:16:53 DEBUG QueryTranslatorImpl:264 - SQL: select accounts0_.userId as userId1_0_, accounts0_.email as email2_0_, accounts0_.fname as fname3_0_, accounts0_.lname as lname4_0_, accounts0_.pword as pword5_0_, accounts0_.uname as uname6_0_ from Accounts accounts0_ where accounts0_.uname=? and accounts0_.pword=?
+2017-08-02 02:16:53 DEBUG ErrorCounter:113 - throwQueryException() : no errors
+2017-08-02 02:16:53 TRACE HQLQueryPlan:390 - HQL param location recognition took 1,277,831 nanoseconds (from Accounts where uname =:uname and pword =:pword)
+2017-08-02 02:16:53 TRACE QueryPlanCache:170 - Located HQL query plan in cache (from Accounts where uname =:uname and pword =:pword)
+2017-08-02 02:16:53 TRACE AbstractServiceRegistryImpl:221 - Initializing service [role=org.hibernate.event.service.spi.EventListenerRegistry]
+2017-08-02 02:16:53 TRACE HQLQueryPlan:209 - Find: from Accounts where uname =:uname and pword =:pword
+2017-08-02 02:16:53 TRACE QueryParameters:298 - Named parameters: {uname=john, pword=password}
+2017-08-02 02:16:53 DEBUG SQL:109 - 
+    select
+        accounts0_.userId as userId1_0_,
+        accounts0_.email as email2_0_,
+        accounts0_.fname as fname3_0_,
+        accounts0_.lname as lname4_0_,
+        accounts0_.pword as pword5_0_,
+        accounts0_.uname as uname6_0_ 
+    from
+        Accounts accounts0_ 
+    where
+        accounts0_.uname=? 
+        and accounts0_.pword=?
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:371 - Registering statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5217f3d0]
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:386 - Registering last query statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5217f3d0]
+2017-08-02 02:16:53 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [john]
+2017-08-02 02:16:53 TRACE BasicBinder:81 - binding parameter [2] as [VARCHAR] - [password]
+2017-08-02 02:16:53 TRACE Loader:1935 - Bound [3] parameters total
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:437 - Registering result set [oracle.jdbc.driver.ForwardOnlyResultSet@209775a9]
+2017-08-02 02:16:53 TRACE Loader:947 - Processing result set
+2017-08-02 02:16:53 DEBUG Loader:952 - Result set row: 0
+2017-08-02 02:16:53 TRACE BasicExtractor:78 - extracted value ([userId1_0_] : [INTEGER]) - [5]
+2017-08-02 02:16:53 DEBUG Loader:1486 - Result row: EntityKey[com.revature.beans.Accounts#5]
+2017-08-02 02:16:53 TRACE Loader:1675 - Initializing object from ResultSet: [com.revature.beans.Accounts#5]
+2017-08-02 02:16:53 TRACE AbstractEntityPersister:2901 - Hydrating entity: [com.revature.beans.Accounts#5]
+2017-08-02 02:16:53 TRACE BasicExtractor:78 - extracted value ([email2_0_] : [VARCHAR]) - [john@yahoo.com]
+2017-08-02 02:16:53 TRACE BasicExtractor:78 - extracted value ([fname3_0_] : [VARCHAR]) - [john]
+2017-08-02 02:16:53 TRACE BasicExtractor:78 - extracted value ([lname4_0_] : [VARCHAR]) - [miller]
+2017-08-02 02:16:53 TRACE BasicExtractor:78 - extracted value ([pword5_0_] : [VARCHAR]) - [password]
+2017-08-02 02:16:53 TRACE BasicExtractor:78 - extracted value ([uname6_0_] : [VARCHAR]) - [john]
+2017-08-02 02:16:53 TRACE Loader:971 - Done processing result set (1 rows)
+2017-08-02 02:16:53 TRACE Loader:1113 - Total objects hydrated: 1
+2017-08-02 02:16:53 DEBUG TwoPhaseLoad:160 - Resolving associations for [com.revature.beans.Accounts#5]
+2017-08-02 02:16:53 DEBUG TwoPhaseLoad:286 - Done materializing entity [com.revature.beans.Accounts#5]
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:412 - Releasing statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5217f3d0]
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:573 - Closing result set [oracle.jdbc.driver.ForwardOnlyResultSet@209775a9]
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:525 - Closing prepared statement [oracle.jdbc.driver.OraclePreparedStatementWrapper@5217f3d0]
+2017-08-02 02:16:53 TRACE JdbcCoordinatorImpl:278 - Starting after statement execution processing [ON_CLOSE]
+2017-08-02 02:16:53 TRACE StatefulPersistenceContext:884 - Initializing non-lazy collections
+2017-08-02 02:16:53 DEBUG SessionFactoryImpl:1339 - HHH000031: Closing
+2017-08-02 02:16:53 TRACE QueryPlanCache:239 - Cleaning QueryPlan Cache
+2017-08-02 02:16:53 DEBUG AbstractServiceRegistryImpl:406 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2017-08-02 02:16:53 INFO  DriverManagerConnectionProviderImpl:281 - HHH000030: Cleaning up connection pool [jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL]
+2017-08-02 02:16:53 DEBUG BootstrapServiceRegistryImpl:308 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2017-08-02 02:19:58 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:21:23 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:31:49 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:34:07 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:34:48 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:39:19 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:39:47 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:40:19 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:40:48 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:40:52 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:42:43 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:42:46 WARN  root:65 - Number of rows affected by update: 0
+2017-08-02 02:44:38 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:45:56 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:47:02 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:47:04 ERROR ErrorCounter:78 - line 1:67: expecting IDENT, found '5'
+2017-08-02 02:47:04 ERROR ErrorCounter:73 - line 1:67: expecting IDENT, found '5'
+line 1:67: expecting IDENT, found '5'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:47:38 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:47:40 ERROR ErrorCounter:78 - line 1:67: expecting IDENT, found '9'
+2017-08-02 02:47:40 ERROR ErrorCounter:73 - line 1:67: expecting IDENT, found '9'
+line 1:67: expecting IDENT, found '9'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:49:19 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:49:22 ERROR ErrorCounter:78 - line 1:67: expecting IDENT, found '5'
+2017-08-02 02:49:22 ERROR ErrorCounter:73 - line 1:67: expecting IDENT, found '5'
+line 1:67: expecting IDENT, found '5'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:50:58 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:51:01 ERROR ErrorCounter:78 - line 1:67: expecting IDENT, found '9'
+2017-08-02 02:51:01 ERROR ErrorCounter:73 - line 1:67: expecting IDENT, found '9'
+line 1:67: expecting IDENT, found '9'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:52:57 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:53:00 ERROR ErrorCounter:78 - line 1:48: expecting IDENT, found '11'
+2017-08-02 02:53:00 ERROR ErrorCounter:73 - line 1:48: expecting IDENT, found '11'
+line 1:48: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.newValue(HqlBaseParser.java:541)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.assignment(HqlBaseParser.java:505)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.setClause(HqlBaseParser.java:444)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:245)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:00 ERROR ErrorCounter:78 - line 1:65: expecting IDENT, found '5'
+2017-08-02 02:53:00 ERROR ErrorCounter:73 - line 1:65: expecting IDENT, found '5'
+line 1:65: expecting IDENT, found '5'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:29 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:53:31 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:53:33 ERROR ErrorCounter:78 - line 1:48: expecting IDENT, found '11'
+2017-08-02 02:53:33 ERROR ErrorCounter:73 - line 1:48: expecting IDENT, found '11'
+line 1:48: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.newValue(HqlBaseParser.java:541)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.assignment(HqlBaseParser.java:505)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.setClause(HqlBaseParser.java:444)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:245)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:33 ERROR ErrorCounter:78 - line 1:65: expecting IDENT, found '11'
+2017-08-02 02:53:33 ERROR ErrorCounter:73 - line 1:65: expecting IDENT, found '11'
+line 1:65: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:34 ERROR ErrorCounter:78 - line 1:48: expecting IDENT, found '11'
+2017-08-02 02:53:34 ERROR ErrorCounter:73 - line 1:48: expecting IDENT, found '11'
+line 1:48: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.newValue(HqlBaseParser.java:541)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.assignment(HqlBaseParser.java:505)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.setClause(HqlBaseParser.java:444)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:245)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:34 ERROR ErrorCounter:78 - line 1:65: expecting IDENT, found '11'
+2017-08-02 02:53:34 ERROR ErrorCounter:73 - line 1:65: expecting IDENT, found '11'
+line 1:65: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:35 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:53:38 ERROR ErrorCounter:78 - line 1:48: expecting IDENT, found '11'
+2017-08-02 02:53:38 ERROR ErrorCounter:73 - line 1:48: expecting IDENT, found '11'
+line 1:48: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.newValue(HqlBaseParser.java:541)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.assignment(HqlBaseParser.java:505)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.setClause(HqlBaseParser.java:444)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:245)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:53:38 ERROR ErrorCounter:78 - line 1:65: expecting IDENT, found '11'
+2017-08-02 02:53:38 ERROR ErrorCounter:73 - line 1:65: expecting IDENT, found '11'
+line 1:65: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:54:15 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:54:17 ERROR ErrorCounter:78 - line 1:48: expecting IDENT, found '11'
+2017-08-02 02:54:17 ERROR ErrorCounter:73 - line 1:48: expecting IDENT, found '11'
+line 1:48: expecting IDENT, found '11'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.newValue(HqlBaseParser.java:541)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.assignment(HqlBaseParser.java:505)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.setClause(HqlBaseParser.java:444)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:245)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:54:17 ERROR ErrorCounter:78 - line 1:65: expecting IDENT, found ''5''
+2017-08-02 02:54:17 ERROR ErrorCounter:73 - line 1:65: expecting IDENT, found ''5''
+line 1:65: expecting IDENT, found ''5''
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:55:29 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 02:55:31 ERROR ErrorCounter:78 - line 1:48: expecting IDENT, found ''11''
+2017-08-02 02:55:31 ERROR ErrorCounter:73 - line 1:48: expecting IDENT, found ''11''
+line 1:48: expecting IDENT, found ''11''
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.newValue(HqlBaseParser.java:541)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.assignment(HqlBaseParser.java:505)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.setClause(HqlBaseParser.java:444)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:245)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 02:55:31 ERROR ErrorCounter:78 - line 1:67: expecting IDENT, found ''5''
+2017-08-02 02:55:31 ERROR ErrorCounter:73 - line 1:67: expecting IDENT, found ''5''
+line 1:67: expecting IDENT, found ''5''
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.parameter(HqlBaseParser.java:4528)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.primaryExpression(HqlBaseParser.java:901)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.atom(HqlBaseParser.java:3609)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.unaryExpression(HqlBaseParser.java:3387)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.multiplyExpression(HqlBaseParser.java:3259)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.additiveExpression(HqlBaseParser.java:2964)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:597)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2730)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2686)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2555)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2471)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2436)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2146)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1922)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:481)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.updateStatement(HqlBaseParser.java:251)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:169)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.revature.Dao.AccountsDaoImp.updateAccounts(AccountsDaoImp.java:62)
+	at com.revature.Driver.Driver.main(Driver.java:19)
+2017-08-02 10:50:02 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 10:50:23 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 10:50:26 WARN  SqlExceptionHelper:144 - SQL Error: 1, SQLState: 23000
+2017-08-02 10:50:26 ERROR SqlExceptionHelper:146 - ORA-00001: unique constraint (THEATER.SYS_C005571) violated
+
+2017-08-02 10:51:20 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 10:51:23 WARN  SqlExceptionHelper:144 - SQL Error: 1, SQLState: 23000
+2017-08-02 10:51:23 ERROR SqlExceptionHelper:146 - ORA-00001: unique constraint (THEATER.SYS_C005571) violated
+
+2017-08-02 10:51:43 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 10:51:46 WARN  SqlExceptionHelper:144 - SQL Error: 1, SQLState: 23000
+2017-08-02 10:51:46 ERROR SqlExceptionHelper:146 - ORA-00001: unique constraint (THEATER.SYS_C005571) violated
+
+2017-08-02 10:52:06 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 10:52:09 WARN  SqlExceptionHelper:144 - SQL Error: 1, SQLState: 23000
+2017-08-02 10:52:09 ERROR SqlExceptionHelper:146 - ORA-00001: unique constraint (THEATER.SYS_C005571) violated
+
+2017-08-02 10:53:11 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-08-02 10:54:50 WARN  DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
