@@ -38,7 +38,7 @@ hcost number(4, 2)
 
 create table theater.Showtimes(
 showId number primary key,
-showtimes timestamp unique
+showtime timestamp unique
 );
 
 create table theater.MovieInfo(
@@ -46,6 +46,7 @@ infoId number primary key,
 movieId number,
 hallId number,
 showId number,
+wdId number,
 onlineTot number,
 walkTot number
 );
@@ -67,7 +68,7 @@ userId number,
 reportsTo number
 );
 
-alter table theater.MovieInfo add constraint MHS_unique unique (movieId, hallId, showId);
+alter table theater.MovieInfo add constraint MHS_unique unique (hallId, showId);
 alter table theater.MovieInfo add constraint movieId_fk foreign key (movieId) references theater.Movies(movieId);
 alter table theater.MovieInfo add constraint hallId_fk foreign key (hallId) references theater.Halls(hallId);
 alter table theater.MovieInfo add constraint showId_fk foreign key (showId) references theater.Showtimes(showId);
@@ -155,16 +156,31 @@ insert into theater.Accounts(uname, pword, email, fname, lname) values('jlangly'
 insert into theater.Accounts(uname, pword, email, fname, lname) values('senderson', 'endpassword', 'senderson@fake.com', 'Sandy', 'Enderson');
 
 insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Secret Agent: Masters', TO_TIMESTAMP('2017-08-04', 'YYYY-MM-DD'), 'Action', 126);
+insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Dark Tower', TO_TIMESTAMP('2017-08-04', 'YYYY-MM-DD'), 'Thriller-Action', 140);
+insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Funny Guy: Gal', TO_TIMESTAMP('2017-08-02', 'YYYY-MM-DD'), 'Comedy', 300);
 
 insert into theater.Halls(hcapacity, hcost) values(5, 13.45);
 insert into theater.Halls(hcapacity, hcost) values(10, 14.58);
 insert into theater.Halls(hcapacity, hcost) values(20, 16.75);
 
-insert into theater.Showtimes(showtimes) values(TO_TIMESTAMP('12:00', 'HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('12:00', 'HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('15:00', 'HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('18:00', 'HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('21:00', 'HH24:MI'));
 
 insert into theater.MovieInfo(movieId, hallId, showId) values(1, 1, 1);
 insert into theater.MovieInfo(movieId, hallId, showId) values(1, 2, 1);
 insert into theater.MovieInfo(movieId, hallId, showId) values(1, 3, 1);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 1, 2);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 2, 2);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 3, 2);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 1, 3);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 2, 3);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 3, 3);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 1, 4);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 2, 4);
+insert into theater.MovieInfo(movieId, hallId, showId) values(1, 3, 4);
+
 
 insert into theater.Employee(userId) values(1);
 insert into theater.Employee(userId, reportsTo) values(2,1);
