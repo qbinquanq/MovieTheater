@@ -17,12 +17,12 @@ public class AccountsHibernate implements AccountsDao {
 	@Override
 	public Accounts login(String uname, String pword) {
 		Session session = hu.getSession();
-		Transaction tx = session.beginTransaction();
 		String hql = ("from Accounts where uname =:uname and pword =:pword");
 		Query query = session.createQuery(hql);
 		query.setString("uname", uname);
 		query.setString("pword", pword);
 		List userinfo = query.list();
+		session.close();
 		if (userinfo != null && userinfo.size() > 0) {
 			return (Accounts) userinfo.get(0);
 		} else
@@ -43,13 +43,8 @@ public class AccountsHibernate implements AccountsDao {
 	@Override
 	public Accounts getById(int id){
 		Session s = hu.getSession();
-		String hql = "from Accounts where userId=:userId";
-		Query query = s.createQuery(hql);
-		query.setInteger("userId", id);
-		List userList = query.list();
-		if (userList != null && userList.size() > 0) {
-			return (Accounts) userList.get(0);
-		} else
-			return null;
+		Accounts user = (Accounts) s.get(Accounts.class, id);
+		s.close();
+		return user;
 	}
 }
