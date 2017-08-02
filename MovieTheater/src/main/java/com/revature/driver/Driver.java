@@ -1,4 +1,4 @@
-package com.revature.Driver;
+package com.revature.driver;
 
 import org.apache.log4j.Logger;
 import org.hibernate.Session;
