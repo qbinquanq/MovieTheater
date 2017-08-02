@@ -3,8 +3,8 @@
 <hibernate-configuration>
 	<session-factory>
 		<!-- Configure our database -->
-		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:tgillette1706cuny.c8apmfvx2unh.us-east-2.rds.amazonaws.com:1521:JAVA</property>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@database.cvu8ch9wvzo2.us-east-2.rds.amazonaws.com:1521:JAVA</property>
 		<property name="hibernate.connection.username">theater</property>
 		<property name="hibernate.connection.password">p4ssw0rd</property>
 		<property name="hibernate.connection.pool_size">35</property>
@@ -16,7 +16,7 @@
 		<property name="hibernate.format_sql">true</property>
 		
 		<!-- Annotation -->
-		<mapping class="com.revature.beans.Movies"/>
+		<mapping class="com.revature.beans.TestMovie"/>
 		<mapping class="com.revature.beans.Accounts"/>
 		<mapping class="com.revature.beans.MovieInfo"/>
 		<!-- The property that must not be used -->

@@ -16,6 +16,10 @@ footer{
 }
 form{
 	color:#000000;
+	background-color:blue;
+}
+#user{
+	width:100%;
 }
 #search{
 	background-color:red;
@@ -37,7 +41,4 @@ form{
 	height:40px;
 	margin-left:10px;
 	border-radius:6px;
-}
-#movie_img{
-	background-color:green;
 }
