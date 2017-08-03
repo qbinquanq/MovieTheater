@@ -5,17 +5,18 @@ import java.util.List;
 import org.hibernate.Session;
 
 import com.revature.beans.Movies;
-import com.revature.util.HibernateUtil;
 
-public class MovieHibernate implements MovieDao {
-	private HibernateUtil hu = HibernateUtil.getInstance();
+public class MovieHibernate implements MovieDao, HibernateSession {
+	private Session session;
+
+	public void setSession(Session session) {
+		this.session = session;
+	}
 
 	@Override
 	public List<Movies> getAllMovies() {
-		Session s = hu.getSession();
 		String hql = "From com.revature.beans.Movies";
-		List<Movies> movList = (List<Movies>) s.createQuery(hql).list();
-		s.close();
+		List<Movies> movList = (List<Movies>) session.createQuery(hql).list();
 		return movList;
 	}
 }

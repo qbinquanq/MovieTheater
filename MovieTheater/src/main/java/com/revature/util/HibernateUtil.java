@@ -5,20 +5,15 @@ import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+import org.springframework.stereotype.Component;
 
+@Component
 public class HibernateUtil {
 	private static HibernateUtil hu;
 	private SessionFactory sessionFactory;
 
 	private HibernateUtil() {
 		super();
-	}
-
-	public synchronized static HibernateUtil getInstance() {
-		if (hu == null) {
-			hu = new HibernateUtil();
-		}
-		return hu;
 	}
 
 	public synchronized SessionFactory getSessionFactory() {

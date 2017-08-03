@@ -9,13 +9,17 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.revature.beans.Transactions;
-import com.revature.util.HibernateUtil;
 
 import oracle.sql.DATE;
 
-public class TransactionsHibernate implements TransactionsDao {
-	private HibernateUtil hu = HibernateUtil.getInstance();
+public class TransactionsHibernate implements TransactionsDao, HibernateSession {
+	private Session session;
 	private Logger log = Logger.getRootLogger();
+
+	public void setSession(Session session) {
+		this.session = session;
+	}
+
 
 	// This is internal checking on auto Refund
 	private void checkAuto(List<Transactions> allTrans) {
@@ -37,33 +41,26 @@ public class TransactionsHibernate implements TransactionsDao {
 	@Override
 	public Transactions saveTransaction(Transactions transaction, int amt) {
 		for (int i = 0; i < amt; i++) {
-			Session session = hu.getSession();
 			Transaction tx = session.beginTransaction();
 			session.save(transaction);
-			log.warn("Transaction saved was: " + transaction);
 			tx.commit();
-			session.close();
 		}
 		return transaction;
 	}
 
 	@Override
 	public List<Transactions> getAllTransactions() {
-		Session s = hu.getSession();
 		String hql = "From com.revature.beans.Transactions";
-		List<Transactions> allTrans = (List<Transactions>) s.createQuery(hql).list();
-		s.close();
+		List<Transactions> allTrans = (List<Transactions>) session.createQuery(hql).list();
 		checkAuto(allTrans);
 		return allTrans;
 	}
 
 	@Override
 	public void deleteTransaction(Transactions t) {
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.delete(t);
+		Transaction tx = session.beginTransaction();
+		session.delete(t);
 		tx.commit();
-		s.close();
 	}
 
 }

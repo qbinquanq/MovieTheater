@@ -7,5 +7,5 @@ public interface AccountsDao {
 	Accounts login(String username, String password);
 
 	//This is to create a new user account
-	Accounts save(Accounts accounts);
+	Accounts saveUser(Accounts accounts);
 }

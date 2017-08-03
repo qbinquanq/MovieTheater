@@ -5,17 +5,18 @@ import java.util.List;
 import org.hibernate.Session;
 
 import com.revature.beans.Halls;
-import com.revature.util.HibernateUtil;
 
-public class HallsHibernate implements HallsDao {
-	private HibernateUtil hu = HibernateUtil.getInstance();
+public class HallsHibernate implements HallsDao, HibernateSession {
+	private Session session;
+
+	public void setSession(Session session) {
+		this.session = session;
+	}
 
 	@Override
 	public List<Halls> getHalls() {
-		Session s = hu.getSession();
 		String hql = "From com.revature.beans.Halls";
-		List<Halls> hallList = (List<Halls>) s.createQuery(hql).list();
-		s.close();
+		List<Halls> hallList = (List<Halls>) session.createQuery(hql).list();
 		return hallList;
 	}
 

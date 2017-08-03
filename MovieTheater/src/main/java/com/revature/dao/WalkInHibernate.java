@@ -4,18 +4,19 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.revature.beans.WalkIn;
-import com.revature.util.HibernateUtil;
 
-public class WalkInHibernate implements WalkInDao {
-	private HibernateUtil hu = HibernateUtil.getInstance();
+public class WalkInHibernate implements WalkInDao, HibernateSession {
+	private Session session;
+
+	public void setSession(Session session) {
+		this.session = session;
+	}
 
 	@Override
 	public WalkIn saveWalkIn(WalkIn walk) {
-		Session s = hu.getSession();
-		Transaction tx = s.beginTransaction();
-		s.save(walk);
+		Transaction tx = session.beginTransaction();
+		session.save(walk);
 		tx.commit();
-		s.close();
 		return walk;
 	}
 
