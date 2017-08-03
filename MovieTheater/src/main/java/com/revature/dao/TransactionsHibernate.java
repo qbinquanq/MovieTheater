@@ -1,20 +1,15 @@
 package com.revature.dao;
 
-import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.List;
 
-import org.apache.log4j.Logger;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.revature.beans.Transactions;
 
-import oracle.sql.DATE;
-
 public class TransactionsHibernate implements TransactionsDao, HibernateSession {
 	private Session session;
-	private Logger log = Logger.getRootLogger();
 
 	public void setSession(Session session) {
 		this.session = session;
@@ -27,11 +22,6 @@ public class TransactionsHibernate implements TransactionsDao, HibernateSession 
 			Calendar mov = Calendar.getInstance();
 			mov.setTime(trans.getMovieInfo().getShowtime().getShowtime());
 			Calendar cur = Calendar.getInstance();
-			try {
-				cur.setTime(DATE.getCurrentDate().dateValue());
-			} catch (SQLException e) {
-				log.trace(e.getMessage());
-			}
 			if (trans.getRequestRet() == 1 && (mov.get(Calendar.DAY_OF_YEAR) - cur.get(Calendar.DAY_OF_YEAR)) < 3) {
 				deleteTransaction(trans);
 			}

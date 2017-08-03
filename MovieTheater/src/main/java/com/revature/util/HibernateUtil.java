@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HibernateUtil {
-	private static HibernateUtil hu;
 	private SessionFactory sessionFactory;
 
 	private HibernateUtil() {
