@@ -15,12 +15,21 @@ footer{
 }
 form{
 	color:#000000;
-	background-color:blue;
+	background-color:#449B4;
+}
+h2{
+	color:black;
+	font-family:"Verdana";
 }
 hr{
 	width:200px;
 	border-top: 2px sold #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#show{
+	margin:0 !important;
+	min-height:450px;
+	background: url(../img/movie.jpg) no-repeat;
 }
 #Registration_panel{
 	font-size:30px;
