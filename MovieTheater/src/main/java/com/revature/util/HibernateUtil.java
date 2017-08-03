@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class HibernateUtil {
 	private SessionFactory sessionFactory;
 
-	private HibernateUtil() {
+	public HibernateUtil() {
 		super();
 	}
 
