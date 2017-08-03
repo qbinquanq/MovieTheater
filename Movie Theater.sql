@@ -83,6 +83,8 @@ alter table theater.WalkIn add constraint emp_movie_unique unique (infoId, userI
 alter table theater.Employee add constraint userId_emp_fk foreign key (userId) references theater.Accounts(userId);
 alter table theater.Employee add constraint manId_emp_fk foreign key (reportsTo) references theater.Accounts(userId);
 
+insert into theater.Accounts(userId, fname, lname) values(0, 'Auto', 'System');
+
 drop sequence theater.userId_pk;
 drop sequence theater.movieId_pk;
 drop sequence theater.hallId_pk;

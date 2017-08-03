@@ -4,10 +4,12 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.MovieInfo;
 
-public class MovieInfoHibernate implements MovieInfoDao, HibernateSession {
+@Component
+public class MovieInfoHibernate implements MovieInfoDao {
 	private Session session;
 
 	public void setSession(Session session) {
@@ -23,9 +25,7 @@ public class MovieInfoHibernate implements MovieInfoDao, HibernateSession {
 
 	@Override
 	public MovieInfo saveMovieInfo(MovieInfo movieInfo) {
-		Transaction tx = session.beginTransaction();
 		session.save(movieInfo);
-		tx.commit();
 		return movieInfo;
 	}
 }

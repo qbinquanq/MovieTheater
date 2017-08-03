@@ -3,10 +3,12 @@ package com.revature.dao;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.Movies;
 
-public class MovieHibernate implements MovieDao, HibernateSession {
+@Component
+public class MovieHibernate implements MovieDao {
 	private Session session;
 
 	public void setSession(Session session) {
@@ -15,8 +17,6 @@ public class MovieHibernate implements MovieDao, HibernateSession {
 
 	@Override
 	public List<Movies> getAllMovies() {
-		String hql = "From com.revature.beans.Movies";
-		List<Movies> movList = (List<Movies>) session.createQuery(hql).list();
-		return movList;
+		return (List<Movies>) session.createCriteria(Movies.class).list();
 	}
 }

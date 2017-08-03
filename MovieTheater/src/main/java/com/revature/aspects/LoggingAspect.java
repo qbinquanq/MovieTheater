@@ -24,6 +24,7 @@ public class LoggingAspect {
 		try {
 			obj = pjp.proceed();
 		} catch (Throwable e) {
+			log.error(e.getClass());
 			log.error(e.getMessage());
 			for(StackTraceElement s : e.getStackTrace())
 			{
