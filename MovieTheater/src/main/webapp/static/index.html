@@ -31,11 +31,11 @@
 	<p>Project Description</p>
 </div>
 
-<div  class=" container" ng-controller="newRegistration">
+<div  class="container" ng-controller="newRegistration">
 	<div class="row">
 		<div  class="col-md-6">
-		<h2>User Registration</h2>
-			<form id="Registration_panel" action="register" method="post">
+			<h2>User Registration</h2>
+			<form id="Registration_panel">
 				<div class="form-group">
 					<label for="u_firstname">FirstName</label>
 					<input id="u_firstname" type="text" ng-model="newRegis.fname"/>
@@ -59,9 +59,9 @@
 					
 					<label for="confirm_pass">Confirm Password</label>
 					<input id="confirm_pass" name="confirm_pass" type="password"/>
-				</div>
+			</div>
 			
-				<input type="submit" ng-click="submitRegistration(newRegis, $event)" value="Register" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/> 
+			<input type="button" ng-click="submitRegistration(newRegis, $event)" value="Register" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/> 
 			</form>
 		</div>
 		<div class="col-md-6">
@@ -87,6 +87,7 @@
 <footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
 <!--  <script type="text/javascript" src="static/js/bootstrap.js"></script> -->
 <script type="text/javascript" src="static/js/register.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </body>
 </html>
 

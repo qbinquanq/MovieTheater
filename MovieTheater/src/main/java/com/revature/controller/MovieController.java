@@ -26,12 +26,12 @@ public class MovieController {
 			return "static/index.html";
 	}
 	@RequestMapping(value="/register", method=RequestMethod.POST)
-	//@ResponseStatus(HttpStatus.OK)
-	public String returnBackToHome(String regis,HttpSession session) throws JsonParseException, JsonMappingException, IOException{
-		System.out.println("at register");
-		Accounts account = om.readValue(regis, Accounts.class);
+	@ResponseStatus(HttpStatus.OK)
+	public void addAccount(String account) throws JsonParseException, JsonMappingException, IOException{
 		System.out.println(account);
+		Accounts accounts = om.readValue(account, Accounts.class);
+		System.out.println(accounts);
 		//System.out.println(u_firstname + " " + u_lastname + " " + user+ " " + email+ " "+ pass);
-		return "redirect:/index";
+		//return "redirect:/index";
 	}
 }
