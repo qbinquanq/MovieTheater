@@ -46,7 +46,6 @@ infoId number primary key,
 movieId number,
 hallId number,
 showId number,
-wdId number,
 onlineTot number,
 walkTot number
 );
@@ -54,7 +53,8 @@ walkTot number
 create table theater.Transactions(
 transId number primary key,
 userId number,
-infoId number
+infoId number,
+requestRet number(1,0)
 );
 
 create table theater.WalkIn(
@@ -78,11 +78,10 @@ alter table theater.Transactions add constraint infoId_trans_fk foreign key (inf
 
 alter table theater.WalkIn add constraint infoId_walk_fk foreign key (infoId) references theater.MovieInfo(infoId);
 alter table theater.WalkIn add constraint userId_walk_fk foreign key (userId) references theater.Accounts(userId);
+alter table theater.WalkIn add constraint emp_movie_unique unique (infoId, userId);
 
 alter table theater.Employee add constraint userId_emp_fk foreign key (userId) references theater.Accounts(userId);
 alter table theater.Employee add constraint manId_emp_fk foreign key (reportsTo) references theater.Accounts(userId);
-
-insert into theater.Accounts(userId, fname, lname) values(0, 'Auto', 'System');
 
 drop sequence theater.userId_pk;
 drop sequence theater.movieId_pk;
@@ -150,6 +149,26 @@ begin
 end;
 /
 
+create or replace trigger theater.trans_info_trig
+after insert or delete on theater.Transactions
+for each row
+begin
+    if INSERTING then
+        update theater.MovieInfo set onlineTot=(onlineTot+1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
+    elsif DELETING then
+        update theater.MovieInfo set onlineTot=(onlineTot-1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
+    end if;
+end;
+/
+
+create or replace trigger theater.walk_info_trig
+after insert on theater.WalkIn
+for each row
+begin
+        update theater.MovieInfo set walkTot=(walkTot+(select walkAmount from theater.WalkIn where :old.userId = :old.userid)) where (select infoId from theater.WalkIn where :old.userId = :old.userid)=infoId;
+end;
+/
+
 insert into theater.Accounts(uname, pword, email, fname, lname) values('rmiller', 'mypassword', 'rmiller@fake.com', 'Robert', 'Miller');
 insert into theater.Accounts(uname, pword, email, fname, lname) values('mmasters', 'apassword', 'mmasters@fake.com', 'Maggie', 'Masters');
 insert into theater.Accounts(uname, pword, email, fname, lname) values('jlangly', 'thepassword', 'jlangly@fake.com', 'Jonah', 'Langly');
@@ -195,6 +214,46 @@ insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-11 12:00', 
 insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-11 15:00', 'YYYY-MM-DD HH24:MI'));
 insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-11 18:00', 'YYYY-MM-DD HH24:MI'));
 insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-11 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-12 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-12 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-12 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-12 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-13 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-13 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-13 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-13 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-14 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-14 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-14 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-14 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-15 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-15 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-15 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-15 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-16 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-16 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-16 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-16 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-17 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-17 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-17 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-17 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-18 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-18 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-18 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-18 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-19 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-19 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-19 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-19 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-20 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-20 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-20 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-20 21:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-21 12:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-21 15:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-21 18:00', 'YYYY-MM-DD HH24:MI'));
+insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-21 21:00', 'YYYY-MM-DD HH24:MI'));
 
 --08/04/17
 insert into theater.MovieInfo(movieId, hallId, showId) values(1, 1, 1);

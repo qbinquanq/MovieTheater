@@ -1,5 +1,7 @@
 package com.revature.beans;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,7 +11,7 @@ import javax.persistence.Table;
 public class Showtimes {
 	@Id
 	private int showId;
-	private String showtime;
+	private Date showtime;
 
 	public int getShowId() {
 		return showId;
@@ -19,11 +21,11 @@ public class Showtimes {
 		this.showId = showId;
 	}
 
-	public String getShowtime() {
+	public Date getShowtime() {
 		return showtime;
 	}
 
-	public void setShowtime(String showtime) {
+	public void setShowtime(Date showtime) {
 		this.showtime = showtime;
 	}
 
@@ -60,7 +62,7 @@ public class Showtimes {
 		return "Showtimes [showId=" + showId + ", showtime=" + showtime + "]";
 	}
 
-	public Showtimes(int showId, String showtime) {
+	public Showtimes(int showId, Date showtime) {
 		super();
 		this.showId = showId;
 		this.showtime = showtime;
@@ -69,5 +71,4 @@ public class Showtimes {
 	public Showtimes() {
 		super();
 	}
-
 }

@@ -1,11 +1,11 @@
 package com.revature.dao;
 
-import java.util.List;
-
 import com.revature.beans.Accounts;
 
 public interface AccountsDao {
+	//This is used for logging in
 	Accounts login(String username, String password);
-	Accounts save (Accounts accounts);
-	Accounts getById(int id);
+
+	//This is to create a new user account
+	Accounts save(Accounts accounts);
 }

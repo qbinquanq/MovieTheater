@@ -1,11 +1,10 @@
 package com.revature.dao;
 
-import java.util.List;
-
 import org.apache.log4j.Logger;
-import org.hibernate.Query;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 
 import com.revature.beans.Accounts;
 import com.revature.util.HibernateUtil;
@@ -16,35 +15,22 @@ public class AccountsHibernate implements AccountsDao {
 
 	@Override
 	public Accounts login(String uname, String pword) {
-		Session session = hu.getSession();
-		String hql = ("from Accounts where uname =:uname and pword =:pword");
-		Query query = session.createQuery(hql);
-		query.setString("uname", uname);
-		query.setString("pword", pword);
-		List userinfo = query.list();
-		session.close();
-		if (userinfo != null && userinfo.size() > 0) {
-			return (Accounts) userinfo.get(0);
-		} else
-			return null;
+		Session s = hu.getSession();
+		Criteria crit = s.createCriteria(Accounts.class).add(Restrictions.eq("uname", uname))
+				.add(Restrictions.eq("pword", pword));
+		Accounts userinfo = (Accounts) crit.uniqueResult();
+		s.close();
+		return userinfo;
 	}
 
 	@Override
-	public Accounts save(Accounts accounts) {
+	public Accounts save(Accounts account) {
 		Session session = hu.getSession();
 		Transaction tx = session.beginTransaction();
-		session.save(accounts);
-		log.warn("The user is: " + accounts);
+		session.save(account);
+		log.warn("Account saved was: "+account);
 		tx.commit();
 		session.close();
-		return accounts;
-	}
-	
-	@Override
-	public Accounts getById(int id){
-		Session s = hu.getSession();
-		Accounts user = (Accounts) s.get(Accounts.class, id);
-		s.close();
-		return user;
+		return account;
 	}
 }
