@@ -58,6 +58,7 @@ requestRet number(1,0)
 );
 
 create table theater.WalkIn(
+walkId number primary key,
 infoId number,
 walkAmount number,
 userId number
@@ -91,6 +92,7 @@ drop sequence theater.hallId_pk;
 drop sequence theater.showId_pk;
 drop sequence theater.infoId_pk;
 drop sequence theater.transId_pk;
+drop sequence theater.walkId_pk;
 
 create sequence theater.userId_pk;
 create sequence theater.movieId_pk;
@@ -98,6 +100,7 @@ create sequence theater.hallId_pk;
 create sequence theater.showId_pk;
 create sequence theater.infoId_pk;
 create sequence theater.transId_pk;
+create sequence theater.walkId_pk;
 
 create or replace trigger theater.userId_pk_trig
 before insert on theater.Accounts
@@ -148,6 +151,14 @@ before insert on theater.Transactions
 for each row
 begin 
     select transId_pk.nextVal into :new.transId from dual;
+end;
+/
+
+create or replace trigger theater.walkId_pk_trig
+before insert on theater.WalkIn
+for each row
+begin 
+    select walkId_pk.nextVal into :new.walkId from dual;
 end;
 /
 
