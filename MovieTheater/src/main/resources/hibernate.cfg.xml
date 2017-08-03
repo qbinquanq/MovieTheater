@@ -16,12 +16,13 @@
 		<property name="hibernate.format_sql">true</property>
 		
 		<!-- Annotation -->
-		<mapping class="com.revature.beans.TestMovie"/>
 		<mapping class="com.revature.beans.Accounts"/>
 		<mapping class="com.revature.beans.Movies"/>
 		<mapping class="com.revature.beans.Showtimes"/>
 		<mapping class="com.revature.beans.Halls"/>
 		<mapping class="com.revature.beans.MovieInfo"/>
+		<mapping class="com.revature.beans.Transactions"/>
+		<mapping class="com.revature.beans.WalkIn"/>
 		
 		<!-- The property that must not be used -->
 	</session-factory>
