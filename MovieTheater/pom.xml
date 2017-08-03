@@ -49,6 +49,10 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
 		<!-- A logging module that spring uses. -->
 		<dependency>
 			<groupId>commons-logging</groupId>
