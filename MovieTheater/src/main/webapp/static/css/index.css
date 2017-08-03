@@ -1,8 +1,8 @@
 body{
-	background-color:#E8F7F7;
+	background-color:white;
 }
 .jumbrotron{
-	background-color:#B4403C !important;
+	background-color:#B4403C;
 	padding:10px 10px 10px 10px;
 }
 .container{
@@ -14,25 +14,43 @@ footer{
     width: 400px;
 }
 form{
-	color:#000000;
-	background-color:#449B4;
+  background-color:#A13657;
+  border: 1px solid #c6c7cc;
+  border-radius: 2px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 100%;
+  opacity:0.8;
+  padding:20px;
 }
+#user-form{
+  background-color:#A13657;
+  border: 1px solid #c6c7cc;
+  border-radius: 2px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  width: 240px;
+  opacity:0.8;
+  float:right;
+}
+
 h2{
 	color:black;
 	font-family:"Verdana";
 }
 hr{
-	width:200px;
+	width:80%;
 	border-top: 2px sold #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 #show{
 	margin:0 !important;
 	min-height:450px;
-	background: url(../img/movie.jpg) no-repeat;
+	background: url(static/img/movie.jpg) no-repeat;
 }
-#Registration_panel{
-	font-size:30px;
+.form_length{
+	width:80%;
+	margin-left:4px;
 }
 #search{
 	background-color:red;
