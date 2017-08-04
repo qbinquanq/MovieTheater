@@ -8,7 +8,7 @@
 
 <title>Users</title>
 </head>
-<body>
+<body id="login_page">
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
           <div class="navbar-header">
@@ -34,8 +34,9 @@
 <div  class="container" ng-controller="newRegistration">
 	<div class="row">
 		<div  class="col-md-6">
-			<h2>User Registration</h2>
+			
 			<form id="Registration_panel">
+				<h2>User Registration</h2>
 				<div class="form-group">
 					<label for="u_firstname">FirstName</label>
 					<input id="u_firstname" type="text" ng-model="newRegis.fname"/>
@@ -47,12 +48,11 @@
 				<div class="form-group">
 					<label for="user">Username</label>
 					<input id="user" type="text" ng-model="newRegis.uname"/>
-				</div>
-		
-			<div class="form-group">		
+					
 					<label for="email">Email</label>
 					<input id="email" type="email" ng-model="newRegis.email"/>
-			</div>
+				</div>
+				
 			<div class="form-group">
 				<label for="pass">Password</label>
 					<input id="pass" type="password" ng-model="newRegis.pword"/>
@@ -65,8 +65,8 @@
 			</form>
 		</div>
 		<div class="col-md-6">
-			<h2>User Login</h2>
 			<form action="" method="post">
+			<h2>User Login</h2>
 			 <div class="form-group">
 				<label for="user">Username</label>
 				<input id="user" name="user" type="text"/>
@@ -76,7 +76,7 @@
 				<label for="pass">Password</label>
 				<input id="pass" name="pass" type="password"/>
 			</div>
-				<input type="submit" value="Login" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/>
+				<input type="submit" value="Login" class="btn btn-primary"/>
 			</form>
 		</div>
 	</div>
@@ -84,7 +84,9 @@
 
 
 <hr>
-<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
+<div class="footer">
+	<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
+</div>
 <!--  <script type="text/javascript" src="static/js/bootstrap.js"></script> -->
 <script type="text/javascript" src="static/js/register.js" ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>

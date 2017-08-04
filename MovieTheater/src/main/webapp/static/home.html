@@ -5,11 +5,12 @@
 <title>Home</title>
 
 <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="static/css/index.css" />
 </head>
 <body>
 
-	<nav style="background-color:blue;" class="navbar navbar-default navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -18,6 +19,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
+            <a class="navbar-brand" href="#"><strong>Movie Theate</strong>r</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -29,8 +31,8 @@
         </div>
 </nav>
 
-<div  class="jumbotron">
-	<h2> Welcome to Our Company</h2>
+<div id="main_page" class="jumbotron" >
+	<h2 id="home_text"> Welcome to Our Company</h2>
 					<p> With this application Users can make accounts and login to purchase movie tickets for future dates, 
 					and can also ask for a reimbursement as long as it is two days before the date they bought the ticket(s) for.</p>
 					
@@ -44,7 +46,7 @@
 		<ul ng-repeat="h in ">
 			<li></li>
 		</ul>
-		<p id="search_title">Search Movies. Enjoy Life.</p>
+		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
 		<input id="search_bar" type="search" name="search" placeholder="Search...." class="form-control">
         <button id="search_button" class="btn btn-danger" type="button">Search</button>
 		
@@ -54,19 +56,26 @@
 	<div id="show" class="jumbotron">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
-					<h1>Enjoy your time at the movies</h1>
+				<div class="col-md-4">
+					<i class="fa fa-camera-retro fa-5x"></i>
 					<p>No more of a hassle to buy tickets, and the movies you love will always be played</p>
 				</div>
-				<div class="col-md-5">
-					<img id="movie_img" src="static/img/movie.png" alt="movie_img">
+				<div class="col-md-4">
+				<i class="fa fa-picture-o fa-5x" aria-hidden="true"></i>
+					<p>Watch movies and have fun with friends.</p>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-file-video-o fa-5x" aria-hidden="true"></i>
+					<p>Always find movies with times that work for you</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<div class="footer">
 <footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
-<script type="text/javascript" src="static/js/home.js"></script>
+</div>
+
 
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
