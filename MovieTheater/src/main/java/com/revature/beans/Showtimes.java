@@ -3,7 +3,10 @@ package com.revature.beans;
 import java.util.Date;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -13,6 +16,8 @@ import org.springframework.stereotype.Component;
 @Table
 public class Showtimes {
 	@Id
+	@SequenceGenerator(name = "SHOWTIMEID_SEQ", sequenceName = "showId_pk")
+	@GeneratedValue(generator = "SHOWTIMEID_SEQ", strategy = GenerationType.AUTO)
 	private int showId;
 	private Date showtime;
 

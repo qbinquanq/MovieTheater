@@ -2,8 +2,12 @@ package com.revature.beans;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -12,6 +16,11 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table
 public class WalkIn {
+	
+	@Id
+	@SequenceGenerator(name = "WALKID_SEQ", sequenceName = "walkId_pk")
+	@GeneratedValue(generator = "WALKID_SEQ", strategy = GenerationType.AUTO)
+	private int walkId;
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "infoId")
 	private MovieInfo movieInfo;

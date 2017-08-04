@@ -1,7 +1,10 @@
 package com.revature.beans;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -11,6 +14,8 @@ import org.springframework.stereotype.Component;
 @Table
 public class Halls {
 	@Id
+	@SequenceGenerator(name = "HALLID_SEQ", sequenceName = "hallId_pk")
+	@GeneratedValue(generator = "HALLID_SEQ", strategy = GenerationType.AUTO)
 	private int hallId;
 	private int hCapacity;
 	private double hCost;

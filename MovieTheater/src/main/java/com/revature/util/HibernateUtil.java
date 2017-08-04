@@ -17,7 +17,7 @@ public class HibernateUtil {
 
 	public synchronized SessionFactory getSessionFactory() {
 		if (sessionFactory == null) {
-			Configuration conf = new Configuration().configure();
+			Configuration conf = new Configuration().configure("hibernate.cfg.xml");
 			ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(conf.getProperties())
 					.build();
 			sessionFactory = conf.buildSessionFactory(serviceRegistry);
