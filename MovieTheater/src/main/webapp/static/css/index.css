@@ -1,27 +1,49 @@
-body{
-	background-color:white;
+#login_page{
+	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE12BFySQKh-VzGRtFGVFu3E2yI0m0Yiiufw-XWHIsaVefohpPg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .jumbrotron{
 	background-color:#B4403C;
 	padding:10px 10px 10px 10px;
 }
+#home_text{
+	text-align:center;
+}
 .container{
 	margin-top:80px;
 }
-footer{
-	color:#000000;
-    margin: auto;
+#main_page{
+	height:600px;
+	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE12BFySQKh-VzGRtFGVFu3E2yI0m0Yiiufw-XWHIsaVefohpPg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+	font-size:10px;
+	text-align:center;
+	opacity:0.8;
+}
+.footer{
+	color:#7A2A29;
+    margin: 0 auto;
     width: 400px;
+    font-size:1em;
+    font-weight:bold;
 }
 form{
   background-color:#A13657;
   border: 1px solid #c6c7cc;
-  border-radius: 2px;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   width: 100%;
   opacity:0.8;
   padding:20px;
+  margin-left:10px;
+  color:white;
+}
+.form-group{
+	float:left;
+	margin-right:6px;
 }
 #user-form{
   background-color:#A13657;
@@ -35,8 +57,14 @@ form{
 }
 
 h2{
-	color:black;
+	color:white;
 	font-family:"Verdana";
+	font-weight:700;
+	font-size:5em;
+	font-family:"Gill Sans Extrabold, sans-serif";
+}
+.fa{
+	margin:0 auto;
 }
 hr{
 	width:80%;
@@ -44,9 +72,9 @@ hr{
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 #show{
-	margin:0 !important;
-	min-height:450px;
-	background: url(static/img/movie.jpg) no-repeat;
+
+	background-image: url("static/img/movie.jpg");
+	background-repeat: no-repeat;
 }
 .form_length{
 	width:80%;
@@ -57,15 +85,16 @@ hr{
     height: 200px;
     width: 80%;
     margin: 0 auto;
-    opacity:0.5;
+    opacity:0.8;
     border-radius:6px;
     margin-bottom:10px;
 }
 #search_title{
-	font-weight:500;
-	font-size:4em;
+	color:white;
+	font-weight:700;
+	font-size:5em;
 	font-family:"Gill Sans Extrabold, sans-serif";
-	margin-right:10px;
+	margin-left:10px;
 }
 #search_bar{
 	width:80%;
