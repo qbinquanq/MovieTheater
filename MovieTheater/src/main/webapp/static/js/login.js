@@ -4,6 +4,11 @@ function newLoginService($scope, $http){
 		console.log(newLogin);
 		console.log("registration="+JSON.stringify($scope.newLogin))
 		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-		$http.post("login", "account="+JSON.stringify($scope.newLogin)).then(alert("You login account succesfully"));
+		$http.post("loginthrough", "login="+JSON.stringify($scope.newLogin)).success(function (data, status, headers, config) {
+            //$scope.PostDataResponse = data;
+		  alert("You login account succesfully");
+		  location.reload();
+        })
+		
 	}
 }
