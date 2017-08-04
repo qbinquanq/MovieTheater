@@ -1,6 +1,7 @@
-
-function Hello($scope,$http){
-	$http.get('home/all').then(function(response){
+function fill($scope, $http){
+	$http.post("home/all").success(function(response){
 		console.log(response);
+		$scope.movies=response.data
 	});
 };
+

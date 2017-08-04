@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="FilterBox">
+<html ng-app>
 <head>
 <meta charset="ISO-8859-1">
 <title>Home</title>
@@ -43,11 +43,14 @@
 </div>
 
 <div ng-controller="fill" id="search" class="input-group input-group-lg" class="jumbotron">
-		<ul ng-repeat="h in ">
-			<li></li>
-		</ul>
+		
 		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
-		<input id="search_bar" type="search" name="search" placeholder="Search...." class="form-control">
+		<input id="search_bar" type="search" placeholder="Search...." class="form-control" ng-model="getMovies">
+		<ul>
+			<li ng-repeat="x in mTitle | filter:getMovies | orderBy:mTitle">
+				{{x}}
+			</li>
+		</ul>
         <button id="search_button" class="btn btn-danger" type="button">Search</button>
 		
 </div>
@@ -79,6 +82,7 @@
 
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
+<script type="text/javascript" src="static/js/home.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </body>
 </html>

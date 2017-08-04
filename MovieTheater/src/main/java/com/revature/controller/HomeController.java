@@ -2,6 +2,8 @@ package com.revature.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,31 +13,40 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Movies;
-
-import testservices.HomeService;
+import com.revature.testservices.HomeService;
 
 @Controller
 public class HomeController {
 	
-	/*@Autowired
-	HomeService hs;
-	private ObjectMapper om = new ObjectMapper();*/
+	@Autowired
+	private HomeService hs;
+	private ObjectMapper om = new ObjectMapper();
 	
-	@RequestMapping(value="/home", method=RequestMethod.GET)
-	public String getHomepage()
+	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
+	public String getHomepage(HttpSession session)
 	{
 		return "static/home.html";
 	}
 
 	
-	/*@RequestMapping(value="/home/all", method=RequestMethod.GET, produces={"application/xml","application/json"})
+	@RequestMapping(value="home/all", method=RequestMethod.POST)
 	@ResponseBody
-	public String getHomepage() throws JsonProcessingException
+	public String getAll() throws JsonProcessingException
 	{
 		List<Movies> m = hs.getAllMovies();
 		System.out.println(om.writeValueAsString(m));
 			return om.writeValueAsString(m);
-	}*/
+	}
+
+
+	public HomeService getHs() {
+		return hs;
+	}
+
+
+	public void setHs(HomeService hs) {
+		this.hs = hs;
+	}
 
 	
 }
