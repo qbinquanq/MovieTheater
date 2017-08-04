@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="FilterBox">
 <head>
 <meta charset="ISO-8859-1">
 <title>Home</title>
+
 <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="static/css/index.css" />
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<nav style="background-color:blue;" class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -28,7 +29,7 @@
         </div>
 </nav>
 
-<div id="show" class="jumbotron">
+<div  class="jumbotron">
 	<h2> Welcome to Our Company</h2>
 					<p> With this application Users can make accounts and login to purchase movie tickets for future dates, 
 					and can also ask for a reimbursement as long as it is two days before the date they bought the ticket(s) for.</p>
@@ -39,7 +40,10 @@
 
 </div>
 
-<div id="search" class="input-group input-group-lg" class="jumbotron">
+<div ng-controller="fill" id="search" class="input-group input-group-lg" class="jumbotron">
+		<ul ng-repeat="h in ">
+			<li></li>
+		</ul>
 		<p id="search_title">Search Movies. Enjoy Life.</p>
 		<input id="search_bar" type="search" name="search" placeholder="Search...." class="form-control">
         <button id="search_button" class="btn btn-danger" type="button">Search</button>
@@ -47,7 +51,7 @@
 </div>
 
 <section>
-	<div class="jumbotron">
+	<div id="show" class="jumbotron">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-7">
@@ -62,7 +66,10 @@
 	</div>
 </section>
 <footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
+<script type="text/javascript" src="static/js/home.js"></script>
+
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </body>
 </html>

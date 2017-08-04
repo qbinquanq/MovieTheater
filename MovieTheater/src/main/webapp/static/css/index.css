@@ -1,5 +1,9 @@
 body{
-	background-color:white;
+	background-image:url("/movies.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .jumbrotron{
 	background-color:#B4403C;
@@ -44,9 +48,9 @@ hr{
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 #show{
-	margin:0 !important;
-	min-height:450px;
-	background: url(static/img/movie.jpg) no-repeat;
+
+	background-image: url("static/img/movie.jpg");
+	background-repeat: no-repeat;
 }
 .form_length{
 	width:80%;
