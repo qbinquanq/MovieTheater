@@ -3,10 +3,12 @@ package com.revature.dao;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.Halls;
 
-public class HallsHibernate implements HallsDao, HibernateSession {
+@Component
+public class HallsHibernate implements HallsDao {
 	private Session session;
 
 	public void setSession(Session session) {
@@ -19,5 +21,4 @@ public class HallsHibernate implements HallsDao, HibernateSession {
 		List<Halls> hallList = (List<Halls>) session.createQuery(hql).list();
 		return hallList;
 	}
-
 }

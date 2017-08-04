@@ -4,7 +4,10 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
@@ -14,6 +17,8 @@ import org.springframework.stereotype.Component;
 @Table(name = "MOVIES")
 public class Movies{
 	@Id
+	@SequenceGenerator(name = "MOVIEID_SEQ", sequenceName = "movieId_pk")
+	@GeneratedValue(generator = "MOVIEID_SEQ", strategy = GenerationType.AUTO)
 	private int movieId;
 	private String mTitle;
 	private Date releaseDate;

@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.revature.beans.Transactions;
 
-public interface TransactionsDao {
+public interface TransactionsDao extends HibernateSession {
 	//This is to save Transations
 	public Transactions saveTransaction(Transactions transaction, int amt);
 	

@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Table
 public class MovieInfo {
 	@Id
-	@SequenceGenerator(name = "INFOID_SEQ", sequenceName = "INFOID_SEQ")
+	@SequenceGenerator(name = "INFOID_SEQ", sequenceName = "infoId_pk")
 	@GeneratedValue(generator = "INFOID_SEQ", strategy = GenerationType.AUTO)
 	private int infoId;
 	@ManyToOne(fetch = FetchType.EAGER)

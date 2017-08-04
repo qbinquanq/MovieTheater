@@ -18,8 +18,8 @@ import org.springframework.stereotype.Component;
 @Table(name = "Accounts")
 public class Accounts {
 	@Id
-	@SequenceGenerator(name = "USERID_SEQ", sequenceName = "USERID_SEQ")
-	@GeneratedValue(generator = "USERID_SEQ", strategy = GenerationType.AUTO)
+	@SequenceGenerator(name = "ACCOUNTID_SEQ", sequenceName = "userId_pk")
+	@GeneratedValue(generator = "ACCOUNTID_SEQ", strategy = GenerationType.AUTO)
 	private int userId;
 	private String uname;
 	private String pword;

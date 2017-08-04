@@ -5,16 +5,17 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.Transactions;
 
-public class TransactionsHibernate implements TransactionsDao, HibernateSession {
+@Component
+public class TransactionsHibernate implements TransactionsDao {
 	private Session session;
 
 	public void setSession(Session session) {
 		this.session = session;
 	}
-
 
 	// This is internal checking on auto Refund
 	private void checkAuto(List<Transactions> allTrans) {
@@ -31,9 +32,7 @@ public class TransactionsHibernate implements TransactionsDao, HibernateSession 
 	@Override
 	public Transactions saveTransaction(Transactions transaction, int amt) {
 		for (int i = 0; i < amt; i++) {
-			Transaction tx = session.beginTransaction();
 			session.save(transaction);
-			tx.commit();
 		}
 		return transaction;
 	}
@@ -48,9 +47,6 @@ public class TransactionsHibernate implements TransactionsDao, HibernateSession 
 
 	@Override
 	public void deleteTransaction(Transactions t) {
-		Transaction tx = session.beginTransaction();
 		session.delete(t);
-		tx.commit();
 	}
-
 }

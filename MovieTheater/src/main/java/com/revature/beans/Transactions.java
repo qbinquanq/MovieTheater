@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Table
 public class Transactions {
 	@Id
-	@SequenceGenerator(name = "TRANSID_SEQ", sequenceName = "TRANSID_SEQ")
+	@SequenceGenerator(name = "TRANSID_SEQ", sequenceName = "transID_pk")
 	@GeneratedValue(generator = "TRANSID_SEQ", strategy = GenerationType.AUTO)
 	private int transId;
 	@ManyToOne(fetch = FetchType.EAGER)

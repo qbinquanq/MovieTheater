@@ -21,6 +21,7 @@ public class HibernateAspect {
 	@Around("allDaoObjects()")
 	public Object manageSession(ProceedingJoinPoint pjp) throws Throwable
 	{
+		System.out.println("Hello from manageSession()");
 		Object obj = null;
 		Session session = hu.getSession();
 		Transaction tx = session.beginTransaction();

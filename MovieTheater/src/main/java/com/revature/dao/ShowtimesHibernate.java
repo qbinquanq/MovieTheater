@@ -3,10 +3,12 @@ package com.revature.dao;
 import java.util.List;
 
 import org.hibernate.Session;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.Showtimes;
 
-public class ShowtimesHibernate implements ShowtimesDao, HibernateSession {
+@Component
+public class ShowtimesHibernate implements ShowtimesDao {
 	private Session session;
 
 	public void setSession(Session session) {
@@ -19,5 +21,4 @@ public class ShowtimesHibernate implements ShowtimesDao, HibernateSession {
 		List<Showtimes> showList = (List<Showtimes>) session.createQuery(hql).list();
 		return showList;
 	}
-
 }

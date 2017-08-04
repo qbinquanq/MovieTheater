@@ -24,6 +24,5 @@
 		<mapping class="com.revature.beans.Transactions"/>
 		<mapping class="com.revature.beans.WalkIn"/>
 		
-		<!-- The property that must not be used -->
 	</session-factory>
 </hibernate-configuration>

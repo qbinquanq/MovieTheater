@@ -2,12 +2,13 @@ package com.revature.dao;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.Accounts;
 
-public class AccountsHibernate implements AccountsDao, HibernateSession {
+@Component
+public class AccountsHibernate implements AccountsDao {
 	private Session session;
 
 	public void setSession(Session session) {
@@ -23,10 +24,7 @@ public class AccountsHibernate implements AccountsDao, HibernateSession {
 	}
 
 	@Override
-	public Accounts saveUser(Accounts account) {
-		Transaction tx = session.beginTransaction();
+	public void saveUser(Accounts account) {
 		session.save(account);
-		tx.commit();
-		return account;
 	}
 }
