@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>log in</title>
+</head>
+<body>
+	<!--  <form action="static/login.html" method="POST"> -->
+	<!-- 	<input id ="text" type="text" name = "username" placeholder="username"/> -->
+		<!-- 		<input id="pass" name="pass" type="password" placeholder="password"/> -->
+		<!-- 	</div> -->
+			
+		<!--		<input type="submit" value="Login" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/>   -->
+		<!-- 	</form> -->
+			
+			
+			
+	<div  class="container" ng-controller="newLoginService">
+	<div class="row">
+		<div  class="col-md-6">
+			<h2>User Registration</h2>
+			<form id="Login_panel">
+				
+				
+				<div class="form-group">
+					<label for="user">Username</label>
+					<input id="user" type="text" ng-model="newLogin.uname"/>
+				</div>
+		
+		
+			<div class="form-group">
+				<label for="pass">Password</label>
+					<input id="pass" type="password" ng-model="newLogin.pword"/>
+					
+	
+			</div>
+			
+			<input type="button" ng-click="login(newLogin, $event)" value="Login" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/> 
+			</form>
+		</div>
+		
+	</div>
+</div>
+	
+<script type="text/javascript" src="static/js/login.js" ></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+</body>
+</html>
