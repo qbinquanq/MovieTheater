@@ -40,7 +40,7 @@ public class TestLogin {
 			return "redirect:home";
 		}
 		//System.out.println(ls.login("rmiller", "mypassword"));
-		return "static/login.html";
+		return "static/index.html";
 	}
 	
 	@RequestMapping(value="/loginthrough",method=RequestMethod.POST)
@@ -53,7 +53,7 @@ public class TestLogin {
 		System.out.println("password :"+ accounts.getPword());
 		Accounts  acc = ls.login(accounts.getUname(), accounts.getPword());
 		if(acc==null)
-			return "redirect:login";
+			return "redirect:index";
 		else
 		{
 			System.out.println("login is good");
