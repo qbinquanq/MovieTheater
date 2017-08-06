@@ -24,8 +24,7 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="static/search"><i class="glyphicon glyphicon-home"></i> Main Page </a></li>
-              <li><a href="static/index.html"><i class="fa fa-exchange"></i> Sign up </a></li>
-              <li><a href="static/index.html"><i class="fa fa-sign-in"></i> Login</a></li>
+              <li><a href="static/index.html"><i class="fa fa-sign-in"></i> Log Out</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -40,14 +39,14 @@
 					
 					<p> ut aut reiciendis voluptatibus maiores alias consequatur aut </p>
 
-<div ng-controller="fill" id="search" class="input-group input-group-lg" >
+<div data-ng-controller="fill" id="search" class="input-group input-group-lg" >
 		
 		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
-		<input id="search_bar" type="search" placeholder="Search...." class="form-control" ng-model="getMovies">
+		<input id="search_bar" type="search" placeholder="Search...." class="form-control" data-ng-model="getMovies">
 		<button id="search_button" class="btn btn-danger" type="button">Search</button>
-		<ul>
-			<li ng-repeat="x in MOVIES | filter:getMovies | orderBy:mTitle">
-				{{x.mTitle}}
+		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
+			<li id="search_box">
+				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <button class="btn btn-primary">Buy Ticket</button>
 			</li>
 		</ul>
         

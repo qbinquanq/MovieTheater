@@ -23,7 +23,7 @@ public class HomeController {
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
-	public String getHomepage(HttpSession session)
+	public String getSearchPage(HttpSession session)
 	{
 		return "static/home.html";
 	}
@@ -31,7 +31,7 @@ public class HomeController {
 	
 	@RequestMapping(value="home/all", method=RequestMethod.POST)
 	@ResponseBody
-	public String getAll() throws JsonProcessingException
+	public String getAll(HttpSession session) throws JsonProcessingException
 	{
 		List<Movies> m = hs.getAllMovies();
 		System.out.println(om.writeValueAsString(m));
