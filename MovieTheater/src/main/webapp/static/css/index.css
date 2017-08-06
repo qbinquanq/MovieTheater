@@ -1,11 +1,12 @@
 #login_page{
-	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE12BFySQKh-VzGRtFGVFu3E2yI0m0Yiiufw-XWHIsaVefohpPg');
+	background-image:url('https://www.nyfa.edu/film-school-blog/wp-content/uploads/2015/01/THEATERF1ONRF-00006562-0011.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.jumbrotron{
-	background-color:#B4403C;
+.jumbotron{
 	padding:10px 10px 10px 10px;
+	height:100%;
+	margin-top:20px;
 }
 #home_text{
 	text-align:center;
@@ -15,31 +16,32 @@
 }
 #main_page{
 	height:600px;
-	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWE12BFySQKh-VzGRtFGVFu3E2yI0m0Yiiufw-XWHIsaVefohpPg');
+	background-image:url('https://www.nyfa.edu/film-school-blog/wp-content/uploads/2015/01/THEATERF1ONRF-00006562-0011.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color:white;
 	font-size:10px;
 	text-align:center;
-	opacity:0.8;
+}
+.nav >li > a:hover{
+	background-color:#fcc;
 }
 .footer{
-	color:#7A2A29;
+	color:gray;
     margin: 0 auto;
     width: 400px;
     font-size:1em;
     font-weight:bold;
 }
 form{
-  background-color:#A13657;
+  background-color:white;
   border: 1px solid #c6c7cc;
   font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   width: 100%;
-  opacity:0.8;
   padding:20px;
   margin-left:10px;
-  color:white;
+  color:black;
 }
 input{
 	color:black;
@@ -60,48 +62,173 @@ input{
 }
 
 h2{
-	color:white;
 	font-family:"Verdana";
-	font-weight:700;
-	font-size:5em;
+	font-weight:bold;
+	font-size:2.5;
 	font-family:"Gill Sans Extrabold, sans-serif";
-}
-.fa{
-	margin:0 auto;
+	padding:6px;
 }
 hr{
-	width:80%;
+	width:100%;
 	border-top: 2px sold #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-#show{
-
-	background-image: url("static/img/movie.jpg");
-	background-repeat: no-repeat;
 }
 .form_length{
 	width:80%;
 	margin-left:4px;
 }
 #search{
-	background-color:red;
-    height: 200px;
+	background-color:#2A88AD;
+    height: 40%;
     width: 80%;
-    margin: 0 auto;
     opacity:0.8;
-    border-radius:6px;
-    margin-bottom:10px;
+    margin: 0 auto;
+    border-radius:4px;
+    margin-bottom:4px;
+    margin-top:4px;
 }
 #search_title{
 	color:white;
 	font-weight:700;
-	font-size:5em;
-	font-family:"Gill Sans Extrabold, sans-serif";
+	font-size:4em;
+	font-family:"Gill, Sans Extrabold, sans-serif";
 	margin-left:10px;
+	margin-top:40px;
+}
+li{
+	color:black;
 }
 #search_bar{
 	width:80%;
-	height:40px;
+	height:35px;
 	margin-left:10px;
-	border-radius:6px;
+	border-radius:4px;
+	border: 2px solid #0080ff;
+}
+#search_button{
+	background-color:#0080ff;
+	border: 2px solid #0080ff;
+	margin-left:-170px;
+}
+#show{
+	background-color:#dfdfff;
+	margin-top:-30px;
+	height:500px;
+}
+/*Login Forms and Registration*/
+.col-md-6{
+	padding:20px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    margin-right:40px;
+}
+#user_form_login{
+	margin-left:-80px;
+}
+.form_h2{
+	background: #ff0000;
+    padding: 20px 30px 15px 30px;
+    margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+}
+h2 > span{
+	display: block;
+    margin-top: 2px;
+    font: 13px Arial, Helvetica, sans-serif;
+    background: #2A88AD;
+    padding: 5px 10px 5px 10px;
+}
+label{
+	display: block;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #0080ff;
+    margin-bottom: 15px;
+}
+.section span{
+	background: #2A88AD;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -45px;
+    color: #fff;
+    margin-top: -3px;
+}
+input[type="text"],.form-style-10 input[type="email"],input[type="password"],
+input[type="email"]{
+	    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border: 2px solid #0080ff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+.button-section{
+	margin-left:80%;
+}
+input[type="button"]{
+	    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
+input[type="button"]:hover{
+	    background: #0000ff;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+/*User profile*/
+.img-thumbnail{
+	border-radius:50%;
+	margin-top:100%;
+	margin-left:-220px;
+}
+#user_page{
+	background-color:#2A88AD;
+	color:white;
+	font-weight:700;
+	font-size:3em;
+	margin-top:-40px;
+}
+.dropdown{
+	padding:10px;
+	border-radius:4px;
+	background-color:#74808b;
+	width:20%;
+	margin-top:10px;
+	color:white;
+}
+.dropdown-toggle{
+	color:white;
 }
