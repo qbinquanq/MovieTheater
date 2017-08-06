@@ -23,7 +23,7 @@ public class HomeController {
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
-	public String getHomepage(HttpSession session)
+	public String getSearchPage(HttpSession session)
 	{
 		return "static/home.html";
 	}
