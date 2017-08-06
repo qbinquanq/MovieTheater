@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -23,9 +23,9 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="static/search">Main Page </a></li>
-              <li><a href="static/index.html"> Sign up </a></li>
-              <li><a href="static/index.html">Login</a></li>
+              <li><a href="static/search"><i class="glyphicon glyphicon-home"></i> Main Page </a></li>
+              <li><a href="static/index.html"><i class="fa fa-exchange"></i> Sign up </a></li>
+              <li><a href="static/index.html"><i class="fa fa-sign-in"></i> Login</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -40,22 +40,21 @@
 					
 					<p> ut aut reiciendis voluptatibus maiores alias consequatur aut </p>
 
-</div>
-
-<div ng-controller="fill" id="search" class="input-group input-group-lg" class="jumbotron">
+<div ng-controller="fill" id="search" class="input-group input-group-lg" >
 		
 		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
 		<input id="search_bar" type="search" placeholder="Search...." class="form-control" ng-model="getMovies">
+		<button id="search_button" class="btn btn-danger" type="button">Search</button>
 		<ul>
-			<li ng-repeat="x in mTitle | filter:getMovies | orderBy:mTitle">
-				{{x}}
+			<li ng-repeat="x in MOVIES | filter:getMovies | orderBy:mTitle">
+				{{x.mTitle}}
 			</li>
 		</ul>
-        <button id="search_button" class="btn btn-danger" type="button">Search</button>
+        
 		
 </div>
 
-<section>
+</div>
 	<div id="show" class="jumbotron">
 		<div class="container">
 			<div class="row">
@@ -74,7 +73,6 @@
 			</div>
 		</div>
 	</div>
-</section>
 <div class="footer">
 <footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
 </div>

@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 
 <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="static/css/index.css" />
 
 <title>Users</title>
@@ -21,84 +22,93 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="static/index.html">Home<span> Main Page</span> </a></li>
+              <li><a href="static/index.html">Home<span> Page</span> </a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
 </nav>
-<br>
-<div class="jumbotron" >
-	<p>Project Description</p>
-</div>
+
 
 <div  class="container" ng-controller="newRegistration">
 	<div class="row">
-		<div  class="col-md-6">
+		<div  id="user_form_login" class="col-md-6">
 			
 			<form id="Registration_panel">
-				<h2>User Registration</h2>
-				<div class="form-group">
-					<label for="u_firstname">FirstName</label>
-					<input id="u_firstname" type="text" ng-model="newRegis.fname"/>
+				<h2 class="form_h2">User Registration</h2>
+				<div class="section"><span>1</span></div>
+				<div class="inner-wrap">
+					<label for="u_firstname">Firstname
+						<i class="fa fa-user-plus"></i>
+						<input id="u_firstname" type="text" ng-model="newRegis.fname" placeholder="First name"/>
+					</label>
+					<label for="u_lastname">Lastname
+						<i class="fa fa-user-plus"></i>
+						<input id="u_lastname" type="text" ng-model="newRegis.lname" placeholder="Last name"/>
+					</label>
 					
-					<label for="u_lastname">LastName</label>
-					<input id="u_lastname" type="text" ng-model="newRegis.lname"/>
+					<div class="section"><span>2</span></div>
+					<label for="user">Username
+						<i class="fa fa-user-times"></i>
+						<input id="user" type="text" ng-model="newRegis.uname" placeholder="Username"/>
+					</label>
+					<label for="email">Email
+						<i class="fa fa-envelope"></i>
+						<input id="email" type="email" ng-model="newRegis.email" placeholder="example@gmail.com"/>
+					</label>
 				</div>
 				
-				<div class="form-group">
-					<label for="user">Username</label>
-					<input id="user" type="text" ng-model="newRegis.uname"/>
-					
-					<label for="email">Email</label>
-					<input id="email" type="email" ng-model="newRegis.email"/>
-				</div>
-				
-			<div class="form-group">
-				<label for="pass">Password</label>
-					<input id="pass" type="password" ng-model="newRegis.pword"/>
-					
-					<label for="confirm_pass">Confirm Password</label>
-					<input id="confirm_pass" name="confirm_pass" type="password"/>
+				<div class="section"><span>3</span></div>
+			<div class="inner-wrap">
+					<label for="pass">Password
+						<i class="fa fa-key"></i>
+						<input id="pass" type="password" ng-model="newRegis.pword" placeholder="Password"/>
+					</label>
+					<label for="confirm_pass">Confirm Password
+						<i class="fa fa-key"></i>
+						<input id="confirm_pass" name="confirm_pass" type="password" placeholder="Confirm Password"/>
+					</label>
 			</div>
 			
-			<input type="button" ng-click="submitRegistration(newRegis, $event)" value="Register" class="btn btn-primary"/> 
-			</form>
-		</div>
-			<div  class="container" ng-controller="newLoginService">
-	<div class="row">
-		<div  class="col-md-6">
-			<h2>Login</h2>
-			<form id="Login_panel">
-				
-				
-				<div class="form-group">
-					<label for="user">Username</label>
-					<input id="user" type="text" ng-model="newLogin.uname"/>
-				</div>
-		
-		
-			<div class="form-group">
-				<label for="pass">Password</label>
-					<input id="pass" type="password" ng-model="newLogin.pword"/>
-					
-	
+			<div class="button-section">
+				<input id="btn" type="button" ng-click="submitRegistration(newRegis, $event)" value="Register" class="btn btn-success"/> 
 			</div>
-			
-			<input type="button" ng-click="login(newLogin, $event)" value="login" style="background-color:#8BC7FF !important; border: 1px solid #45A1B3 !important; border-radius:2px; padding:3px"/> 
 			</form>
 		</div>
-		
+		<div  class="col-md-6" ng-controller="newLoginService">
+			<form action="" method="post">
+			<h2 class="form_h2">User Login</h2>
+			 <div  class="inner-wrap">
+				<label class="log_label" for="user">Username
+					<i class="fa fa-user"></i>
+					<input class="log" id="user" name="user" type="text" placeholder="Username" ng-model="newLogin.uname"/>
+				</label>
+
+				<label class="log_label" for="pass">Password
+					<i class="fa fa-key"></i>
+					<input class="log" id="pass" name="pass" type="password"  placeholder="Password" ng-model="newLogin.pword" />
+				</label>
+			</div>
+			<div class="button-section">
+				<input id="log_submit" type="button" ng-click="login(newLogin, $event)" value="Login" class="btn btn-success"/>
+			</div>
+			</form>
+		</div>
 	</div>
 </div>
-	
 
 
 <hr>
 <div class="footer">
 	<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
 </div>
+<<<<<<< HEAD
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
 <script type="text/javascript" src="static/js/login.js" ></script>
+=======
+
+<script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+>>>>>>> aff527b4b5d8dcbc6e701e75a1dd1baae42ec9bf
 <script type="text/javascript" src="static/js/register.js" ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </body>
