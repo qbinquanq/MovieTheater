@@ -9,19 +9,20 @@ items.controller('newLoginService', function($scope, $http){
 		$http.post("loginthrough", "login="+JSON.stringify($scope.newLogin)).then(function onSuccess(response){
 			console.log("successPost");
 			//console.log(response.data.success);
-			console.log(response.data == 'OK');
-			console.log(response.data == 'BAD_REQUEST');
-			if(response.data == 'OK'){
-				alert("You login successfully.");
-				location.reload()
-			}
-			else {
-				alert("Your username or password is not correct.")
-			}
+			//console.log(response.data == 'OK');
+			//console.log(response.data == 'BAD_REQUEST');
+			//if(response.data == 'OK'){
+			alert("You login successfully.");
+			location.reload()
+			//}
+			//else {
+			//	alert("Your username or password is not correct.")
+			//}
 			//console.log(response.data);
 			//console.log(response.status);
 			//console.log(response.statusText);
 		}, function onError(response){
+			alert("Your username or password is not correct.")
 			console.log("failed");
 		});
 	}
@@ -55,12 +56,10 @@ items.controller('newRegistration', function ($scope, $http){
 		console.log("registration="+JSON.stringify($scope.newRegis))
 		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
 		$http.post("register", "account="+JSON.stringify($scope.newRegis)).then(function onSuccess(response){
-			if(response.data == 'OK'){
-				alert("You created account succesfully.");
-				location.reload();
-			}
-			else {
-				alert("Your username or password are not valid.")
-			}
-		})
+			alert("You created account succesfully.");
+			location.reload();
+		}, function onError(response){
+			alert("Your username or password is not valid.")
+			console.log("failed");
+		});
 	}})

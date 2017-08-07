@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,18 +17,18 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Accounts;
-import com.revature.service.LoginService;
+import com.revature.service.AccountService;
 
 @Controller
 public class LoginController {
 	@Autowired
-	LoginService ls;
+	AccountService ls;
 	ObjectMapper om = new ObjectMapper();
-	public LoginService getLs() {
+	public AccountService getLs() {
 		return ls;
 	}
 
-	public void setLs(LoginService ls) {
+	public void setLs(AccountService ls) {
 		this.ls = ls;
 	}
 
@@ -46,7 +47,7 @@ public class LoginController {
 	
 	@RequestMapping(value="/loginthrough",method=RequestMethod.POST)
 	@ResponseBody
-	public HttpStatus login(String login, HttpSession session) throws JsonParseException, JsonMappingException, IOException
+	public ResponseEntity login(String login, HttpSession session) throws JsonParseException, JsonMappingException, IOException
 	{	
 		
 		Accounts accounts = om.readValue(login, Accounts.class);
@@ -58,7 +59,8 @@ public class LoginController {
 			//throw new ResourceNotFoundException(); 
 			//return "static/index.html";
 			//return loginFail();
-			return HttpStatus.BAD_REQUEST;
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+			
 		}
 		else
 		{
@@ -67,7 +69,7 @@ public class LoginController {
 			//return "redirect:home";
 			//return loginSuccess();
 			//return "static/home.html";
-			return HttpStatus.OK;
+			return ResponseEntity.status(HttpStatus.OK).body(null);
 		}
 	}
 	
