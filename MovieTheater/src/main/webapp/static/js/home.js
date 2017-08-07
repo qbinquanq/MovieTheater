@@ -1,13 +1,14 @@
-function fill($scope, $http){
+var app = angular.module('mainApp',[]);
+	app.controller('fill',function($scope,$http){
 	$http.post("home/all").then(function(response){
 		console.log(response);
 		$scope.MOVIES=response.data;
-	});
-};
-function autoFill($scope, $http){
-	$http.post("info/movies").then(function(response){
-		console.log(response);
-	});
-}
 
+});
+});
 
+	app.controller('autoFill',function($scope,$http){
+		$http.post("info/movies").then(function(response){
+			console.log(response);
+		});
+	});
