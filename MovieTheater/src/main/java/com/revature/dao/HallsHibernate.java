@@ -17,8 +17,6 @@ public class HallsHibernate implements HallsDao {
 
 	@Override
 	public List<Halls> getHalls() {
-		String hql = "From com.revature.beans.Halls";
-		List<Halls> hallList = (List<Halls>) session.createQuery(hql).list();
-		return hallList;
+		return (List<Halls>) session.createCriteria(Halls.class).list();
 	}
 }
