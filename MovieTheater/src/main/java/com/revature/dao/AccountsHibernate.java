@@ -17,15 +17,12 @@ public class AccountsHibernate implements AccountsDao {
 
 	@Override
 	public Accounts login(String uname, String pword) {
-		Criteria crit = session.createCriteria(Accounts.class).add(Restrictions.eq("uname", uname))
-				.add(Restrictions.eq("pword", pword));
-		Accounts userinfo = (Accounts) crit.uniqueResult();
-		return userinfo;
+		return (Accounts) session.createCriteria(Accounts.class).add(Restrictions.eq("uname", uname))
+				.add(Restrictions.eq("pword", pword)).uniqueResult();
 	}
 
 	@Override
 	public Integer saveUser(Accounts account) {
-		Integer acc = (Integer) session.save(account);
-		return acc;
+		return (Integer) session.save(account);
 	}
 }

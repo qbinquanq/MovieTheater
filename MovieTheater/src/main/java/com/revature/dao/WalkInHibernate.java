@@ -15,8 +15,7 @@ public class WalkInHibernate implements WalkInDao {
 	}
 
 	@Override
-	public WalkIn saveWalkIn(WalkIn walk) {
-		session.save(walk);
-		return walk;
+	public Integer saveWalkIn(WalkIn walk) {
+		return (Integer) session.save(walk);
 	}
 }

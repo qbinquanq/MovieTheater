@@ -18,14 +18,11 @@ public class MovieInfoHibernate implements MovieInfoDao {
 
 	@Override
 	public List<MovieInfo> getAllMovieInfo() {
-		String hql = "From com.revature.beans.MovieInfo";
-		List<MovieInfo> allInfo = (List<MovieInfo>) session.createQuery(hql).list();
-		return allInfo;
+		return (List<MovieInfo>) session.createCriteria(MovieInfo.class).list();
 	}
 
 	@Override
-	public MovieInfo saveMovieInfo(MovieInfo movieInfo) {
-		session.save(movieInfo);
-		return movieInfo;
+	public Integer saveMovieInfo(MovieInfo movieInfo) {
+		return (Integer) session.save(movieInfo);
 	}
 }

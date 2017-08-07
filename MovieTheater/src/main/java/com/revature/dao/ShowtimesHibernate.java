@@ -17,8 +17,6 @@ public class ShowtimesHibernate implements ShowtimesDao {
 
 	@Override
 	public List<Showtimes> getAllShow() {
-		String hql = "From com.revature.beans.Showtimes";
-		List<Showtimes> showList = (List<Showtimes>) session.createQuery(hql).list();
-		return showList;
+		return (List<Showtimes>) session.createCriteria(Showtimes.class).list();
 	}
 }

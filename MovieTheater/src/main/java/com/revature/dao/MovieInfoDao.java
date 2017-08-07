@@ -9,5 +9,5 @@ public interface MovieInfoDao extends HibernateSession {
 	public List<MovieInfo> getAllMovieInfo();
 
 	// This is for inserting new MovieInfo(Movie, Hall, Showtime)
-	public MovieInfo saveMovieInfo(MovieInfo movieInfo);
+	public Integer saveMovieInfo(MovieInfo movieInfo);
 }
