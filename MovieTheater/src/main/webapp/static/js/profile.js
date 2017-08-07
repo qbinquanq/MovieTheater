@@ -1,4 +1,5 @@
-function NavigationPanel($scope, $http){
+var profile = angular.module('HomePage',[]);
+profile.controller('NavigationPanel', function ($scope, $http){
 	'use strict';
 	$scope.LogOut = function(){
 		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
@@ -6,4 +7,4 @@ function NavigationPanel($scope, $http){
 			location.reload();
 		})
 	}
-}
+})

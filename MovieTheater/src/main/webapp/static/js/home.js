@@ -1,4 +1,4 @@
-var app = angular.module('mainApp',[]);
+var app = angular.module('HomePage',[]);
 	app.controller('fill',function($scope,$http){
 	$http.post("home/all").then(function(response){
 		console.log(response);
