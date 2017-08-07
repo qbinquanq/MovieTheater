@@ -23,7 +23,9 @@ public class HomeController {
 	
 	@Autowired
 	private MovieService ms;
+	@Autowired
 	private ShowtimesService ss;
+	@Autowired
 	private HallsService hll;
 	private ObjectMapper om = new ObjectMapper();
 	
