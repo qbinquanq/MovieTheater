@@ -4,6 +4,10 @@ function fill($scope, $http){
 		$scope.MOVIES=response.data;
 	});
 };
-
+function autoFill($scope, $http){
+	$http.post("info/movies").then(function(response){
+		console.log(response);
+	});
+}
 
 
