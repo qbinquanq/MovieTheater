@@ -3,12 +3,12 @@ package com.revature.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.Transactions;
 import com.revature.dao.TransactionsDao;
 
-@Component
+@Repository
 public class TransactionsServiceImpl implements TransactionsService{
 
 	@Autowired
