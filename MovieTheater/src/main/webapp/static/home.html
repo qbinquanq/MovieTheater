@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="HomePage">
 <head>
 <meta charset="ISO-8859-1">
 <title>Home</title>
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationPanel">
 	<div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -23,11 +23,11 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/user"> Main Page </a></li>
-              <li><a href="static/index.html"><i class="fa fa-sign-in"></i> Log Out</a></li>
+              <li><a type="button" ng-click="MainPage()">Main Page</a></li>
+              <li><a type="button" ng-click="LogOut()"><i class="fa fa-sign-in"></i>Log Out</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-        </div>
+    </div>
 </nav>
 
 <div id="main_page" class="jumbotron" >
@@ -46,12 +46,12 @@
 		<button id="search_button" class="btn btn-danger" type="button">Search</button>
 		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
 			<li id="search_box">
-				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Buy Ticket</a>
+				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" data-ng-controller="autoFill">Buy Ticket</a>
 			</li>
 		</ul>
 	
 </div>
-	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
 		<div class="modal-dialog" role="document">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModal">Add Movies</h5>
@@ -59,7 +59,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body" data-ng-controller="autoFill">
+			<div class="modal-body" >
 				<form action="user" method="post" data-ng-model="complete">
 					<h2>Checkout Movies</h2>
 					<div class="form-group">
@@ -126,6 +126,7 @@
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
 <script type="text/javascript" src="static/js/home.js"></script>
+<script type="text/javascript" src="static/js/profile.js"></script>
 
 </body>
 </html>

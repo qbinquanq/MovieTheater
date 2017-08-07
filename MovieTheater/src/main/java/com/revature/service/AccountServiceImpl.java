@@ -1,12 +1,12 @@
 package com.revature.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.Accounts;
 import com.revature.dao.AccountsDao;
 
-@Component
+@Repository
 public class AccountServiceImpl implements AccountService {
 
 	@Autowired
