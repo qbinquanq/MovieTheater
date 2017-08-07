@@ -24,7 +24,8 @@ public class AccountsHibernate implements AccountsDao {
 	}
 
 	@Override
-	public void saveUser(Accounts account) {
-		session.save(account);
+	public Integer saveUser(Accounts account) {
+		Integer acc = (Integer) session.save(account);
+		return acc;
 	}
 }
