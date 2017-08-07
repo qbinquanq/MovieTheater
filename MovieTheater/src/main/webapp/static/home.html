@@ -23,7 +23,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="static/search"><i class="glyphicon glyphicon-home"></i> Main Page </a></li>
+              <li><a href="/user"> Main Page </a></li>
               <li><a href="static/index.html"><i class="fa fa-sign-in"></i> Log Out</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -46,14 +46,60 @@
 		<button id="search_button" class="btn btn-danger" type="button">Search</button>
 		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
 			<li id="search_box">
-				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <button class="btn btn-primary">Buy Ticket</button>
+				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Buy Ticket</a>
 			</li>
 		</ul>
-        
-		
+	
 </div>
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModal">Add Movies</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body" data-ng-controller="autoFill">
+				<form action="user" method="post" data-ng-model="complete">
+					<h2>Checkout Movies</h2>
+					<div class="form-group">
+						<label for="type">Title
+							<input type="text">
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="type">Release Date
+							<input type="text">
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="type">Genre
+							<input type="text">
+						</label>
+						<label for="type">Halls
+							<select>
+								<option value="Small">Small</option>
+							</select>
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="type">Length
+							<input type="text">
+						</label>
+						<label for="type">Showtime
+							<select>
+								<option value="Early">Early</option>
+							</select>
+						</label>
+					</div>
+					<button  id="getReq" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
+				 </form>
+			</div>
+				
+			</div>
+		</div>
+	</div>
 
-</div>
 	<div id="show" class="jumbotron">
 		<div class="container">
 			<div class="row">
@@ -76,10 +122,10 @@
 <footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
 </div>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
 <script type="text/javascript" src="static/js/home.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
 </body>
 </html>

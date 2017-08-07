@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -39,7 +40,7 @@ public class MovieController {
 	}
 	@RequestMapping(value="/register", method=RequestMethod.POST)
 	@ResponseBody
-	public HttpStatus addAccount(String account) throws JsonParseException, JsonMappingException, IOException{
+	public ResponseEntity addAccount(String account) throws JsonParseException, JsonMappingException, IOException{
 		System.out.println(account);
 		Accounts accounts = om.readValue(account, Accounts.class);
 		System.out.println(accounts);
@@ -50,10 +51,10 @@ public class MovieController {
 		//return "redirect:/index";
 		if(acc == null){
 			//return "Your username is not valid, please choose another one";
-			return HttpStatus.BAD_REQUEST;
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
 		}
 		//return "Congratulation! You successfully created a new account";
-		return HttpStatus.OK;
+		return ResponseEntity.status(HttpStatus.OK).body(null);
 	}
 	
 	
