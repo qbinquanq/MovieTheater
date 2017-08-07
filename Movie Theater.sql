@@ -373,7 +373,7 @@ insert into theater.MovieInfo(movieId, hallId, showId) values(1, 1, 32);
 insert into theater.MovieInfo(movieId, hallId, showId) values(1, 2, 32);
 insert into theater.MovieInfo(movieId, hallId, showId) values(1, 3, 32);
 
-insert into theater.Employee(userId) values(1);
+insert into theater.Employee(userId, reportsTo) values(1, 0);
 insert into theater.Employee(userId, reportsTo) values(2,1);
 insert into theater.Employee(userId, reportsTo) values(3,1);
 insert into theater.Employee(userId, reportsTo) values(4,1);

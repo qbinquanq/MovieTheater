@@ -7,5 +7,5 @@ public interface AccountsDao extends HibernateSession{
 	Accounts login(String username, String password);
 
 	//This is to create a new user account
-	void saveUser(Accounts accounts);
+	Integer saveUser(Accounts accounts);
 }

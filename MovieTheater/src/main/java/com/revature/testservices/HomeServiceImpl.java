@@ -1,14 +1,14 @@
-package testservices;
+package com.revature.testservices;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.Movies;
 import com.revature.dao.MovieDao;
 
-@Component
+@Repository
 public class HomeServiceImpl implements HomeService{
 
 	@Autowired 
@@ -23,6 +23,6 @@ public class HomeServiceImpl implements HomeService{
 	public void setMd(MovieDao md) {
 		this.md = md;
 	}
-
+	
 	
 }
