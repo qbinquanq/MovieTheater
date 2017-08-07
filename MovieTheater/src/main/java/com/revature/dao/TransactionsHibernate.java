@@ -30,19 +30,16 @@ public class TransactionsHibernate implements TransactionsDao {
 	}
 
 	@Override
-	public Transactions saveTransaction(Transactions transaction, int amt) {
-		for (int i = 0; i < amt; i++) {
+	public Integer saveTransaction(Transactions transaction, int amt) {
+		for (int i = 0; i < amt-1; i++) {
 			session.save(transaction);
 		}
-		return transaction;
+		return (Integer) session.save(transaction);
 	}
 
 	@Override
 	public List<Transactions> getAllTransactions() {
-		String hql = "From com.revature.beans.Transactions";
-		List<Transactions> allTrans = (List<Transactions>) session.createQuery(hql).list();
-		checkAuto(allTrans);
-		return allTrans;
+		return (List<Transactions>) session.createCriteria(Transactions.class).list();
 	}
 
 	@Override
