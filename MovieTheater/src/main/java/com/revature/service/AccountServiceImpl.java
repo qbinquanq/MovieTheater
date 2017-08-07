@@ -21,8 +21,9 @@ public class AccountServiceImpl implements AccountService{
 	}
 	
 	@Override
-	public void saveUser(Accounts account) {
-		ad.saveUser(account);
+	public Integer saveUser(Accounts account) {
+		Integer i = ad.saveUser(account);
+		return i;
 	}
 	
 

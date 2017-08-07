@@ -1,4 +1,5 @@
 function newRegistration($scope, $http){
+	"use strict";
 	$scope.newRegis={};
 	$scope.submitRegistration = function(newRegis, $event){
 		console.log(newRegis);
@@ -8,7 +9,7 @@ function newRegistration($scope, $http){
 	}
 }
 
-function newLoginService($scope, $http){
+/*function newLoginService($scope, $http){
 	$scope.newLogin={};
 	$scope.login = function(newLogin, $event){
 		console.log(newLogin);
@@ -21,4 +22,4 @@ function newLoginService($scope, $http){
         })
 		
 	}
-}
+}*/

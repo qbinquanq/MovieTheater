@@ -9,16 +9,17 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Accounts;
-import com.revature.services.LoginService;
+import com.revature.service.LoginService;
 
 @Controller
-public class TestLogin {
+public class LoginController {
 	@Autowired
 	LoginService ls;
 	ObjectMapper om = new ObjectMapper();
@@ -40,29 +41,43 @@ public class TestLogin {
 			return "redirect:home";
 		}
 		//System.out.println(ls.login("rmiller", "mypassword"));
-		return "static/index.html";
+		return "redirect:index.html";
 	}
 	
 	@RequestMapping(value="/loginthrough",method=RequestMethod.POST)
-	@ResponseStatus(HttpStatus.OK)
-	public String login(String login, HttpSession session) throws JsonParseException, JsonMappingException, IOException
+	@ResponseBody
+	public HttpStatus login(String login, HttpSession session) throws JsonParseException, JsonMappingException, IOException
 	{	
 		
 		Accounts accounts = om.readValue(login, Accounts.class);
 		System.out.println("username :" + accounts.getUname());
 		System.out.println("password :"+ accounts.getPword());
 		Accounts  acc = ls.login(accounts.getUname(), accounts.getPword());
-		if(acc==null)
-			return "redirect:index";
+		if(acc==null){
+			System.out.println("loginthrough page is null");
+			//throw new ResourceNotFoundException(); 
+			//return "static/index.html";
+			//return loginFail();
+			return HttpStatus.BAD_REQUEST;
+		}
 		else
 		{
-			System.out.println("login is good");
+			System.out.println("login goes through");
 			session.setAttribute("user", acc);
-			return "redirect:home";
+			//return "redirect:home";
+			//return loginSuccess();
+			//return "static/home.html";
+			return HttpStatus.OK;
 		}
 	}
-
 	
-	
+}
+@ResponseStatus(value = HttpStatus.NOT_FOUND)
+class ResourceNotFoundException extends RuntimeException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6405897690634892881L;
+    
 }
