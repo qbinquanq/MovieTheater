@@ -1,12 +1,12 @@
 package com.revature.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.revature.beans.WalkIn;
 import com.revature.dao.WalkInDao;
 
-@Component
+@Repository
 public class WalkInServiceImpl implements WalkInService{
 
 	@Autowired
