@@ -46,12 +46,12 @@
 		<button id="search_button" class="btn btn-danger" type="button">Search</button>
 		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
 			<li id="search_box">
-				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal">Buy Ticket</a>
+				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" data-ng-controller="autoFill">Buy Ticket</a>
 			</li>
 		</ul>
 	
 </div>
-	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
 		<div class="modal-dialog" role="document">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModal">Add Movies</h5>
@@ -59,7 +59,7 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body" data-ng-controller="autoFill">
+			<div class="modal-body" >
 				<form action="user" method="post" data-ng-model="complete">
 					<h2>Checkout Movies</h2>
 					<div class="form-group">
