@@ -32,9 +32,23 @@ public class HomeController {
 	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
 	public String getSearchPage(HttpSession session)
 	{
-		return "static/home.html";
+		if(session.getAttribute("user")!=null)
+		{
+				return "static/home.html";
+			}
+			//System.out.println(ls.login("rmiller", "mypassword"));
+			return "redirect:index";
 	}
-
+	@RequestMapping(value={"/home"}, method=RequestMethod.POST)
+	public String navigateToHomePage(HttpSession session)
+	{
+		if(session.getAttribute("user")!=null)
+		{
+				return "redirect:home";
+			}
+			//System.out.println(ls.login("rmiller", "mypassword"));
+			return "static/index.html";
+	}
 	
 	@RequestMapping(value="home/all", method=RequestMethod.POST)
 	@ResponseBody
