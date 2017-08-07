@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.MovieInfo;
-import com.revature.testservices.UserService;
+import com.revature.service.MovieInfoService;
 
 @Controller
 public class UserController {
 
 	@Autowired
-	private UserService us;
+	private MovieInfoService us;
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/user"}, method=RequestMethod.GET)
@@ -37,13 +37,15 @@ public class UserController {
 			return om.writeValueAsString(mi);
 	}
 
-	public UserService getUs() {
+	public MovieInfoService getUs() {
 		return us;
 	}
 
-	public void setUs(UserService us) {
+	public void setUs(MovieInfoService us) {
 		this.us = us;
 	}
+
+
 	
 	
 }

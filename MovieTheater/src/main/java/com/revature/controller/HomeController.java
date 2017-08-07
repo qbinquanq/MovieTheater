@@ -12,18 +12,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.revature.beans.Halls;
 import com.revature.beans.Movies;
 import com.revature.beans.Showtimes;
 import com.revature.service.HallsService;
+import com.revature.service.MovieService;
 import com.revature.service.ShowtimesService;
-import com.revature.testservices.HomeService;
 
 @Controller
 public class HomeController {
 	
 	@Autowired
-	private HomeService hs;
+	private MovieService ms;
 	private ShowtimesService ss;
 	private HallsService hll;
 	private ObjectMapper om = new ObjectMapper();
@@ -39,7 +38,7 @@ public class HomeController {
 	@ResponseBody
 	public String getAll(HttpSession session) throws JsonProcessingException
 	{
-		List<Movies> m = hs.getAllMovies();
+		List<Movies> m = ms.getAllMovies();
 		System.out.println(om.writeValueAsString(m));
 			return om.writeValueAsString(m);
 	}
@@ -52,17 +51,6 @@ public class HomeController {
 		System.out.println(om.writeValueAsString(s));
 		return om.writeValueAsString(s);
 	}
-
-	public HomeService getHs() {
-		return hs;
-	}
-
-
-	public void setHs(HomeService hs) {
-		this.hs = hs;
-	}
-
-
 
 
 	public ShowtimesService getSs() {
