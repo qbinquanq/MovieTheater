@@ -1,4 +1,4 @@
-var profile = angular.module('HomePage',[]);
+var profile = angular.module('HomePage');
 profile.controller('NavigationPanel', function ($scope, $http){
 	'use strict';
 	$scope.LogOut = function(){
