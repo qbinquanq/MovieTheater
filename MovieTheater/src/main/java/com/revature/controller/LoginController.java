@@ -32,17 +32,13 @@ public class LoginController {
 		this.ls = ls;
 	}
 
-	//This maps to /login/hi
-	//@RequestMapping(value="hi")
-	//public void test(){System.out.println("hi");}
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String goLogin(HttpSession session){
 		if(session.getAttribute("user")!=null)
 	{
 			return "redirect:home";
 		}
-		//System.out.println(ls.login("rmiller", "mypassword"));
-		return "redirect:index.html";
+		return "redirect:index";
 	}
 	
 	@RequestMapping(value="/loginthrough",method=RequestMethod.POST)
@@ -56,30 +52,15 @@ public class LoginController {
 		Accounts  acc = ls.login(accounts.getUname(), accounts.getPword());
 		if(acc==null){
 			System.out.println("loginthrough page is null");
-			//throw new ResourceNotFoundException(); 
-			//return "static/index.html";
-			//return loginFail();
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
-			
 		}
 		else
 		{
 			System.out.println("login goes through");
 			session.setAttribute("user", acc);
-			//return "redirect:home";
-			//return loginSuccess();
-			//return "static/home.html";
 			return ResponseEntity.status(HttpStatus.OK).body(null);
 		}
 	}
 	
 }
-@ResponseStatus(value = HttpStatus.NOT_FOUND)
-class ResourceNotFoundException extends RuntimeException {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 6405897690634892881L;
-    
-}
