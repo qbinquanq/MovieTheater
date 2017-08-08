@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class LogoutController {
 	
 	@RequestMapping(value="/logout", method=RequestMethod.GET)
-	public void logout(HttpSession session){
+	public String logout(HttpSession session){
+		System.out.println("log out controller");
+		
 		session.invalidate();
+		return "redirect:index";
 	}
 }
