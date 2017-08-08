@@ -6,5 +6,21 @@ profile.controller('NavigationPanel', function ($scope, $http){
 		$http.get('logout').then(function(response){
 			location.reload();
 		})
+	};
+	$scope.MainPage=function(){
+		$http.get('mainpage').then(function(response){
+			console.log("mainpage");
+			console.log(response.data)
+			location.href = response.data;
+		})
 	}
-})
+});
+
+/*profile.controller('NavigationPanel', function ($scope, $http){
+	'use strict';
+	$scope.MainPage=function(){
+		#http.get('mainpage').then(function(response){
+			location.reload();
+		})
+	}
+})*/
