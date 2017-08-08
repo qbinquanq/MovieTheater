@@ -20,10 +20,10 @@ public class MainPageController {
 			Accounts acc = (Accounts) session.getAttribute("user");
 			System.out.println(acc);
 			if(acc.getUserId() > 4)
-				return "user.html";
+				return "user";
 			else if(acc.getUserId() == 1)
-				return "manager.html";
-			return "employee.html";
+				return "manager";
+			return "employee";
 		}
 		//System.out.println(ls.login("rmiller", "mypassword"));
 		return "redirect:index";
