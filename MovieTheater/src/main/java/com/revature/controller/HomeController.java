@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.beans.Halls;
 import com.revature.beans.Movies;
 import com.revature.beans.Showtimes;
 import com.revature.service.HallsService;
@@ -68,7 +69,16 @@ public class HomeController {
 		return om.writeValueAsString(s);
 	}
 
+	@RequestMapping(value="info/halls",method=RequestMethod.POST)
+	@ResponseBody
+	public String displayHall(HttpSession session) throws JsonProcessingException
+	{
+		List<Halls> h = hll.getHalls();
+		System.out.println(om.writeValueAsString(h));
+		return om.writeValueAsString(h);
+	}
 
+	
 	public ShowtimesService getSs() {
 		return ss;
 	}
