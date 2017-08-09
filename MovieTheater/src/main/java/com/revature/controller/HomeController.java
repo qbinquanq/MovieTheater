@@ -4,7 +4,10 @@ import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
+import org.hibernate.Transaction;
+import org.omg.IOP.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +18,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Halls;
 import com.revature.beans.Movies;
 import com.revature.beans.Showtimes;
+import com.revature.beans.Transactions;
 import com.revature.service.HallsService;
 import com.revature.service.MovieService;
 import com.revature.service.ShowtimesService;
@@ -28,6 +32,8 @@ public class HomeController {
 	private ShowtimesService ss;
 	@Autowired
 	private HallsService hll;
+	@Autowired
+	private TransactionService ts;
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
@@ -79,6 +85,12 @@ public class HomeController {
 	}
 
 	
+	public TransactionService getTs() {
+		return ts;
+	}
+	public void setTs(TransactionService ts) {
+		this.ts = ts;
+	}
 	public ShowtimesService getSs() {
 		return ss;
 	}

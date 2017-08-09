@@ -10,9 +10,8 @@ var profile = angular.module('HomePage',[]);
 
 	profile.controller('filling',function($scope,$http){
 		$http.post("home/all").then(function(response){
-			$scope.fillForm = function(){
-				console.log(response);
-				$scope.myVar= response.data.mTitle;
+			$scope.fillForm = function(index){
+				alert(index)
 			}
 			
 		});
