@@ -247,3 +247,13 @@ input[type="button"]:hover{
 #buyTicket{
 	backgrounf-color:white;
 }
+
+
+/* manager page */
+
+#manager {
+	background-image:url('http://images.all-free-download.com/images/graphiclarge/gorgeous_stage_background_05_hd_pictures_169912.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+
