@@ -45,12 +45,11 @@
 		<input id="search_bar" type="search" placeholder="Search...." class="form-control" data-ng-model="getMovies">
 		<button id="search_button" class="btn btn-danger" type="button">Search</button>
 		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
-			<li id="search_box">
-				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" data-ng-controller="autoFill">Buy Ticket</a>
+			<li id="search_box" ng-init="count=0">
+				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" ng-click="fillForm(x)" >Buy Ticket</a>
 			</li>
 		</ul>
 	
-</div>
 	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
 		<div class="modal-dialog" role="document">
 			<div class="modal-header">
@@ -59,46 +58,49 @@
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
-			<div class="modal-body" >
-				<form action="user" method="post" data-ng-model="complete">
+			<div class="modal-body">
+				<form id="buyTicket" action="user" method="post" >
 					<h2>Checkout Movies</h2>
-					<div class="form-group">
+					<div class="form-group" >
 						<label for="type">Title
-							<input type="text">
+							<input type="text" ng-model="mTitle"/>
 						</label>
 					</div>
 					<div class="form-group">
 						<label for="type">Release Date
-							<input type="text">
+							<input type="text" ng-model="releaseDate"/>
 						</label>
 					</div>
 					<div class="form-group">
 						<label for="type">Genre
-							<input type="text">
+							<input type="text" ng-model="genre"/>
 						</label>
 						<label for="type">Halls
-							<select>
-								<option value="Small">Small</option>
+							<select ng-model="selectedHall" ng-controller="autoFillHalls">
+								<option value="" ng-repeat="h in HALLS" values="{{h.hCapacity}} {{h.hCost}}">{{"Hall Size: "+h.hCapacity}} {{h.hCost | currency}}</option>
 							</select>
 						</label>
 					</div>
 					<div class="form-group">
 						<label for="type">Length
-							<input type="text">
+							<input type="text" ng-model="mLength"/>
 						</label>
 						<label for="type">Showtime
-							<select>
-								<option value="Early">Early</option>
+							<select id="times" ng-model="selectedData" ng-controller="autoFill">
+								<option value="" ng-repeat="x in SHOWTIMES" value="{{x.showtime}}">{{"Date " + x.showtime}}</option>
 							</select>
 						</label>
 					</div>
-					<button  id="getReq" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
+					<button  id="getReq" class="btn btn-default btn-success btn-block"><span class="fa fa-power-off"></span> Purchase Ticket</button>
 				 </form>
 			</div>
 				
 			</div>
 		</div>
 	</div>
+	
+</div>
+	
 
 	<div id="show" class="jumbotron">
 		<div class="container">

@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
+import org.omg.IOP.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,12 +21,16 @@ public class UserController {
 
 	@Autowired
 	private MovieInfoService us;
+
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/user"}, method=RequestMethod.GET)
 	public String getHomepage(HttpSession session)
 	{
-		return "static/user.html";
+		if(session.getAttribute("user")!=null){
+            return "static/user.html";
+        }
+        return "redirect:index";
 	}
 	
 	@RequestMapping(value="movie/all", method=RequestMethod.POST)
@@ -36,6 +41,8 @@ public class UserController {
 		System.out.println(om.writeValueAsString(mi));
 			return om.writeValueAsString(mi);
 	}
+	
+	@RequestMapping(value="transactions/all",method=RequestMethod.GET)
 
 	public MovieInfoService getUs() {
 		return us;
@@ -44,8 +51,5 @@ public class UserController {
 	public void setUs(MovieInfoService us) {
 		this.us = us;
 	}
-
-
-	
 	
 }
