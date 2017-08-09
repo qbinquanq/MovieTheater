@@ -240,3 +240,10 @@ input[type="button"]:hover{
 .dropdown-toggle{
 	color:white;
 }
+/*Select Design*/
+#times{
+	color:black;
+}
+#buyTicket{
+	backgrounf-color:white;
+}
