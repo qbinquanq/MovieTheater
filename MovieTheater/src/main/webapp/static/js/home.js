@@ -35,6 +35,7 @@ var profile = angular.module('HomePage',[]);
 		
 	});
 	*/
+	
 	profile.controller('autoFill',function($scope,$http){
 		$http.post("info/movies").then(function(response){
 				$scope.SHOWTIMES=response.data;
@@ -49,6 +50,9 @@ var profile = angular.module('HomePage',[]);
 	});
 	
 
+	profile.controller('transAmt/save',function($scope,$http){
+		
+	});
 /*	profile.controller('autoFill',function($scope){
 		$scope.updateVar = function (event){
 			$scope.getMovies = angular.element(event.target).text();

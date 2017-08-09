@@ -1,13 +1,11 @@
 package com.revature.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
-import org.hibernate.Transaction;
-import org.omg.IOP.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,10 +16,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Halls;
 import com.revature.beans.Movies;
 import com.revature.beans.Showtimes;
-import com.revature.beans.Transactions;
 import com.revature.service.HallsService;
 import com.revature.service.MovieService;
 import com.revature.service.ShowtimesService;
+import com.revature.service.TransactionsService;
+import com.revature.testholder.TransAmt;
 
 @Controller
 public class HomeController {
@@ -33,7 +32,8 @@ public class HomeController {
 	@Autowired
 	private HallsService hll;
 	@Autowired
-	private TransactionService ts;
+	private TransactionsService ts;
+
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
@@ -84,11 +84,21 @@ public class HomeController {
 		return om.writeValueAsString(h);
 	}
 
+	@RequestMapping(value="transAmt/save",method=RequestMethod.POST)
+	@ResponseBody
+	public String displayTrans(String transactions, HttpSession session) throws JsonProcessingException, IOException
+
+	{
+		TransAmt transamt = (TransAmt)om.readValue(transactions, TransAmt.class);
+		Integer acc = ts.saveTransaction(transamt.getTrans(), transamt.getAmt());
+		return String.valueOf(acc);
+	}
 	
-	public TransactionService getTs() {
+	
+	public TransactionsService getTs() {
 		return ts;
 	}
-	public void setTs(TransactionService ts) {
+	public void setTs(TransactionsService ts) {
 		this.ts = ts;
 	}
 	public ShowtimesService getSs() {
