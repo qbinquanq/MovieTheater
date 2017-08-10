@@ -151,7 +151,6 @@ before insert on theater.Transactions
 for each row
 begin 
     select transId_pk.nextVal into :new.transId from dual;
-    update theater.MovieInfo set onlineTot=(onlineTot+1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
 end;
 /
 
@@ -160,15 +159,6 @@ before insert on theater.WalkIn
 for each row
 begin 
     select walkId_pk.nextVal into :new.walkId from dual;
-    update theater.MovieInfo set walkTot=(walkTot+(select walkAmount from theater.WalkIn where :old.walkId = :old.walkId)) where (select infoId from theater.WalkIn where :old.walkId = :old.walkid)=infoId;
-end;
-/
-
-create or replace trigger theater.trans_info_trig
-after delete on theater.Transactions
-for each row
-begin
-    update theater.MovieInfo set onlineTot=(onlineTot-1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
 end;
 /
 
