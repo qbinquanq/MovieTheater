@@ -1,25 +1,35 @@
 package com.revature.controller;
 
+import java.io.IOException;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.fasterxml.jackson.databind.util.JSONWrappedObject;
+import com.revature.beans.Accounts;
 import com.revature.beans.Halls;
 import com.revature.beans.MovieInfo;
 import com.revature.beans.Movies;
 import com.revature.beans.Showtimes;
+import com.revature.beans.Transactions;
 import com.revature.service.HallsService;
 import com.revature.service.MovieInfoService;
 import com.revature.service.MovieService;
 import com.revature.service.ShowtimesService;
+import com.revature.service.TransactionsService;
 
 @Controller
 public class HomeController {
@@ -33,6 +43,9 @@ public class HomeController {
 	
 	@Autowired
 	private MovieInfoService mi;
+	
+	@Autowired
+	private TransactionsService ts;
 	private ObjectMapper om = new ObjectMapper();
 	
 	@RequestMapping(value={"/home"}, method=RequestMethod.GET)
@@ -93,6 +106,25 @@ public class HomeController {
         return om.writeValueAsString(listMovie);
     }
 	
+	@RequestMapping(value="/buytickets/{infoId}", method=RequestMethod.POST)
+	@ResponseBody
+	public String purchaseTicket(@PathVariable Integer infoId,HttpSession session) throws JsonParseException, JsonMappingException, IOException{
+		//MovieInfo movieInfo = om.readValue(buyTicket, MovieInfo.class);
+	//	System.out.println(movieInfo.getInfoId()+" "+movieInfo.getHall()+" "+movieInfo.getMovie());
+		//System.out.println(infoId + " this is info Id");
+		MovieInfo movieinfo = mi.getInfoById(infoId);
+		Accounts accounts = (Accounts) session.getAttribute("user");
+		System.out.println(infoId + "   tickets");
+		System.out.println("movieInfo "+movieinfo.getShowtime());
+		Transactions transaction = new Transactions();
+		transaction.setAccount(accounts);
+		transaction.setMovieInfo(movieinfo);
+		transaction.setRequestRet(0);
+		ts.saveTransaction(transaction, 1);
+		movieinfo.setOnlineTot((movieinfo.getOnlineTot()+1));
+		mi.updateInfo(movieinfo);
+		return "static/home.html";
+	}
 	
 	public ShowtimesService getSs() {
 		return ss;
