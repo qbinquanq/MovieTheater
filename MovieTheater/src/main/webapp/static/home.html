@@ -59,7 +59,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				<form id="buyTicket" action="user" method="post" >
+				<form id="buyTicket">
 					<h2>Checkout Movies</h2>
 					<div class="form-group" >
 						<label for="type">Title
@@ -75,23 +75,27 @@
 						<label for="type">Genre
 							<input type="text" ng-model="genre"/>
 						</label>
-						<label for="type">Halls
-							<select ng-model="selectedHall" ng-controller="autoFillHalls">
-								<option value="" ng-repeat="h in HALLS" values="{{h.hCapacity}} {{h.hCost}}">{{"Hall Size: "+h.hCapacity}} {{h.hCost | currency}}</option>
-							</select>
-						</label>
+						
 					</div>
 					<div class="form-group">
 						<label for="type">Length
 							<input type="text" ng-model="mLength"/>
 						</label>
-						<label for="type">Showtime
-							<select id="times" ng-model="selectedData" ng-controller="autoFill">
-								<option value="" ng-repeat="x in SHOWTIMES" value="{{x.showtime}}">{{"Date " + x.showtime}}</option>
+						<!-- <label for="type">Showtime
+							<select id="times" ng-model="selectedData" ng-change="changeShowtime()">
+								<option></option>
+								<option ng-repeat="x in SHOWTIMES" value="{{x.showtime}}">{{"Date " + x.showtime}}</option>
+							</select>
+						</label> -->
+					</div>
+					<div class="form-group">
+						<label for="type">Select Your Schedule
+							<select ng-model="selectedHall" ng-change="changeHall()">
+								<option ng-repeat="h in movieHall" values="{{h.movieId}} {{h.hCapacity}} {{h.hCost}} {{h.showtime}}">{{"Hall Size: "+h.hCapacity}}, {{h.hCost | currency}}, {{"Date " + h.showtime}}</option>
 							</select>
 						</label>
 					</div>
-					<button  id="getReq" class="btn btn-default btn-success btn-block"><span class="fa fa-power-off"></span> Purchase Ticket</button>
+					<button ng-click="getReq()" class="btn btn-default btn-success btn-block"><span class="fa fa-power-off"></span> Purchase Ticket</button>
 				 </form>
 			</div>
 				
