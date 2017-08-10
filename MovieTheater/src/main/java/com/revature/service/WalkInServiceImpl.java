@@ -1,5 +1,7 @@
 package com.revature.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -23,5 +25,10 @@ public class WalkInServiceImpl implements WalkInService{
 	@Override
 	public Integer saveWalkIn(WalkIn walk) {
 		return wid.saveWalkIn(walk);
+	}
+
+	@Override
+	public List<WalkIn> getWalkIn() {
+		return wid.getWalkIn();
 	}
 }

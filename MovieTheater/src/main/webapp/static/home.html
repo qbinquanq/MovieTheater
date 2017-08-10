@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="HomePage">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="static/css/index.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavigationPanel">
+	<div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><strong>Movie Theate</strong>r</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a type="button" ng-click="MainPage()">Main Page</a></li>
+              <li><a type="button" ng-click="LogOut()"><i class="fa fa-sign-in"></i>Log Out</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div id="main_page" class="jumbotron" >
+	<h2 id="home_text"> Welcome to Our Company</h2>
+					<p> With this application Users can make accounts and login to purchase movie tickets for future dates, 
+					and can also ask for a reimbursement as long as it is two days before the date they bought the ticket(s) for.</p>
+					
+					<p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.</p>
+					
+					<p> ut aut reiciendis voluptatibus maiores alias consequatur aut </p>
+
+<div data-ng-controller="fill" id="search" class="input-group input-group-lg" >
+		
+		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
+		<input id="search_bar" type="search" placeholder="Search...." class="form-control" data-ng-model="getMovies">
+		<button id="search_button" class="btn btn-danger" type="button">Search</button>
+		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
+			<li id="search_box" ng-init="count=0">
+				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" ng-click="fillForm(x)" >Buy Ticket</a>
+			</li>
+		</ul>
+	
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModal">Add Movies</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form id="buyTicket">
+					<h2>Checkout Movies</h2>
+					<div class="form-group" >
+						<label for="type">Title
+							<input type="text" ng-model="mTitle"/>
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="type">Release Date
+							<input type="text" ng-model="releaseDate"/>
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="type">Genre
+							<input type="text" ng-model="genre"/>
+						</label>
+						
+					</div>
+					<div class="form-group">
+						<label for="type">Length
+							<input type="text" ng-model="mLength"/>
+						</label>
+						<!-- <label for="type">Showtime
+							<select id="times" ng-model="selectedData" ng-change="changeShowtime()">
+								<option></option>
+								<option ng-repeat="x in SHOWTIMES" value="{{x.showtime}}">{{"Date " + x.showtime}}</option>
+							</select>
+						</label> -->
+					</div>
+					<div class="form-group">
+						<label for="type">Select Your Schedule
+							<select ng-model="selectedHall" ng-change="changeHall()">
+								<option ng-repeat="h in movieHall" values="{{h.movieId}} {{h.hCapacity}} {{h.hCost}} {{h.showtime}}">{{"Hall Size: "+h.hCapacity}}, {{h.hCost | currency}}, {{"Date " + h.showtime}}</option>
+							</select>
+						</label>
+					</div>
+					<button ng-click="getReq()" class="btn btn-default btn-success btn-block"><span class="fa fa-power-off"></span> Purchase Ticket</button>
+				 </form>
+			</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+	
+
+	<div id="show" class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-camera-retro fa-5x"></i>
+					<p>No more of a hassle to buy tickets, and the movies you love will always be played</p>
+				</div>
+				<div class="col-md-4">
+				<i class="fa fa-picture-o fa-5x" aria-hidden="true"></i>
+					<p>Watch movies and have fun with friends.</p>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-file-video-o fa-5x" aria-hidden="true"></i>
+					<p>Always find movies with times that work for you</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="footer">
+<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.js"></script>
+<script type="text/javascript" src="static/js/home.js"></script>
+<script type="text/javascript" src="static/js/profile.js"></script>
+
+</body>
+</html>
