@@ -31,4 +31,9 @@ public class MovieInfoServiceImpl implements MovieInfoService {
 	public Integer saveMovieInfo(MovieInfo movieInfo) {
 		return mid.saveMovieInfo(movieInfo);
 	}
+
+	@Override
+	public MovieInfo getInfoById(int infoId) {
+		return mid.getInfoById(infoId);
+	}
 }
