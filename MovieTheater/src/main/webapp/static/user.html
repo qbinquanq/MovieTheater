@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="User">
 <head>
 <meta charset="ISO-8859-1">
 
@@ -48,10 +48,23 @@
 
 <section>
 	 <ul style="list-style-type:none">
-		<li class="dropdown"> <i class="fa fa-camera fa-lg" aria-hidden="true"></i> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Tickets of Movies you have purchased <span class="caret"></span></a>  
-			<ul class="dropdown-menu">
-				<li> <i class="fa fa-camera-retro fa-lg"></i> Movie Title <i class="fa fa-clock-o fa-lg"></i>Time <i class="fa fa-line-chart fa-lg"></i>Length </li>
-			</ul>
+		<li class="dropdown"> <i class="fa fa-camera fa-lg" aria-hidden="true"></i> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" ng-controller="userFil">Tickets of Movies you have purchased <span class="caret"></span></a>  
+			<table class="dropdown-menu" ng-repeat="x in TRANSACTIONS">
+			<tr>
+				<th>Movie Tile</th>
+				<th>Hall</th>
+				<th>Showtime</th>
+				<th>Cost</th>
+				<th>Refund/Delete</th>
+			</tr>
+			<tr>
+				<td ng-model="tile"><i class="fa fa-camera-retro fa-lg"></i>{{x.TRANSACTIONS.movie.mTitle}}</td>
+				<td ng-model="hall"></td>
+				<td ng-model="cost"></td>
+				<td ng-model="showtime"></td>
+			</tr>
+				<li> Time <i class="fa fa-line-chart fa-lg"></i>Length </li>
+			</table>
 		</li>
 	</ul>
 	
@@ -60,9 +73,11 @@
 <div class="footer">
 	<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 <script type="text/javascript" src="static/js/jquery-1.12.3.js" ></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
-<script type="text/javascript" src="static/js/profile.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script type="text/javascript" src="static/js/user.js"></script>
+
 </body>
 </html>

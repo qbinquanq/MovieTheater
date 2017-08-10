@@ -48,11 +48,8 @@ var profile = angular.module('HomePage',[]);
 								}
 								else{
 								$http.post("buytickets/"+infoId).then(function onSuccess(response){
-									alert("You purchased the ticket successfully. You can check it in your profile now.")
+									alert("You purchased the ticket successfully. You can check it in your profile now.");
 									location.reload();
-								},function onError(response){
-									alert("You can't purchase this ticket now.")
-									console.log("failed");
 								});
 								}
 								break;
