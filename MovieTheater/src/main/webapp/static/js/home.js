@@ -1,19 +1,24 @@
 var profile = angular.module('HomePage',[]);
 	profile.controller('fill',function($scope,$http){
-	$http.post("home/all").then(function(response){
+	$http.post("movieinfo/all").then(function(response){
 		console.log(response);
-		$scope.MOVIES=response.data;
-		$scope.fillForm = function(x){
+		$scope.MOVIEINFO=response.data;
+/*		$scope.fillForm = function(){
 			console.log(x);
+			$http.post("transAmt/save").then(function(response){
+				
+			});
 			//console.log($scope.MOVIES[0].mTitle);
 			$scope.mTitle = x.mTitle;
 			$scope.releaseDate = x.releaseDate;
 			$scope.genre = x.genre;
 			$scope.mLength = x.mLength;
-		}
+		}*/
 
 	});
 });
+
+
 
 
 	/*profile.controller('filling',function($scope,$http){
@@ -36,7 +41,7 @@ var profile = angular.module('HomePage',[]);
 	});
 	*/
 	
-	profile.controller('autoFill',function($scope,$http){
+/*	profile.controller('autoFill',function($scope,$http){
 		$http.post("info/movies").then(function(response){
 				$scope.SHOWTIMES=response.data;
 		});
@@ -47,12 +52,9 @@ var profile = angular.module('HomePage',[]);
 			console.log(response);
 			$scope.HALLS=response.data;
 		});
-	});
+	});*/
 	
 
-	profile.controller('transAmt/save',function($scope,$http){
-		
-	});
 /*	profile.controller('autoFill',function($scope){
 		$scope.updateVar = function (event){
 			$scope.getMovies = angular.element(event.target).text();

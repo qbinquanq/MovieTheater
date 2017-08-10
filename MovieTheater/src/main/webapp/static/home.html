@@ -30,7 +30,7 @@
     </div>
 </nav>
 
-<div id="main_page" class="jumbotron" >
+<div id="main_page" class="jumbotron" ng-controller="saveTrans">
 	<h2 id="home_text"> Welcome to Our Company</h2>
 					<p> With this application Users can make accounts and login to purchase movie tickets for future dates, 
 					and can also ask for a reimbursement as long as it is two days before the date they bought the ticket(s) for.</p>
@@ -44,13 +44,15 @@
 		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
 		<input id="search_bar" type="search" placeholder="Search...." class="form-control" data-ng-model="getMovies">
 		<button id="search_button" class="btn btn-danger" type="button">Search</button>
-		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
-			<li id="search_box" ng-init="count=0">
-				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" ng-click="fillForm(x)" >Buy Ticket</a>
+		<ul ng-if="getMovies" ng-repeat="x in MOVIEINFO | filter:getMovies | orderBy: 'x.MOVIEINFO.movie.mTitle'" >
+			<li id="search_box" >
+				{{"Movie Tile: "+x.movie.mTitle}} {{"Length: "+ x.movie.mLength}} {{"Time: "+ x.movie.releaseDate}} 
+				{{"Hall: "+ x.hall.hCapacity}} {{"Hall: "+ x.hall.hCost  | currency}} {{"Showtime: "+ x.showtime.showtime}}
+				<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" ng-click="fillForm()" >Buy Ticket</a>
 			</li>
 		</ul>
 	
-	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
+<!-- 	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
 		<div class="modal-dialog" role="document">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModal">Add Movies</h5>
@@ -96,7 +98,7 @@
 			</div>
 				
 			</div>
-		</div>
+		</div> -->
 	</div>
 	
 </div>

@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Halls;
+import com.revature.beans.MovieInfo;
 import com.revature.beans.Movies;
 import com.revature.beans.Showtimes;
 import com.revature.service.HallsService;
+import com.revature.service.MovieInfoService;
 import com.revature.service.MovieService;
 import com.revature.service.ShowtimesService;
 import com.revature.service.TransactionsService;
@@ -33,6 +35,8 @@ public class HomeController {
 	private HallsService hll;
 	@Autowired
 	private TransactionsService ts;
+	@Autowired
+	private MovieInfoService mis;
 
 	private ObjectMapper om = new ObjectMapper();
 	
@@ -84,6 +88,15 @@ public class HomeController {
 		return om.writeValueAsString(h);
 	}
 
+	@RequestMapping(value="movieinfo/all",method=RequestMethod.POST)
+	@ResponseBody
+	public String displayInfo(HttpSession session) throws JsonProcessingException
+	{
+		List<MovieInfo> mi = mis.getAllMovieInfo();
+		System.out.println(om.writeValueAsString(mi));
+		return om.writeValueAsString(mi);
+	}
+	
 	@RequestMapping(value="transAmt/save",method=RequestMethod.POST)
 	@ResponseBody
 	public String displayTrans(String transactions, HttpSession session) throws JsonProcessingException, IOException
@@ -92,9 +105,17 @@ public class HomeController {
 		TransAmt transamt = (TransAmt)om.readValue(transactions, TransAmt.class);
 		Integer acc = ts.saveTransaction(transamt.getTrans(), transamt.getAmt());
 		return String.valueOf(acc);
+		
 	}
 	
 	
+	
+	public MovieInfoService getMis() {
+		return mis;
+	}
+	public void setMis(MovieInfoService mis) {
+		this.mis = mis;
+	}
 	public TransactionsService getTs() {
 		return ts;
 	}

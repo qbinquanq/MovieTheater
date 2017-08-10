@@ -14,13 +14,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.MovieInfo;
+import com.revature.beans.Transactions;
 import com.revature.service.MovieInfoService;
+import com.revature.service.TransactionsService;
 
 @Controller
 public class UserController {
 
 	@Autowired
 	private MovieInfoService us;
+	@Autowired
+	private TransactionsService ts;
 
 	private ObjectMapper om = new ObjectMapper();
 	
@@ -33,8 +37,7 @@ public class UserController {
         return "redirect:index";
 	}
 	
-	@RequestMapping(value="movie/all", method=RequestMethod.POST)
-	@ResponseBody
+	@RequestMapping(value="movie/all", method=RequestMethod.GET)
 	public String getAll() throws JsonProcessingException
 	{
 		List<MovieInfo> mi = us.getAllMovieInfo();
@@ -43,6 +46,21 @@ public class UserController {
 	}
 	
 	@RequestMapping(value="transactions/all",method=RequestMethod.GET)
+	@ResponseBody
+	public String getAllTrans() throws JsonProcessingException
+	{
+		List<Transactions> trans = ts.getAllTransactions();
+		return om.writeValueAsString(trans);
+	}
+
+	
+	public TransactionsService getTs() {
+		return ts;
+	}
+
+	public void setTs(TransactionsService ts) {
+		this.ts = ts;
+	}
 
 	public MovieInfoService getUs() {
 		return us;
