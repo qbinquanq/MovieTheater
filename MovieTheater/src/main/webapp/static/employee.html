@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html ng-app="WalkIn">
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Home</title>
+<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+<link rel="stylesheet"
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="static/css/index.css" />
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top"
+		ng-controller="NavigationPanel">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><strong>Movie Theater</strong></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a type="button" ng-click="PageHome()">Home Page</a></li>
+					<li><a type="button" ng-click="LogOut()"><i
+							class="fa fa-sign-in"></i>Log Out</a></li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	
+	<p id="search_title">Currently showing movies.</p>
+	<div data-ng-controller="fill" id="search"
+		class="input-group input-group-lg">
+		<table>
+			<tr><th>Movie Title</th>	<th>Hall</th>	<th>Hall Size</th>	<th>Time</th>	<th>Walk In Amount</th></tr>
+			<tr ng-repeat="x in MOVIEINFO" ng-if="x.showtime.showtime<now && (x.onlineTot + x.walkTot) < x.hall.hCapacity">
+			<td>{{x.movie.mTitle}}</td>		<td>{{x.hall.hallId}}</td> 	<td>{{x.hall.hCapacity}}</td>	
+				<td ng-bind="x.showtime.showtime"></td>	
+				<td><input placeholder={{x.walkTot+x.onlineTot}} type="number" min ="0" max="(x.hall.hCapacity-(x.onlineTot+x.walkTot))"></td>
+				<td><button type="submit" ng-bind="x.infoId"></button></td>
+				</tr>
+		</table>
+	</div>
+
+	<div class="footer">
+		<footer>
+			<p>
+				MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a
+					href="#"> Privacy</a>
+			</p>
+		</footer>
+	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="static/js/employee.js"></script>
+</body>
+</html>

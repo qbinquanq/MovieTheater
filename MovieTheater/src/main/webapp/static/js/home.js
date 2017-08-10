@@ -2,6 +2,10 @@ var profile = angular.module('HomePage',[]);
 	profile.controller('fill',function($scope,$http){
 	$http.get("home/all").then(function(response){
 		console.log(response);
+		for(var object of response.data){
+			date = new Date(parseInt(object.releaseDate));
+			object.releaseDate = date;
+			}
 		$scope.MOVIES=response.data;
 		$scope.fillForm = function(x){
 			console.log(x);
@@ -13,7 +17,7 @@ var profile = angular.module('HomePage',[]);
 			$scope.movieHall =[];
 			for(var a of $scope.MOVIEINFO){
 				if(x.movieId == a.movie.movieId){
-					$scope.movieHall.push({movieId: a.movie.movieId, hCapacity:a.hall.hCapacity, hCost:a.hall.hCost, showtime:a.showtime.showtime})
+					$scope.movieHall.push({movieId: a.movie.movieId, hCapacity:a.hall.hCapacity, hCost:a.hall.hCost, showtime:a.showtime.showtime, time:new Date(parseInt(a.showtime.showtime))})
 				}
 			}
 			$scope.getReq = function(){
@@ -39,6 +43,10 @@ var profile = angular.module('HomePage',[]);
 								var showtime = ck.showtime;
 								var walkTot = ck.walkTot;
 								console.log(infoId);
+								if((onlineTot+walkTot)>$scope.movieHall[i].hCapacity){
+									alert("Cannot buy ticket, hall booked to max capacity.");
+								}
+								else{
 								$http.post("buytickets/"+infoId).then(function onSuccess(response){
 									alert("You purchased the ticket successfully. You can check it in your profile now.")
 									location.reload();
@@ -46,6 +54,7 @@ var profile = angular.module('HomePage',[]);
 									alert("You can't purchase this ticket now.")
 									console.log("failed");
 								});
+								}
 								break;
 							}
 						}
@@ -59,6 +68,10 @@ var profile = angular.module('HomePage',[]);
 
 	});
 	$http.get("movieinfo/all").then(function(response){
+		for(var object of response.data){
+			date = new Date(parseInt(object.movie.releaseDate));
+			object.movie.releaseDate = date;
+			}
 		$scope.MOVIEINFO = response.data;
 		console.log($scope.MOVIEINFO);
 	})
