@@ -36,4 +36,9 @@ public class MovieInfoServiceImpl implements MovieInfoService {
 	public MovieInfo getInfoById(int infoId) {
 		return mid.getInfoById(infoId);
 	}
+
+	@Override
+	public MovieInfo updateInfo(MovieInfo mi) {
+		return mid.updateInfo(mi);
+	}
 }

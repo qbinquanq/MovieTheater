@@ -13,4 +13,7 @@ public interface MovieInfoDao extends HibernateSession {
 	
 	//This is for getting Movie info by ID
 	public MovieInfo getInfoById(int infoId);
+	
+	//This is for updating MovieInfo
+	public MovieInfo updateInfo(MovieInfo mi);
 }

@@ -10,4 +10,6 @@ public interface MovieInfoService {
 	public Integer saveMovieInfo(MovieInfo movieInfo);
 	
 	public MovieInfo getInfoById(int infoId);
+	
+	public MovieInfo updateInfo(MovieInfo mi);
 }

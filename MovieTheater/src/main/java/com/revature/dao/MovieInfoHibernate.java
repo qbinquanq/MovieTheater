@@ -30,4 +30,9 @@ public class MovieInfoHibernate implements MovieInfoDao {
 	public MovieInfo getInfoById(int infoId) {
 		return (MovieInfo) session.get(MovieInfo.class, infoId);
 	}
+
+	@Override
+	public MovieInfo updateInfo(MovieInfo mi) {
+		return (MovieInfo) session.merge(mi);
+	}
 }
