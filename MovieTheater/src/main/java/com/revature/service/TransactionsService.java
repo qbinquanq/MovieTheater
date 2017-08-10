@@ -2,6 +2,7 @@ package com.revature.service;
 
 import java.util.List;
 
+import com.revature.beans.Accounts;
 import com.revature.beans.Transactions;
 
 public interface TransactionsService {
@@ -9,5 +10,7 @@ public interface TransactionsService {
 
 	public List<Transactions> getAllTransactions();
 
+	public List<Transactions> getByUser(Accounts user);
+	
 	public void deleteTransaction(Transactions t);
 }
