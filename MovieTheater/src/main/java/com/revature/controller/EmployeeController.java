@@ -6,6 +6,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -73,8 +74,10 @@ public class EmployeeController {
 		return om.writeValueAsString(wil);
 	}
 	
-	@RequestMapping(value="employee/walkinamt")
-	public void insertWalkIn(HttpSession session){
-		
+	@RequestMapping(value="employee/{{amt}}/{{info}}", method = RequestMethod.POST)
+	@ResponseBody
+	public void insertWalkIn(@PathVariable Integer amt, @PathVariable Integer info, HttpSession session){
+		WalkIn wi = new WalkIn();
+		MovieInfo mi = mis.getInfoById(info);
 	}
 }

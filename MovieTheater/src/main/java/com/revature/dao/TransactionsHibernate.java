@@ -5,8 +5,10 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Component;
 
+import com.revature.beans.Accounts;
 import com.revature.beans.Transactions;
 
 @Component
@@ -45,5 +47,10 @@ public class TransactionsHibernate implements TransactionsDao {
 	@Override
 	public void deleteTransaction(Transactions t) {
 		session.delete(t);
+	}
+
+	@Override
+	public List<Transactions> getByUser(Accounts user) {
+		return (List<Transactions>) session.createCriteria(Transactions.class).add(Restrictions.eq("accounts", user)).list();
 	}
 }

@@ -39,11 +39,11 @@
 		class="input-group input-group-lg">
 		<table>
 			<tr><th>Movie Title</th>	<th>Hall</th>	<th>Hall Size</th>	<th>Time</th>	<th>Walk In Amount</th></tr>
-			<tr ng-repeat="x in MOVIEINFO" ng-if="x.showtime.showtime<now && (x.onlineTot + x.walkTot) < x.hall.hCapacity">
+			<tr ng-repeat="x in MOVIEINFO" ng-if="x.showtime.showtime<now && (x.onlineTot + x.walkTot) < x.hall.hCapacity" ng-model="selectedMovie">
 			<td>{{x.movie.mTitle}}</td>		<td>{{x.hall.hallId}}</td> 	<td>{{x.hall.hCapacity}}</td>	
 				<td ng-bind="x.showtime.showtime"></td>	
 				<td><input placeholder={{x.walkTot+x.onlineTot}} type="number" min ="0" max="(x.hall.hCapacity-(x.onlineTot+x.walkTot))"></td>
-				<td><button type="submit" ng-bind="x.infoId"></button></td>
+				<td><button type="submit">Submit Value</button></td>
 				</tr>
 		</table>
 	</div>
