@@ -91,7 +91,7 @@
 					<div class="form-group">
 						<label for="type">Select Your Schedule
 							<select ng-model="selectedHall" ng-change="changeHall()">
-								<option ng-repeat="h in movieHall" values="{{h.movieId}} {{h.hCapacity}} {{h.hCost}} {{h.showtime}}">{{"Hall Size: "+h.hCapacity}}, {{h.hCost | currency}}, {{"Date " + h.showtime}}</option>
+								<option ng-repeat="h in movieHall" values="{{h.movieId}} {{h.hCapacity}} {{h.hCost}} {{h.showtime}}">{{"Hall Size: "+h.hCapacity}}, {{h.hCost | currency}}, {{"ShowID " + h.showtime}}, {{"Date " + h.time}}</option>
 							</select>
 						</label>
 					</div>
