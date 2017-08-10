@@ -4,7 +4,7 @@
 	<session-factory>
 		<!-- Configure our database -->
 		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
-		<property name="hibernate.connection.url">jdbc:oracle:thin:@dbmaster.cobna3pvy3hy.us-east-2.rds.amazonaws.com:1521:ORCL</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@saurabh.c0vw1ivgdocl.us-east-2.rds.amazonaws.com:1521:ORCL</property>
 		<property name="hibernate.connection.username">theater</property>
 		<property name="hibernate.connection.password">p4ssw0rd</property>
 		<property name="hibernate.connection.pool_size">35</property>

@@ -21,6 +21,23 @@ $scope.LogOut=function(){
 
 
 
+manager.controller('report', function ($scope, $http){
+$http.post("manager/movieinfo").then(function(response){
+	console.log(response);
+	for(var object of response.data){
+        var date = new Date(parseInt(object.showtime.showtime));
+        object.showtime.showtime = date;
+        
+	}
+
+	$scope.MOVIEINFO=response.data;
+	
+	}); 
+});
+
+
+
+
 manager.controller('fill', function($scope, $http) {
     $http.post("manager/movieinfo").then(function(response) {
         for(var object of response.data){
@@ -33,6 +50,11 @@ manager.controller('fill', function($scope, $http) {
         console.log(response.data);
         $scope.MOVIEINFO = response.data;
         $scope.now = new Date();
+        
+        
+        
+        
+        
     });
 
 });

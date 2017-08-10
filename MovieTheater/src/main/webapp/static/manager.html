@@ -55,14 +55,24 @@ table#t01 {
 </style>
 
 
-<table id="t01">
+<table id="t01" data-ng-controller ="report">
   <tr>
-    <th>Movie Name</th> 
+    <th ng-model="names">Movie Name</th> 
     <th>Revenue</th>
-    <th>Movie Hall<th>
+    <th>Audience</th>
+    <th>Showtime</th>
   </tr>
   
-</table>
+   <tr ng-repeat ="x in MOVIEINFO | filter:names" >
+    <th>{{x.movie.mTitle}} </th> 
+    <th>{{(x.onlineTot*x.hall.hCost)+(x.walkTot*x.hall.hCost)}} </th>
+    <th>{{x.onlineTot+x.walkTot}} </th>
+    <th>{{x.showtime.showtime}}</th>
+  </tr>
+  
+  
+  
+</table>	
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
