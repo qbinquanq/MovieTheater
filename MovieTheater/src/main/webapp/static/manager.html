@@ -24,7 +24,7 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a type="button" ng-click="HomePage()">Home Page</a></li>
+              <li><a type="button" ng-click="HomePage()"><i class="fa fa-home" aria-hidden="true"></i>Home Page</a></li>
               <li><a type="button" ng-click="LogOut()"><i class="fa fa-sign-in"></i>Log Out</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -32,47 +32,111 @@
 </nav>
 
 
-
-<div class="footer">
-<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
-</div>
-
-
-<style>
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 5px;
-    text-align: left;
-}
-table#t01 {
-    width: 100%;
-    margin-top: 81px;    
-    background-color: #f1f1c1;
-}
-</style>
-
-
-<table id="t01" data-ng-controller ="report">
+<div class="resize">
+<h2 class="man_text">Revenue</h2>
+ <div class="resized">
+		<table id="t01" data-ng-controller ="report">
+		
   <tr>
     <th ng-model="names">Movie Name</th> 
     <th>Revenue</th>
     <th>Audience</th>
     <th>Showtime</th>
   </tr>
-  
-   <tr ng-repeat ="x in MOVIEINFO | filter:names" >
+ 
+
+   <tr ng-repeat ="x in MOVIEINFO " >
     <th>{{x.movie.mTitle}} </th> 
     <th>{{(x.onlineTot*x.hall.hCost)+(x.walkTot*x.hall.hCost)}} </th>
     <th>{{x.onlineTot+x.walkTot}} </th>
-    <th>{{x.showtime.showtime}}</th>
+    <th ng-bind="x.showtime.showtime">
   </tr>
   
   
   
-</table>	
+</table>
+</div>
+</div>
+
+<div class="resize">
+<h2 class="man_text">Refunds</h2>
+ <div class="resized">
+		<table id="t01" data-ng-controller ="refund">
+		
+  <tr>
+    <th>Account</th>
+    <th>MovieInfo</th>
+    <th>Approve/Deny</th>
+  </tr>
+ 
+
+   <tr ng-repeat ="x in TRANSACTIONS | orderBy:'userId'" >
+    <td>{{x.userId}} </td> 
+    <td>{{x.infoId}} </td>
+    <td><button class="btn btn-danger">Deny</button> <button class="btn btn-success">Submit</button></td>
+  </tr>
+   
+</table>
+</div>
+</div>
+
+<div class="resize" id="move-left">
+<h2 class="man_text">Schedule For Next Week</h2>
+ <div class="resized">
+		<table id="t01" data-ng-controller ="switchHalls">
+		
+  <tr>
+    <th>MovieInfo</th>
+    <th>Schedule</th>
+  </tr>
+ 
+
+   <tr ng-repeat ="x in MOVIEINFO | limitTo:3" >
+    <td ng-model="movie">{{x.movie.mTitle}} </td> 
+    <td  type="button" data-toggle="modal" data-target="#modal" ng-click="displayShow"><button class="btn btn-warning">Switch</button></td>
+  </tr>
+   
+</table>
+</div>
+</div>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times</button>
+				<h4 class="modal-title">Schedule Movie For Next Week</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+				<div class="form-group">
+					<label>Movie</label>
+					<input type="text" ng-model="changeMovie" />
+				</div>
+					<div class="form-group">
+					<label>Halls</label>
+						<select ng-controller="showMovie">
+							<option ng-model="hall_time" ng-repeat="x in MOVIEINFO | limit:3" values="{{x.hall.hCapacity}}">{{x.hall.hCapacity}}</option>
+						</select>
+						
+						<label>Pick Date:</label>
+						<div class="input-group date" date-provide="datepicker">
+							<input type="date" name="date" ng-model="show" id="myLocalDate" value="Pick Date">
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="switches(x)">Update</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+<footer><p> MovieTheater Inc. &copy; 2017 - <a href="#"> Terms </a> &middot; <a href="#"> Privacy</a> </p></footer>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 <script type="text/javascript" src="static/js/jquery-1.12.3.js"></script>
 <script type="text/javascript" src="static/js/bootstrap.js"></script>
