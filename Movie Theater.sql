@@ -378,4 +378,9 @@ insert into theater.Employee(userId, reportsTo) values(2,1);
 insert into theater.Employee(userId, reportsTo) values(3,1);
 insert into theater.Employee(userId, reportsTo) values(4,1);
 
+insert into theater.WalkIn(infoId, walkAmount, userId) values (1, 5, 2);
+insert into theater.WalkIn(infoId, walkAmount, userId) values (2, 8, 2);
+insert into theater.WalkIn(infoId, walkAmount, userId) values (3, 12, 3);
+insert into theater.WalkIn(infoId, walkAmount, userId) values (4, 2, 2);
+
 commit;
