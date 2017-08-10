@@ -74,8 +74,10 @@ public class EmployeeController {
 		return om.writeValueAsString(wil);
 	}
 	
-	@RequestMapping(value="employee/{{amt}}/{{info}}")
+	@RequestMapping(value="employee/{{amt}}/{{info}}", method = RequestMethod.POST)
+	@ResponseBody
 	public void insertWalkIn(@PathVariable Integer amt, @PathVariable Integer info, HttpSession session){
-		
+		WalkIn wi = new WalkIn();
+		MovieInfo mi = mis.getInfoById(info);
 	}
 }
