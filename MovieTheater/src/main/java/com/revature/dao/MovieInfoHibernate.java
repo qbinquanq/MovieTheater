@@ -25,4 +25,9 @@ public class MovieInfoHibernate implements MovieInfoDao {
 	public Integer saveMovieInfo(MovieInfo movieInfo) {
 		return (Integer) session.save(movieInfo);
 	}
+
+	@Override
+	public MovieInfo getInfoById(int infoId) {
+		return (MovieInfo) session.get(MovieInfo.class, infoId);
+	}
 }
