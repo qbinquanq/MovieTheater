@@ -151,6 +151,7 @@ before insert on theater.Transactions
 for each row
 begin 
     select transId_pk.nextVal into :new.transId from dual;
+    update theater.MovieInfo set onlineTot=(onlineTot+1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
 end;
 /
 
@@ -159,26 +160,15 @@ before insert on theater.WalkIn
 for each row
 begin 
     select walkId_pk.nextVal into :new.walkId from dual;
+    update theater.MovieInfo set walkTot=(walkTot+(select walkAmount from theater.WalkIn where :old.walkId = :old.walkId)) where (select infoId from theater.WalkIn where :old.walkId = :old.walkid)=infoId;
 end;
 /
 
 create or replace trigger theater.trans_info_trig
-after insert or delete on theater.Transactions
+after delete on theater.Transactions
 for each row
 begin
-    if INSERTING then
-        update theater.MovieInfo set onlineTot=(onlineTot+1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
-    elsif DELETING then
-        update theater.MovieInfo set onlineTot=(onlineTot-1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
-    end if;
-end;
-/
-
-create or replace trigger theater.walk_info_trig
-after insert on theater.WalkIn
-for each row
-begin
-        update theater.MovieInfo set walkTot=(walkTot+(select walkAmount from theater.WalkIn where :old.userId = :old.userid)) where (select infoId from theater.WalkIn where :old.userId = :old.userid)=infoId;
+    update theater.MovieInfo set onlineTot=(onlineTot-1) where (select infoId from theater.Transactions where :old.transId = :old.transid)=infoId;
 end;
 /
 
@@ -186,6 +176,7 @@ insert into theater.Accounts(uname, pword, email, fname, lname) values('rmiller'
 insert into theater.Accounts(uname, pword, email, fname, lname) values('mmasters', 'apassword', 'mmasters@fake.com', 'Maggie', 'Masters');
 insert into theater.Accounts(uname, pword, email, fname, lname) values('jlangly', 'thepassword', 'jlangly@fake.com', 'Jonah', 'Langly');
 insert into theater.Accounts(uname, pword, email, fname, lname) values('senderson', 'endpassword', 'senderson@fake.com', 'Sandy', 'Enderson');
+insert into theater.Accounts(uname, pword, email, fname, lname) values('asmith', 'pass', 'asmith@fake.com', 'Alexus', 'Smith');
 
 insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Secret Agent: Masters', TO_TIMESTAMP('2017-08-04', 'YYYY-MM-DD'), 'Action', 126);
 insert into theater.Movies(mtitle, releasedate, mgenre, mlength) values('Dark Tower', TO_TIMESTAMP('2017-08-04', 'YYYY-MM-DD'), 'Thriller-Action', 140);
@@ -269,9 +260,9 @@ insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-21 18:00', 
 insert into theater.Showtimes(showtime) values(TO_TIMESTAMP('2017-08-21 21:00', 'YYYY-MM-DD HH24:MI'));
 
 --08/04/17
-insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(1, 1, 1, 0, 0);
-insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(2, 2, 1, 0, 0);
-insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(3, 3, 1, 0, 0);
+insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(1, 1, 1, 0, 5);
+insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(2, 2, 1, 0, 4);
+insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(3, 3, 1, 0, 12);
 insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(1, 1, 2, 0, 0);
 insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(3, 2, 2, 0, 0);
 insert into theater.MovieInfo(movieId, hallId, showId, onlineTot, walkTot) values(2, 3, 2, 0, 0);
