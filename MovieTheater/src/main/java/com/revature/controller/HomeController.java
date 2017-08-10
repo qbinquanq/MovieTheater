@@ -6,6 +6,8 @@ import java.util.List;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -108,7 +110,7 @@ public class HomeController {
 	
 	@RequestMapping(value="/buytickets/{infoId}", method=RequestMethod.POST)
 	@ResponseBody
-	public String purchaseTicket(@PathVariable Integer infoId,HttpSession session) throws JsonParseException, JsonMappingException, IOException{
+	public ResponseEntity purchaseTicket(@PathVariable Integer infoId,HttpSession session) throws JsonParseException, JsonMappingException, IOException{
 		//MovieInfo movieInfo = om.readValue(buyTicket, MovieInfo.class);
 	//	System.out.println(movieInfo.getInfoId()+" "+movieInfo.getHall()+" "+movieInfo.getMovie());
 		//System.out.println(infoId + " this is info Id");
@@ -120,10 +122,13 @@ public class HomeController {
 		transaction.setAccount(accounts);
 		transaction.setMovieInfo(movieinfo);
 		transaction.setRequestRet(0);
-		ts.saveTransaction(transaction, 1);
-		movieinfo.setOnlineTot((movieinfo.getOnlineTot()+1));
-		mi.updateInfo(movieinfo);
-		return "static/home.html";
+		Integer i = ts.saveTransaction(transaction, 1);
+		if(i != null){
+			movieinfo.setOnlineTot((movieinfo.getOnlineTot()+1));
+			mi.updateInfo(movieinfo);
+			return ResponseEntity.status(HttpStatus.OK).body(null);
+		}
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
 	}
 	
 	public ShowtimesService getSs() {
