@@ -1,5 +1,7 @@
 package com.revature.dao;
 
+import java.util.List;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.springframework.stereotype.Component;
@@ -17,5 +19,10 @@ public class WalkInHibernate implements WalkInDao {
 	@Override
 	public Integer saveWalkIn(WalkIn walk) {
 		return (Integer) session.save(walk);
+	}
+
+	@Override
+	public List<WalkIn> getWalkIn() {
+		return (List<WalkIn>) session.createCriteria(WalkIn.class).list();
 	}
 }

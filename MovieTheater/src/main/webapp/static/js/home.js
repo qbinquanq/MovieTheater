@@ -1,6 +1,6 @@
 var profile = angular.module('HomePage',[]);
 	profile.controller('fill',function($scope,$http){
-	$http.post("home/all").then(function(response){
+	$http.get("home/all").then(function(response){
 		console.log(response);
 		$scope.MOVIES=response.data;
 		$scope.fillForm = function(x){
@@ -10,43 +10,77 @@ var profile = angular.module('HomePage',[]);
 			$scope.releaseDate = x.releaseDate;
 			$scope.genre = x.genre;
 			$scope.mLength = x.mLength;
+			$scope.movieHall =[];
+			for(var a of $scope.MOVIEINFO){
+				if(x.movieId == a.movie.movieId){
+					$scope.movieHall.push({movieId: a.movie.movieId, hCapacity:a.hall.hCapacity, hCost:a.hall.hCost, showtime:a.showtime.showtime})
+				}
+			}
+			$scope.getReq = function(){
+				console.log($scope.selectedHall);
+				var string = $scope.selectedHall.replace(/,/g, "").replace(/:/g, "");;
+				console.log(string);
+				var arr = string.split(" ");
+				console.log(arr);
+				console.log($scope.movieHall);
+				console.log($scope.movieHall.length);
+				console.log("err");
+				
+				for(var i = 0; i<$scope.movieHall.length;i++){
+					if(arr[2]==$scope.movieHall[i].hCapacity && arr[5]==$scope.movieHall[i].showtime){
+						console.log($scope.movieHall[i]);
+						$http.post("buyTicket", "buyticket="+JSON.stringify($scope.movieHall[i])).then(function onSuccess(response){
+							alert("You purchased the ticket successfully. You can check it in your profile now.")
+						});
+					}
+				}
+			}
+			//console.log($scope.selectedHall);
 		}
-
-	});
-});
-
-
-	/*profile.controller('filling',function($scope,$http){
-		$scope.fillForm = function(count){
-			console.log(count);
-			console.log($scope.MOVIES[0].mTitle);
-			$scope.mTitle = $scope.MOVIES[count].mTitle;
-			$scope.releaseDate = $scope.MOVIES[count].releaseDate;
-			$scope.genre = $scope.MOVIES[count].genre;
-			$scope.mLength = $scope.MOVIES[count].mLength;
-		}
-		$http.post("home/all").then(function(response){
-			$scope.myVar= response.data;
-			console.log($scope.myVar);
-				//$scope.myVar= response.data.mTitle;
-			
-			
-		});
 		
+
 	});
-	*/
-	profile.controller('autoFill',function($scope,$http){
-		$http.post("info/movies").then(function(response){
-				$scope.SHOWTIMES=response.data;
-		});
-	});
+	$http.get("movieinfo/all").then(function(response){
+		$scope.MOVIEINFO = response.data;
+		console.log($scope.MOVIEINFO);
+	})
 	
-	profile.controller('autoFillHalls',function($scope,$http){
-		$http.post("info/halls").then(function(response){
-			console.log(response);
-			$scope.HALLS=response.data;
-		});
-	});
+});
+	/*$http.get("info/movies").then(function(response){
+		$scope.SHOWTIMES=response.data;
+		console.log("showtime: " + response)
+	});*/
+/*	$scope.changeShowtime = function(){
+		console.log($scope.selectedData)
+		console.log($scope.MOVIEINFO);
+		$scope.filteredHalls = $scope.MOVIEINFO;
+		console.log($scope.selectedData);
+		console.log($scope.HALLS)
+		for(var a of $scope.filteredHalls){
+			//if($scope.seletedData == a.showtime.showtime){
+				console.log(a.hall.hCapacity);
+			if($scope.selectedData == a.showtime.showtime){
+				console.log(a.showtime.showtime)
+				console.log("hello");
+			}
+		}
+		
+		$scope.filerHALLS.splice(1,1);
+			
+		
+	}*/
+	/*$http.get("info/halls").then(function(response){
+		console.log(response);
+		$scope.HALLS=response.data;
+		$scope.filerHALLS = $scope.HALLS;
+	});*/
+	/*$scope.changeHall = function(){
+		console.log($scope.selectedHall)
+		console.log($scope.MOVIEINFO);
+	}*/
+
+
+
 	
 
 /*	profile.controller('autoFill',function($scope){
