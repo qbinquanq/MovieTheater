@@ -17,4 +17,10 @@ public interface TransactionsDao extends HibernateSession {
 	
 	//This is to delete Transactions
 	public void deleteTransaction(Transactions t);
+	
+	//This is to get Transaction by Id
+	public Transactions getTransById(int traId);
+	
+	//This is for updating Transaction
+	public Transactions updateTrans(Transactions tran);
 }

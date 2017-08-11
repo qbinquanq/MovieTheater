@@ -42,4 +42,14 @@ public class TransactionsServiceImpl implements TransactionsService{
 	public List<Transactions> getByUser(Accounts user) {
 		return td.getByUser(user);
 	}
+	
+	@Override
+	public Transactions getTransById(int id){
+		return td.getTransById(id);
+	}
+	
+	@Override
+	public Transactions updateTrans(Transactions tran){
+		return td.updateTrans(tran);
+	}
 }

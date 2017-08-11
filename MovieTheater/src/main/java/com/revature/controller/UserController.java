@@ -72,7 +72,7 @@ public class UserController {
 	}
 
 	//delete a transaction
-	@RequestMapping(value="/trans/remove/",method=RequestMethod.POST)
+	@RequestMapping(value="/trans/remove",method=RequestMethod.POST)
 	@ResponseBody
 	public String removeTrans(Transactions trans){
 		ts.deleteTransaction(trans);
@@ -80,15 +80,14 @@ public class UserController {
 	}
 	
 	//apply for a refund
-	@RequestMapping(value="/applyRefund/apply", method=RequestMethod.POST)
+	@RequestMapping(value="/applyRefund/{ref}/{traId}", method=RequestMethod.POST)
 	@ResponseBody
-	public ResponseEntity applyRefund(HttpSession session) throws JsonParseException, JsonMappingException, IOException{
-		Transactions transaction = new Transactions();
-		transaction.getAccount();
-		transaction.getMovieInfo();
-		transaction.setRequestRet(1);
+	public String applyRefund(@PathVariable int ref, @PathVariable int traId, HttpSession session) throws JsonParseException, JsonMappingException, IOException{
+		Transactions transaction = ts.getTransById(traId);
+		transaction.setRequestRet(ref);
+		ts.updateTrans(transaction);
 
-		return ResponseEntity.status(HttpStatus.OK).body(null);
+		return "static/user.html";
 	}
 	public TransactionsService getTs() {
 		return ts;

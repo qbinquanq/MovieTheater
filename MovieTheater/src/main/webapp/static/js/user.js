@@ -27,24 +27,20 @@ app.controller('userFil',function($scope,$http){
 
 	});
 	
-	$scope.deleteTrans=function(movieInfo){
-
+	$scope.deleteTrans=function(response){
 		var response= $http({
 			method:'post',
-			url:'/trans/remove/{{movieInfo}}',
-			params:{
-				movieInfo: JSON.stringify(movieInfo)
-			}
+			url:'/trans/remove'
 		});
 		return response;
 		}
 
 
-	$scope.refund=function(){
-		$http.post("/applyRefund/apply").then(function onSuccess(response){
+	$scope.refund=function(x){
+		var ref =1;
+		$http.post("applyRefund/"+ref+"/"+x.transId).then(function onSuccess(response){
 			location.reload()
-		},function onError(response){
-			console.log("Error in Refunding");
+		
 		});
 	};
 });

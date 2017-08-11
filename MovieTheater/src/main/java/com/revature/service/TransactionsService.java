@@ -13,4 +13,8 @@ public interface TransactionsService {
 	public List<Transactions> getByUser(Accounts user);
 	
 	public void deleteTransaction(Transactions t);
+	
+	public Transactions getTransById(int tranId);
+	
+	public Transactions updateTrans(Transactions tran);
 }

@@ -63,7 +63,7 @@
 				<td ng-model="hall"><i class="fa fa-building" aria-hidden="true"></i> {{x.movieInfo.hall.hCapacity}}</td>
 				<td ng-model="showtime"><i class="fa fa-calendar" aria-hidden="true"></i> {{x.movieInfo.showtime.showtime | date}}</td>
 				<td ng-model="cost"><i class="fa fa-money" aria-hidden="true"></i> {{x.movieInfo.hall.hCost | currency}}</td>
-				<td><button class="btn btn-danger" ng-click="deleteTrans(x.movieInfo)">Delete</button> <button class="btn btn-warning" ng-click="refund(newRefund,$event)">Refund</button></td>
+				<td><button class="btn btn-danger" ng-click="deleteTrans(x)">Delete</button> <button class="btn btn-warning" ng-click="refund(x)">Refund</button></td>
 			</tr>
 			</table>
 

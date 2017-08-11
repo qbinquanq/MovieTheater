@@ -4,11 +4,11 @@ import java.util.Calendar;
 import java.util.List;
 
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Component;
 
 import com.revature.beans.Accounts;
+import com.revature.beans.MovieInfo;
 import com.revature.beans.Transactions;
 
 @Component
@@ -26,7 +26,11 @@ public class TransactionsHibernate implements TransactionsDao {
 			mov.setTime(trans.getMovieInfo().getShowtime().getShowtime());
 			Calendar cur = Calendar.getInstance();
 			if (trans.getRequestRet() == 1 && (mov.get(Calendar.DAY_OF_YEAR) - cur.get(Calendar.DAY_OF_YEAR)) < 3) {
+				MovieInfo info = trans.getMovieInfo();
 				deleteTransaction(trans);
+				info.setOnlineTot((info.getOnlineTot()-1));
+				MovieInfoDao mid = new MovieInfoHibernate();
+				mid.updateInfo(info);
 			}
 		}
 	}
@@ -41,6 +45,8 @@ public class TransactionsHibernate implements TransactionsDao {
 
 	@Override
 	public List<Transactions> getAllTransactions() {
+		List<Transactions> tl = (List<Transactions>) session.createCriteria(Transactions.class).list();
+		checkAuto(tl);
 		return (List<Transactions>) session.createCriteria(Transactions.class).list();
 	}
 
@@ -51,6 +57,18 @@ public class TransactionsHibernate implements TransactionsDao {
 
 	@Override
 	public List<Transactions> getByUser(Accounts user) {
+		List<Transactions> ul = (List<Transactions>) session.createCriteria(Transactions.class).add(Restrictions.eq("userId", user.getUserId())).list();
+		checkAuto(ul);
 		return (List<Transactions>) session.createCriteria(Transactions.class).add(Restrictions.eq("userId", user.getUserId())).list();
+	}
+	
+	@Override
+	public Transactions getTransById(int traId){
+		return (Transactions) session.get(Transactions.class, traId);
+	}
+	
+	@Override
+	public Transactions updateTrans(Transactions tran){
+		return (Transactions) session.merge(tran);
 	}
 }
