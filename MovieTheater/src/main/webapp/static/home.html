@@ -43,7 +43,6 @@
 		
 		<p id="search_title">Search Movies. Hang out. Have Fun.</p>
 		<input id="search_bar" type="search" placeholder="Search...." class="form-control" data-ng-model="getMovies">
-		<button id="search_button" class="btn btn-danger" type="button">Search</button>
 		<ul ng-if="getMovies" ng-repeat="x in MOVIES | filter:getMovies" >
 			<li id="search_box" ng-init="count=0">
 				{{"Movie Tile: "+x.mTitle}} {{"Length: "+ x.mLength}} {{"Time: "+ x.releaseDate}} <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal" ng-click="fillForm(x)" >Buy Ticket</a>
@@ -52,6 +51,7 @@
 	
 	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true" >
 		<div class="modal-dialog" role="document">
+		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModal">Add Movies</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -100,6 +100,7 @@
 			</div>
 				
 			</div>
+		</div>
 		</div>
 	</div>
 	
