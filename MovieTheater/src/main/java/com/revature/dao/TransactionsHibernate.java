@@ -45,8 +45,6 @@ public class TransactionsHibernate implements TransactionsDao {
 
 	@Override
 	public List<Transactions> getAllTransactions() {
-		List<Transactions> tl = (List<Transactions>) session.createCriteria(Transactions.class).list();
-		checkAuto(tl);
 		return (List<Transactions>) session.createCriteria(Transactions.class).list();
 	}
 
@@ -57,8 +55,6 @@ public class TransactionsHibernate implements TransactionsDao {
 
 	@Override
 	public List<Transactions> getByUser(Accounts user) {
-		List<Transactions> ul = (List<Transactions>) session.createCriteria(Transactions.class).add(Restrictions.eq("userId", user.getUserId())).list();
-		checkAuto(ul);
 		return (List<Transactions>) session.createCriteria(Transactions.class).add(Restrictions.eq("userId", user.getUserId())).list();
 	}
 	
