@@ -60,7 +60,9 @@ input{
   opacity:0.8;
   float:right;
 }
-
+#modal-content{
+	background-color:white;
+}
 h2{
 	font-family:"Verdana";
 	font-weight:bold;
@@ -81,7 +83,6 @@ hr{
 	background-color:#2A88AD;
     height: 40%;
     width: 80%;
-    opacity:0.8;
     margin: 0 auto;
     border-radius:4px;
     margin-bottom:4px;
@@ -98,7 +99,7 @@ hr{
 #search_box{
 	color:#0000ff;
 	list-style:none;
-	background-color:#808080;
+	background-color:white;
 	border:1px solid #2A88AD;
 	padding:10px;
 	height:40px;

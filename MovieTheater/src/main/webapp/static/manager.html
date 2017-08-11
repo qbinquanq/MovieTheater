@@ -56,7 +56,6 @@
   
 </table>
 </div>
-</div>
 
 <div class="resize">
 <h2 class="man_text">Refunds</h2>
@@ -70,9 +69,9 @@
   </tr>
  
 
-   <tr ng-repeat ="x in TRANSACTIONS | orderBy:'userId'" >
-    <td>{{x.userId}} </td> 
-    <td>{{x.infoId}} </td>
+   <tr ng-repeat ="x in TRANSACTIONS | orderBy:'requestRef'" >
+    <td>{{x.accounts.uname}} </td> 
+    <td>{{x.movieInfo.movie.mTitle}} </td>
     <td><button class="btn btn-danger">Deny</button> <button class="btn btn-success">Submit</button></td>
   </tr>
    
