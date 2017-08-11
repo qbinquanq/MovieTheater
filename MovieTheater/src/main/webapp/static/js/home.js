@@ -46,10 +46,7 @@ var profile = angular.module('HomePage',[]);
 									alert("Cannot buy ticket, hall booked to max capacity.");
 								}
 								else{
-								$http.post("buytickets/"+infoId).then(function onSuccess(response){
-									alert("You purchased the ticket successfully. You can check it in your profile now.");
-									location.reload();
-								});
+								$http.post("buytickets/"+infoId).then(onSuccess);
 								}
 								break;
 							}
@@ -115,3 +112,7 @@ var profile = angular.module('HomePage',[]);
 			$scope.getMovies = angular.element(event.target).text();
 		};
 	});*/
+	function onSuccess(response){
+		alert("You purchased the ticket successfully. You can check it in your profile now.");
+		location.reload();
+	}
