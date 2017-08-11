@@ -13,8 +13,6 @@ import javax.persistence.Table;
 
 import org.springframework.stereotype.Component;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 @Component
 @Entity
 @Table(name = "Accounts")
@@ -23,9 +21,7 @@ public class Accounts {
 	@SequenceGenerator(name = "ACCOUNTID_SEQ", sequenceName = "userId_pk")
 	@GeneratedValue(generator = "ACCOUNTID_SEQ", strategy = GenerationType.AUTO)
 	private int userId;
-	@JsonIgnore
 	private String uname;
-	@JsonIgnore
 	private String pword;
 	private String email;
 	private String fname;
