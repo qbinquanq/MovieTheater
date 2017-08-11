@@ -24,7 +24,7 @@ var profile = angular.module('HomePage',[]);
 			}
 			$scope.getReq = function(){
 				console.log($scope.selectedHall);
-				var string = $scope.selectedHall.replace(/,/g, "").replace(/:/g, "");;
+				var string = $scope.selectedHall.replace(/,/g, "").replace(/:/g, "");
 				console.log(string);
 				var arr = string.split(" ");
 				console.log(arr);
@@ -39,10 +39,7 @@ var profile = angular.module('HomePage',[]);
 							if($scope.movieHall[i].movieId == ck.movie.movieId && $scope.movieHall[i].hCapacity == ck.hall.hCapacity && $scope.movieHall[i].showtime == ck.showtime.showtime){
 								console.log(ck);
 								var infoId = ck.infoId;
-								var movie = ck.movie;
 								var onlineTot = ck.onlineTot;
-								var hall = ck.hall;
-								var showtime = ck.showtime;
 								var walkTot = ck.walkTot;
 								console.log(infoId);
 								if((onlineTot+walkTot)>$scope.movieHall[i].hCapacity){
