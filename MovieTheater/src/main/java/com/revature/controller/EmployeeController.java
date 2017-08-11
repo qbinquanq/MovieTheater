@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.beans.Accounts;
 import com.revature.beans.MovieInfo;
 import com.revature.beans.WalkIn;
 import com.revature.service.MovieInfoService;
@@ -74,10 +75,17 @@ public class EmployeeController {
 		return om.writeValueAsString(wil);
 	}
 	
-	@RequestMapping(value="employee/{{amt}}/{{info}}", method = RequestMethod.POST)
+	@RequestMapping(value="employee/{amt}/{info}", method = RequestMethod.POST)
 	@ResponseBody
-	public void insertWalkIn(@PathVariable Integer amt, @PathVariable Integer info, HttpSession session){
+	public String insertWalkIn(@PathVariable Integer amt, @PathVariable Integer info, HttpSession session){
 		WalkIn wi = new WalkIn();
 		MovieInfo mi = mis.getInfoById(info);
+		mi.setWalkTot((amt+mi.getOnlineTot()+mi.getWalkTot()));
+		wi.setAccount((Accounts)session.getAttribute("user"));
+		wi.setMovieInfo(mi);
+		wi.setWalkAmount(amt);
+		wis.saveWalkIn(wi);
+		mis.updateInfo(mi);
+		return "static/employee.html";
 	}
 }

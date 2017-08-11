@@ -2,12 +2,6 @@ var employee = angular.module('WalkIn', []);
 
 employee.controller('fill', function($scope, $http) {
 	$http.post("employee/movieinfo").then(function(response) {
-		$http.post("employee/walkin").then(function(walkresp){
-			$scope.WALKIN = walkresp.data;
-			$http.post("employee/id").then(function(empresp){
-				$scope.EMP = empresp.data;
-			})
-		})
 		for(var object of response.data){
 		var date = new Date(parseInt(object.showtime.showtime));
 		object.showtime.showtime = date;
@@ -17,20 +11,18 @@ employee.controller('fill', function($scope, $http) {
 		}
 		console.log(response.data);
 		$scope.MOVIEINFO = response.data;
-	
 	})
-})
-employee.controller('WalkIn', function ($scope, $http){
-	"use strict";
-	$scope.newWalkIn={};
-	$scope.submitAmt = function(newWalkIn, $event){
-		console.log(newWalkIn);
-		console.log("employee/walkinamt="+JSON.stringify($scope.newWalkIn))
-		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-		$http.post("employee/walkinamt", "amount="+JSON.stringify($scope.newWalkIn)).then(function onSuccess(response){
-			alert("You submitted foot traffic succesfully.");
-			location.reload();
-		});
+	$scope.getWalk = function(x){
+		var amo = (+x.am + +x.walkTot + +x.onlineTot);
+		console.log(amo);
+		if(amo>x.hall.hCapacity){
+			alert("You let too many people in.");
+		}else{
+			$http.post("employee/"+x.am+"/"+x.infoId).then(function onSuccess(response){
+				alert("You successfully put in foot traffic.");
+				location.reload();
+			});
+		}
 	}
 })
 
