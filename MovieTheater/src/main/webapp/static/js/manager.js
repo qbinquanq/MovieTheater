@@ -28,8 +28,6 @@ $http.post("manager/movieinfo").then(function(response){
         var date = new Date(parseInt(object.showtime.showtime));
         object.showtime.showtime = date;
 	}
-
-    var now = new Date();
 	$scope.MOVIEINFO=response.data;
 	
 	}); 
