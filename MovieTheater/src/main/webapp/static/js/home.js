@@ -16,8 +16,10 @@ var profile = angular.module('HomePage',[]);
 			$scope.mLength = x.mLength;
 			$scope.movieHall =[];
 			for(var a of $scope.MOVIEINFO){
-				if(x.movieId == a.movie.movieId){
-					$scope.movieHall.push({movieId: a.movie.movieId, hCapacity:a.hall.hCapacity, hCost:a.hall.hCost, showtime:a.showtime.showtime, time:new Date(parseInt(a.showtime.showtime))})
+				var now = new Date();
+				var at = new Date(parseInt(a.showtime.showtime));
+				if(x.movieId == a.movie.movieId && now<at){
+					$scope.movieHall.push({movieId: a.movie.movieId, hCapacity:a.hall.hCapacity, hCost:a.hall.hCost, showtime:a.showtime.showtime, time:at})
 				}
 			}
 			$scope.getReq = function(){
