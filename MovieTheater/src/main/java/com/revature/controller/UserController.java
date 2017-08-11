@@ -72,7 +72,7 @@ public class UserController {
 	}
 
 	//delete a transaction
-	@RequestMapping(value="/trans/remove",method=RequestMethod.POST)
+	@RequestMapping(value="/trans/remove/",method=RequestMethod.POST)
 	@ResponseBody
 	public String removeTrans(Transactions trans){
 		ts.deleteTransaction(trans);

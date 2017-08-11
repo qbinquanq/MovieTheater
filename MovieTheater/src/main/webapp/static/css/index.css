@@ -113,11 +113,7 @@ hr{
 	border-radius:4px;
 	border: 2px solid #0080ff;
 }
-#search_button{
-	background-color:#0080ff;
-	border: 2px solid #0080ff;
-	margin-left:-170px;
-}
+
 #show{
 	background-color:#dfdfff;
 	margin-top:-30px;
@@ -290,4 +286,8 @@ th, td {
 #move-left{
 	margin-left:52%;
 	margin-top:-850px;
+}
+/*User table*/
+#user-table{
+	margin-left:30%;
 }

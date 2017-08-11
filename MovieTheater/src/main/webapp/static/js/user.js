@@ -26,36 +26,27 @@ app.controller('userFil',function($scope,$http){
 		$scope.TRANSACTIONS=response.data;
 
 	});
-});
-app.controller("userFil",function($scope,$http){
-	"use strict";
-	$scope.newDelete={};
-	$scope.newRefund={};
-	$scope.deleteTrans=function(){
-		$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-	$http.post("/trans/remove","deleted="+JSON.stringify($scope.newLogin)).then(function onSuccess(response){
-		$scope.status="Transaction Deleted Successfully";
-		location.reload()
-	},function onError(response){
-		$scope.status="That did not delete successfully";
-		console.log("failed");
-	});
-};
+	
+	$scope.deleteTrans=function(movieInfo){
 
-$scope.refund=function(){
-	$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
-	$http.post("/applyRefund/apply","Refunded="+JSON.stringify($scope.newRefund)).then(function onSuccess(response){
-		$scope.status="Refund Sent Successfully";
-		location.reload()
-	},function onError(response){
-		$scope.status="The Refund was not successful";
-		console.log("Error in Refunding");
-	});
-};
+		var response= $http({
+			method:'post',
+			url:'/trans/remove/{{movieInfo}}',
+			params:{
+				movieInfo: JSON.stringify(movieInfo)
+			}
+		});
+		return response;
+		}
+
+
+	$scope.refund=function(){
+		$http.post("/applyRefund/apply").then(function onSuccess(response){
+			location.reload()
+		},function onError(response){
+			console.log("Error in Refunding");
+		});
+	};
 });
 
-app.controller('apply-username',function($scope,$http){
-	$http.get("loginthrough").then(function(response){
-		$scope.ACCOUNTS=response.data;
-	});
-});
+
