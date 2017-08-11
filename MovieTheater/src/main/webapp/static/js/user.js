@@ -27,13 +27,13 @@ app.controller('userFil',function($scope,$http){
 
 	});
 	
-	$scope.deleteTrans=function(response){
+/*	$scope.deleteTrans=function(response){
 		var response= $http({
 			method:'post',
 			url:'/trans/remove'
 		});
 		return response;
-		}
+		}*/
 
 
 	$scope.refund=function(x){

@@ -56,14 +56,14 @@
 				<th>Hall</th>
 				<th>Showtime</th>
 				<th>Cost</th>
-				<th>Refund/Delete</th>
+				<th>Refund</th>
 			</tr>
 			<tr ng-repeat="x in TRANSACTIONS ">
 				<td ng-model="tile"><i class="fa fa-camera-retro fa-lg"></i> {{x.movieInfo.movie.mTitle}}</td>
 				<td ng-model="hall"><i class="fa fa-building" aria-hidden="true"></i> {{x.movieInfo.hall.hCapacity}}</td>
-				<td ng-model="showtime"><i class="fa fa-calendar" aria-hidden="true"></i> {{x.movieInfo.showtime.showtime | date:'yyyy-MM-dd'}}</td>
+				<td ng-model="showtime"><i class="fa fa-calendar" aria-hidden="true"></i> {{x.movieInfo.showtime.showtime | date:'MM/dd/yyyy HH:mm:ss'}}</td>
 				<td ng-model="cost"><i class="fa fa-money" aria-hidden="true"></i> {{x.movieInfo.hall.hCost | currency}}</td>
-				<td><button class="btn btn-danger" ng-click="deleteTrans(x)">Delete</button> <button class="btn btn-warning" ng-click="refund(x)">Refund</button></td>
+				<td> <button class="btn btn-warning" ng-click="refund(x)">Refund</button></td>
 			</tr>
 			</table>
 
